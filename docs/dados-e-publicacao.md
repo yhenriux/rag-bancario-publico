@@ -12,7 +12,7 @@ Cada arquivo precisa ter uma origem e uma versão identificadas. A publicação 
 | `examples/` | Perguntas, fontes e formulários fictícios | Servem para aprender e testar o código. |
 | `docs/` | Explicações e protocolo | Servem para entender e executar o estudo. |
 | `data/` | Cópias das fontes, textos e índices reais | Ficam fora do Git por padrão. |
-| `private/` | Anotações, referências, decisões e chaves | A coordenação define quem pode acessar. |
+| `private/` | Anotações, referências, decisões e chaves | Yago controla o acesso aos arquivos de pesquisa. |
 | `runs/` | Resultados e registros das execuções | Ficam fora do Git por padrão. |
 
 O arquivo `.gitignore` evita a inclusão automática dessas pastas no Git. Ele não controla o acesso ao computador ou ao armazenamento do pesquisador.

@@ -36,3 +36,11 @@ O piloto e o estudo final ainda não foram executados.
 - Segmentação assistida identificada, sem aprovação humana implícita.
 - E5 real validado e teste técnico separado para Qwen GGUF em CPU.
 - Novos testes de extração, integridade e revisão assistida; total de 28 aprovados.
+
+## 11/10/2026: plano de conclusão
+
+- Critérios de encerramento, decisões e alternativas para todas as etapas restantes.
+- Rota de integração GGUF e alternativa explícita de dois bancos, com 480 saídas no piloto de 60 perguntas.
+- Calibração da avaliação automática, tratamento de inconclusivos, registro prospectivo e orçamento computacional.
+- Compatibilidade editorial com política de IA conferida antes de escolher o destino.
+- Plano estruturado identificado como planejado, separado dos resultados já executados.

@@ -6,7 +6,7 @@ A execução usa lotes com assistência de Codex. Yago é o único pesquisador. 
 
 | Entrega | Situação |
 |---|---|
-| Código de coleta dirigida e seis configurações | Preparado; cadeia real em teste técnico, ver relatório |
+| Código de coleta dirigida e seis configurações | Preparado; um caso real executado nas seis configurações |
 | Pré-conferência dos caminhos de seis candidatos | Consultas reais registradas em [access-preflight.json](access-preflight.json) |
 | Conferência de termos | Inter e Bradesco: liberação operacional limitada; Itaú, Santander e C6 suspensos |
 | Coleta, extração e catálogo em lote | 17 documentos reais: 12 Inter e 5 Bradesco |
@@ -21,3 +21,5 @@ A execução usa lotes com assistência de Codex. Yago é o único pesquisador. 
 Cada lote termina com contagens, hashes, falhas e decisões. O relatório distingue exemplo fictício, consulta técnica, proposta automática e resultado do estudo. Publicar no GitHub uma atualização do planejamento não significa registrar a etapa final no OSF ou Zenodo.
 
 [Resultados e limites da primeira execução](execucao-20261011.md).
+
+O [plano completo de conclusão](plano-conclusao.md) define critérios de encerramento, alternativas de fonte e método, geração GGUF, avaliação automática, registro e publicação. Suas etapas continuam identificadas como planejadas até produzir as evidências correspondentes.

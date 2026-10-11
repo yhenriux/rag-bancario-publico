@@ -2,6 +2,8 @@
 
 [Voltar ao início](../README.md) · [Método ativo](protocolo-individual.md) · [Comandos](execucao.md)
 
+O [plano completo de conclusão](plano-conclusao.md) fixa as decisões e alternativas para as próximas etapas, incluindo dois bancos e o modelo compacto.
+
 **Meta:** executar seleção, conferência, coleta e catálogo em lote, com assistência de Codex. Yago recebe o resultado e uma lista curta de decisões. O plano dispensa horas semanais e uma equipe de anotadores.
 
 ## Entregas na ordem de execução

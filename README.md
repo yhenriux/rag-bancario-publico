@@ -21,7 +21,8 @@ Os exemplos de demonstração são fictícios. A execução de 11/10/2026 usa fo
 | Entender a ideia, sem programar | [O estudo em linguagem simples](docs/entenda-o-projeto.md) |
 | Ver um exemplo no seu computador | [Primeiros passos](docs/primeiros-passos.md) |
 | Preparar e executar a pesquisa | [Guia de execução](docs/execucao.md) |
-| Ver o plano em lotes para uma jornada | [Planejamento completo](docs/plano-execucao.md) |
+| Ver o plano em lotes para uma jornada | [Plano da jornada](docs/plano-execucao.md) |
+| Concluir todas as etapas da pesquisa | [Plano completo de conclusão](docs/plano-conclusao.md) |
 | Entender verificações e avaliações | [Guia de avaliação](docs/avaliacao.md) |
 | Entender uma palavra técnica | [Glossário](docs/glossario.md) |
 | Acompanhar o que já está pronto | [Plano de trabalho](docs/roadmap.md) |

@@ -6,4 +6,4 @@ authors:
   - family-names: "Andrade Almeida"
     given-names: "Yago Henrique"
 repository-code: "https://github.com/yhenriux/rag-bancario-publico"
-abstract: "Código e documentação de um protocolo sobre busca de evidências e adequação de respostas bancárias. A pesquisa com bancos reais ainda não foi executada."
+abstract: "Código e documentação de um protocolo sobre busca de evidências e adequação de respostas bancárias. A primeira coleta real e um caso técnico foram executados; o piloto completo e a etapa final continuam planejados."

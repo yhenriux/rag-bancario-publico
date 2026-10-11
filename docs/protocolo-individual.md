@@ -52,3 +52,9 @@ A segmentação aceita `assisted_checked` somente com a opção `--allow-assiste
 ## Registro da primeira execução
 
 O [relatório de 11/10/2026](execucao-20261011.md) registra 17 documentos de dois bancos e um caso técnico real assistido. O E5 foi executado em CPU. A versão oficial Qwen3-8B GGUF Q4_K_M foi selecionada somente para teste técnico em llama.cpp, porque o modelo completo não cabe nos 8 GiB disponíveis. Precisão, revisão, hash e implementação são registrados separadamente. Essa alternativa não equivale à execução completa do protocolo. A adoção no piloto exige fixar e justificar o método antes das comparações.
+
+## Planejamento de conclusão
+
+O [plano completo](plano-conclusao.md) especifica a rota seguinte: GGUF na implementação validada, até três bancos com alternativa de duas instituições, avaliação automática calibrada e estudo final exploratório com até 60 famílias novas. A integração ainda precisa ser implementada. A amostra definitiva e as decisões são fixadas antes das respostas finais.
+
+No cenário de dois bancos e 60 perguntas, seis perguntas por banco e classe produzem 360 saídas principais e 120 de estabilidade pela regra atual de arredondamento, totalizando 480. No cenário de três bancos, o total permanece 450. O registro próprio prospectivo usa release datada e commit do GitHub; eventual depósito externo e DOI recebem identificação somente depois de realizados. A compatibilidade da política de IA do periódico integra a decisão editorial.
