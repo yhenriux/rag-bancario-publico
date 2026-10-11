@@ -21,6 +21,7 @@ Os valores e os cartões usados nos exemplos deste repositório são fictícios.
 | Entender a ideia, sem programar | [O estudo em linguagem simples](docs/entenda-o-projeto.md) |
 | Ver um exemplo no seu computador | [Primeiros passos](docs/primeiros-passos.md) |
 | Preparar e executar a pesquisa | [Guia de execução](docs/execucao.md) |
+| Planejar equipe, bancos, permissões, modelos e piloto | [Planejamento completo](docs/plano-execucao.md) |
 | Saber como as pessoas avaliam as respostas | [Guia de avaliação](docs/avaliacao.md) |
 | Entender uma palavra técnica | [Glossário](docs/glossario.md) |
 | Acompanhar o que já está pronto | [Plano de trabalho](docs/roadmap.md) |

@@ -4,6 +4,8 @@
 
 O código e os guias permitem preparar a pesquisa. A coleta de bancos reais, a execução dos modelos e os julgamentos humanos ainda estão pendentes.
 
+O [planejamento completo](plano-execucao.md) detalha responsáveis, seleção de bancos, revisão de permissões, validação dos modelos, piloto, dimensionamento, cronograma e orçamento. Seus registros começam pendentes e são preenchidos com evidências da execução.
+
 ## O que já foi preparado
 
 - Demonstração que funciona sem baixar modelos.

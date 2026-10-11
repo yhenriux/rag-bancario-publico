@@ -2,6 +2,9 @@
 
 ## Preparação do repositório, 11 de outubro de 2026
 
+- Planejamento completo de seleção, permissões, modelos, piloto e etapa final.
+- Cronograma, orçamento de esforço, decisões de avanço e modelo de registros pendentes.
+
 - Publicação da base de coleta, busca, geração e avaliação.
 - Revisão dos guias para leitores sem experiência em RAG.
 - Demonstração com dois casos fictícios de filtragem.

@@ -1,0 +1,113 @@
+{
+  "template_only": true,
+  "status": "pending",
+  "plan_version": null,
+  "recorded_at": null,
+  "coordination": null,
+  "roles": [
+    {"role": "M1", "person": null, "hours_per_week": null, "training_record": null},
+    {"role": "M2", "person": null, "hours_per_week": null, "training_record": null},
+    {"role": "R1", "person": null, "hours_per_week": null, "training_record": null},
+    {"role": "R2", "person": null, "hours_per_week": null, "training_record": null},
+    {"role": "J1", "person": null, "hours_per_week": null, "training_record": null},
+    {"role": "J2", "person": null, "hours_per_week": null, "training_record": null}
+  ],
+  "bank_candidates": [
+    {
+      "bank": null,
+      "official_sources": [],
+      "institutional_scope_evidence": null,
+      "account_evidence": null,
+      "card_evidence": null,
+      "public_portuguese_documents": null,
+      "candidate_documents": null,
+      "eligible_reserved_families_by_contrast": {"H1": null, "H2": null, "H3": null},
+      "decision": "pending",
+      "reason": null,
+      "reviewer": null,
+      "decided_at": null
+    }
+  ],
+  "source_permission_reviews": [
+    {
+      "bank": null,
+      "host": null,
+      "document_urls": [],
+      "official_host_evidence": null,
+      "terms_url": null,
+      "terms_checked_at": null,
+      "terms_copy_sha256": null,
+      "relevant_conditions": null,
+      "robots_url": null,
+      "robots_checked_at": null,
+      "robots_sha256": null,
+      "agent": null,
+      "paths_allowed": null,
+      "collection_permission": "pending",
+      "permission_evidence": null,
+      "redistribution": "pending",
+      "redistribution_evidence": null,
+      "reviewer": null,
+      "second_review_record": null,
+      "decision_reason": null,
+      "next_action": null
+    }
+  ],
+  "technical_validation": {
+    "code_commit": null,
+    "configuration_sha256": null,
+    "model_revisions_record": null,
+    "model_licenses_record": null,
+    "hardware_record": null,
+    "dependencies_record": null,
+    "memory_measurement": null,
+    "timing_measurement": null,
+    "same_prompt_repetition_record": null,
+    "six_configurations_check": null,
+    "processor_check": null,
+    "fidelity_decision_record": null,
+    "blinding_check": null,
+    "decision": "pending",
+    "reviewer": null
+  },
+  "pilot": {
+    "questions_expected": 60,
+    "main_answers_expected": 360,
+    "stability_answers_expected": 90,
+    "answer_judgments_expected": 900,
+    "initial_dossier_annotations_expected": 120,
+    "optional_technical_checks_expected": 144,
+    "collection_record": null,
+    "questions_record": null,
+    "metadata_record": null,
+    "dossiers_record": null,
+    "family_inventory_record": null,
+    "training_record": null,
+    "agreement_records": {"M": null, "R": null, "J": null},
+    "individual_judgments_record": null,
+    "adjudicated_judgments_record": null,
+    "effort_record": null,
+    "analysis_record": null,
+    "excluded_families_record": null,
+    "decision_record": null
+  },
+  "final_stage": {
+    "sample_simulation_record": null,
+    "independent_statistical_review": null,
+    "sample_decision_record": null,
+    "analysis_status_by_contrast": {"H1": "pending", "H2": "pending", "H3": "pending"},
+    "ethics_review_record": null,
+    "roles_record": null,
+    "public_registration_url": null,
+    "registered_at": null,
+    "budget_record": null,
+    "freeze_record": null,
+    "decision": "pending"
+  },
+  "effort_entries": [
+    {"person": null, "task": null, "started_at": null, "ended_at": null, "items_completed": null, "rework_reason": null}
+  ],
+  "decisions": [
+    {"id": null, "stage": null, "decision": "pending", "reason": null, "evidence": [], "responsible": null, "recorded_at": null, "affected_files": [], "next_action": null}
+  ]
+}

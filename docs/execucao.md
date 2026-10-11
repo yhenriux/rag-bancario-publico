@@ -4,6 +4,8 @@
 
 Este guia serve à equipe que vai executar a pesquisa. O código está preparado; a seleção dos bancos, o piloto e os julgamentos humanos ainda precisam acontecer.
 
+Antes dos comandos, consulte o [planejamento completo](plano-execucao.md). Ele define os responsáveis, as entregas e as decisões necessárias para cada etapa.
+
 ## 1. Prepare o ambiente
 
 Use Python 3.11 ou superior. Crie um ambiente separado para instalar os programas do projeto:
