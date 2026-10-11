@@ -33,8 +33,8 @@ Modelo: [questions.jsonl](../examples/questions.jsonl).
 | `family` | Família da regra, com identificação do banco. |
 | `class` | Grupo principal da pergunta. |
 | `question` | Texto da pergunta. |
-| `query_attributes` | Produto e público explícitos na pergunta, já codificados pelo pesquisador. |
-| `origin` | Origem da pergunta: canal oficial ou elaboração do pesquisador. |
+| `query_attributes` | Produto e público explícitos na pergunta, codificados com origem registrada. |
+| `origin` | Origem da pergunta: canal oficial, elaboração humana ou proposta assistida, com ferramenta e instrução registradas. |
 
 Os grupos aceitos pelo código são `direta`, `condicao`, `excecao`, `ambiguidade` e `insuficiencia`.
 
@@ -48,7 +48,7 @@ O arquivo usa o ID de cada trecho como chave. Cada descrição contém listas de
 
 Use `geral` quando a fonte comprovar alcance geral. Use `desconhecido` quando o valor não puder ser determinado. Essas categorias ficam sozinhas na lista do atributo.
 
-A fonte precisa justificar os valores. Yago conserva a versão inicial e as revisões individuais. `adjudication_id` mantém o nome técnico do campo e identifica uma decisão registrada, sem implicar consenso entre pessoas.
+A fonte precisa justificar os valores. Conservar a versão inicial, a evidência e a origem da proposta ou revisão. `adjudication_id` mantém o nome técnico do campo e identifica uma decisão registrada, sem implicar consenso entre pessoas.
 
 ## Referência de avaliação
 
@@ -63,19 +63,19 @@ Modelo: [dossiers.jsonl](../examples/dossiers.jsonl).
 | `reference_units` | Códigos das passagens de referência. |
 | `sufficient_sets` | Conjuntos alternativos de passagens que bastam para responder. |
 | `expected_action` | Resposta, esclarecimento ou reconhecimento da falta de evidência. |
-| `adjudication_id` | Registro da decisão individual sobre a referência. |
+| `adjudication_id` | Registro da decisão sobre a referência, com origem humana ou assistida. |
 
 O arquivo [unit_map.json](../examples/unit_map.json) liga os IDs dos trechos às passagens de referência. Passagens repetidas em trechos sobrepostos usam o mesmo código de evidência.
 
-## Anotação individual
+## Anotação e origem
 
 Modelo: [annotations.template.csv](../examples/annotations.template.csv).
 
-Cada linha registra item, atributo, pessoa ou rodada, valor, evidência e tempo. No estudo individual, `rodada1` e `rodada2` correspondem ao mesmo pesquisador. Para campos que são conjuntos, escreva uma lista JSON na célula. Exemplos: `["alfa", "beta"]` ou `["E1", "E2"]`.
+Cada linha registra item, atributo, origem, valor, evidência e tempo. O formato anterior de duas rodadas humanas permanece opcional; quando usadas, `rodada1` e `rodada2` correspondem ao mesmo pesquisador. Para campos que são conjuntos, escreva uma lista JSON na célula. Exemplos: `["alfa", "beta"]` ou `["E1", "E2"]`.
 
 O comando `study.py agreement` exige duas anotações por item e atributo. Ele interrompe o cálculo se faltar um par.
 
-## Julgamento principal individual
+## Julgamento principal e sua origem
 
 Modelo: [judgments.template.csv](../examples/judgments.template.csv).
 
@@ -83,7 +83,7 @@ Cada linha contém `question_id`, `config`, `adequacy`, `adjudication_id` e `rea
 
 Use `0` ou `1` para adequação. Inclua somente a resposta principal de cada pergunta e configuração. Guarde as respostas de estabilidade em outra tabela.
 
-Esse arquivo registra a primeira avaliação individual. O formulário J1 e a segunda passagem da amostra permanecem preservados. A chave privada relaciona IDs com configurações somente após os julgamentos.
+Conservar, em registro associado, a origem de cada escore, a ferramenta ou pessoa, instrução, data e evidência. A análise numérica não diferencia essas origens por si. Escores automáticos recebem esse rótulo no relatório. O formulário humano J1 permanece opcional.
 
 ## Liberação da etapa final
 
@@ -96,3 +96,7 @@ O modelo de arquivo começa com valores vazios. Eles não indicam aprovação. A
 ## Cuidados com os exemplos
 
 Cada arquivo em `examples/` mostra um formato ou um caso fictício. Os arquivos de pergunta, dossiê e metadados não formam uma coleção completa para rodar E5/Qwen. A demonstração `demo.py` oferece dois casos completos para aprendizagem.
+
+## Catálogo automático
+
+`batch.py catalog` produz `catalog.csv`, `catalog.jsonl`, `critical-passages.jsonl` e `summary.json`. Passagens conservam posição e hash de origem. `annotation_origin` identifica regras determinísticas; `validation` registra ausência de validação humana. Esse catálogo não é diretamente o arquivo de metadados por trecho usado nos índices.

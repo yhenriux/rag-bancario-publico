@@ -10,8 +10,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - run: python -m pip install "beautifulsoup4>=4.12,<5" "pypdf>=5,<7"
       - run: python -m unittest discover -s tests -v
       - run: python study.py check examples/questions.jsonl
       - run: python study.py budget
       - run: python demo.py
-      - run: python -m compileall -q study.py collect.py experiment.py audit.py fidelity.py prepare.py demo.py
+      - run: python -m compileall -q study.py collect.py experiment.py audit.py fidelity.py prepare.py demo.py batch.py

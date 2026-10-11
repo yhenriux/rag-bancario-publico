@@ -1,0 +1,61 @@
+[
+  {
+    "bank": "bb",
+    "host": "www.bb.com.br",
+    "urls": [
+      "https://www.bb.com.br/site/pra-voce/contas/",
+      "https://www.bb.com.br/site/contratos-e-tabelas-cartoes/",
+      "https://www.bb.com.br/docs/pub/contrato.pdf"
+    ],
+    "collection_permission": "pending",
+    "purpose": "candidate_paths_and_robots_rule_probes"
+  },
+  {
+    "bank": "itau",
+    "host": "www.itau.com.br",
+    "urls": [
+      "https://www.itau.com.br/atendimento-itau/para-voce/conta-corrente",
+      "https://www.itau.com.br/cartoes",
+      "https://www.itau.com.br/contrato.pdf"
+    ],
+    "collection_permission": "pending",
+    "purpose": "candidate_paths_and_robots_rule_probes"
+  },
+  {
+    "bank": "inter",
+    "host": "inter.co",
+    "urls": [
+      "https://inter.co/conta-digital/pessoa-fisica/",
+      "https://inter.co/pra-voce/cartoes/"
+    ],
+    "collection_permission": "pending",
+    "purpose": "candidate_paths_and_robots_rule_probes"
+  },
+  {
+    "bank": "caixa",
+    "host": "www.caixa.gov.br",
+    "urls": [
+      "https://www.caixa.gov.br/voce/contas/conta-corrente/Paginas/default.aspx"
+    ],
+    "collection_permission": "pending",
+    "purpose": "candidate_paths_and_robots_rule_probes"
+  },
+  {
+    "bank": "santander",
+    "host": "www.santander.com.br",
+    "urls": [
+      "https://www.santander.com.br/conta-corrente-pessoa-fisica"
+    ],
+    "collection_permission": "pending",
+    "purpose": "candidate_paths_and_robots_rule_probes"
+  },
+  {
+    "bank": "nubank",
+    "host": "nubank.com.br",
+    "urls": [
+      "https://nubank.com.br/contratos"
+    ],
+    "collection_permission": "pending",
+    "purpose": "candidate_paths_and_robots_rule_probes"
+  }
+]

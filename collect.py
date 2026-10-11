@@ -2,12 +2,12 @@
 import argparse
 import hashlib
 import json
+import re
 import time
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import urlsplit, quote, unquote
 from urllib.request import Request, HTTPRedirectHandler, build_opener
-from urllib.robotparser import RobotFileParser
 
 from study import load, write_records
 
@@ -18,6 +18,73 @@ def check_url(url, host):
     p = urlsplit(url)
     if p.scheme != 'https' or p.hostname != host or p.username or p.password or p.port not in (None, 443):
         raise ValueError('Somente HTTPS no host oficial aprovado, sem credenciais')
+
+
+class RobotsRules:
+    """Grupos específicos, regras mais longas, curingas e fim de caminho do robots.txt."""
+    def __init__(self, text):
+        self.groups = []
+        agents, rules, delay, rate, started = [], [], None, None, False
+        for raw in text.splitlines() + ['User-agent: END-OF-PARSE']:
+            line = raw.split('#', 1)[0].strip()
+            if ':' not in line:
+                continue
+            key, value = (x.strip() for x in line.split(':', 1))
+            key = key.lower()
+            if key == 'user-agent':
+                if started:
+                    self.groups.append((agents, rules, delay, rate))
+                    agents, rules, delay, rate, started = [], [], None, None, False
+                agents.append(value.lower())
+            elif agents:
+                started = True
+                if key in ('allow', 'disallow') and value:
+                    rules.append((key == 'allow', value))
+                elif key == 'crawl-delay':
+                    try: delay = float(value)
+                    except ValueError: pass
+                elif key == 'request-rate':
+                    try:
+                        requests, seconds = map(float, value.split('/'))
+                        if requests > 0 and seconds > 0: rate = seconds / requests
+                    except ValueError: pass
+
+    def matching(self, agent):
+        token = agent.split('/')[0].split(' ')[0].lower()
+        matched = [(max((len(a) if a != '*' else 0 for a in agents if a == '*' or a in token), default=-1),
+                    rules, delay, rate) for agents, rules, delay, rate in self.groups]
+        longest = max((g[0] for g in matched), default=-1)
+        return [g for g in matched if g[0] == longest and longest >= 0]
+
+    @staticmethod
+    def normalize(value):
+        value = quote(value, safe="/%:$*?&=;,+-_.!~'()@")
+        def replace(match):
+            byte = unquote(match.group())
+            return byte if len(byte) == 1 and byte in 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._~' else match.group().upper()
+        return re.sub(r'%[a-fA-F0-9]{2}', replace, value)
+
+    def can_fetch(self, agent, url):
+        parsed = urlsplit(url)
+        path = self.normalize((parsed.path or '/') + ('?' + parsed.query if parsed.query else ''))
+        matches = []
+        for _, rules, _, _ in self.matching(agent):
+            for allow, pattern in rules:
+                pattern = self.normalize(pattern)
+                end = pattern.endswith('$')
+                body = pattern[:-1] if end else pattern
+                regex = '^' + '.*'.join(re.escape(piece) for piece in body.split('*')) + ('$' if end else '')
+                if re.search(regex, path):
+                    # Comprimento em octetos, desconsiderando o curinga e o marcador de fim.
+                    specificity = len(re.sub(r'%[A-F0-9]{2}', 'x', body.replace('*', '')))
+                    matches.append((specificity, allow))
+        return max(matches)[1] if matches else True
+
+    def crawl_delay(self, agent):
+        return max((g[2] or 0 for g in self.matching(agent)), default=0)
+
+    def request_interval(self, agent):
+        return max((g[3] or 0 for g in self.matching(agent)), default=0)
 
 
 class RedirectPolicy(HTTPRedirectHandler):
@@ -70,12 +137,8 @@ def collect(sources_path, output, agent):
             raw, _, _, _ = fetch(robot_url, host, agent)
             robot_path = out / 'raw' / (hashlib.sha256(host.encode()).hexdigest() + '-robots.txt')
             robot_path.write_bytes(raw)
-            robots = RobotFileParser(robot_url)
-            robots.parse(raw.decode('utf-8', errors='replace').splitlines())
-            delay = max(2, robots.crawl_delay(agent) or robots.crawl_delay('*') or 0)
-            rate = robots.request_rate(agent) or robots.request_rate('*')
-            if rate:
-                delay = max(delay, rate.seconds / rate.requests)
+            robots = RobotsRules(raw.decode('utf-8', errors='replace'))
+            delay = max(2, robots.crawl_delay(agent), robots.request_interval(agent))
         except Exception as e:
             errors.append({'bank': source['bank'], 'url': f'https://{host}/robots.txt',
                            'status': 'pending', 'error': str(e)})

@@ -7,12 +7,12 @@ Esta tabela liga o [adendo individual ativo](protocolo-individual.md) e os proce
 | Decisão da pesquisa | Arquivo ou comando | Situação |
 |---|---|---|
 | Preservar o plano científico | `docs/protocolo.md` | Cópia e código de integridade conferidos |
-| Selecionar três bancos e justificar exclusões | Cadastro de fontes e guia de execução | Seleção de Yago pendente |
+| Selecionar três bancos e justificar exclusões | Cadastro de fontes e guia de execução | Codex auxilia; decisão final pendente |
 | Revisar termos de uso antes da coleta | `collect.py` | Bloqueio testado com dados fictícios |
-| Guardar fonte, endereço, data e código | `collect.py` | Registro testado sem acessar bancos reais |
-| Extrair páginas e PDFs | `collect.py extract` | Código preparado; validação integrada pendente |
-| Revisar tabelas, valores e notas | Guia de execução | Revisão humana obrigatória |
-| Separar preparação e julgamento por etapas | Adendo individual e guia de avaliação | Um pesquisador; sem independência entre pessoas |
+| Guardar fonte, endereço, data e código | `collect.py` | Instantâneos testados; pré-conferência real de acesso registrada |
+| Extrair páginas e PDFs | `collect.py extract` | Extração HTML testada em lote fictício; PDF real pendente |
+| Revisar tabelas, valores e notas | Guia de execução | Alertas e assistência; validação humana adicional |
+| Separar preparação e julgamento por etapas | Adendo individual e guia de avaliação | Um pesquisador com assistência; origem de cada anotação explícita |
 | Retirar famílias do piloto da etapa final | `study.py check` e `experiment.py` | Validação testada |
 | Dividir texto em trechos E5 | `experiment.py segment` | Código preparado; validação do modelo pendente |
 | Comparar A, B, C, Bp, L e S | `experiment.py` | Código preparado; execução integrada dos modelos pendente |
@@ -26,7 +26,7 @@ Esta tabela liga o [adendo individual ativo](protocolo-individual.md) e os proce
 | Reunir respostas de uma execução completa | `study.py combine` | Testado |
 | Ocultar o sistema e mudar a ordem das respostas | `study.py blind` | Exportação testada com exemplos fictícios |
 | Comparar avaliações individuais | `study.py agreement` | Kappa, conjuntos e Jaccard testados; uso intra-avaliador entre rodadas |
-| Avaliar adequação e aplicabilidade | Formulários e referências | Julgamentos humanos pendentes |
+| Avaliar adequação e aplicabilidade | Formulários e referências | Avaliação automática ainda sem integração; validação humana adicional |
 | Calcular cobertura e recall | `audit.py retrieval` | Funções centrais testadas; referências reais pendentes |
 | Comparar H1, H2 e H3 | `study.py analyze` | Testado com julgamentos fictícios |
 | Calcular intervalos por família e banco | `study.paired_bootstrap` | Testado com dados fictícios |
@@ -36,8 +36,12 @@ Esta tabela liga o [adendo individual ativo](protocolo-individual.md) e os proce
 
 ## Limites da implementação atual
 
-Os testes locais verificam o código com dados fictícios. A execução de E5, Qwen e extração integrada precisa ser validada no ambiente completo.
+Os testes locais verificam o código com dados fictícios. A execução de E5 e Qwen precisa de validação no ambiente completo. A extração HTML integrada ao catálogo foi testada com uma fonte fictícia; a extração de PDFs reais continua pendente.
 
 A análise de amostra por simulação ainda precisa ser implementada e revisada com dados do piloto. O código atual trata os resultados estatísticos como exploratórios.
 
-Os arquivos de decisão conservam registros. Yago verifica seu conteúdo e mantém a chave separada e confirma que o plano foi registrado antes da etapa final.
+Os arquivos de decisão conservam registros. Codex prepara os registros e Yago assume as decisões autorais. O depósito anterior à etapa final continua pendente.
+
+## Automação da jornada
+
+`batch.py preflight` verifica caminhos sem baixar documentos. `batch.py run` encadeia coleta aprovada, extração e catálogo. O catálogo localiza passagens literais por regras e mantém campos semânticos desconhecidos. Preparação semântica, julgamento por IA e piloto E5/Qwen ainda precisam de execução e validação.

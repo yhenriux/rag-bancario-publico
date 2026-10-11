@@ -1,3 +1,11 @@
+## 11/10/2026: execução em lote com assistência de Codex
+
+- Plano por entregas com meta de coleta e catálogo em uma jornada; retirados carga semanal, marcações humanas obrigatórias e intervalo de 14 dias do desenho ativo.
+- `batch.py` encadeia coleta, extração e catálogo; registra duplicatas e passagens literais, com origem automática e revisão pendente.
+- Conferência real de robots.txt para seis candidatos; termos restritivos do Itaú e Santander e falha de acesso da Caixa registrados.
+- Correção da leitura de curingas, comentários e prioridades de robots.txt no coletor.
+- Distinção entre catálogo determinístico, preparação assistida e avaliação humana. Integração semântica e piloto dos modelos continuam pendentes.
+
 # Histórico do projeto
 
 ## Preparação do repositório, 11 de outubro de 2026

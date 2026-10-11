@@ -66,7 +66,7 @@ Os testes também rodam no GitHub. Abra a aba **Actions** para ver o resultado a
 
 ## O que fazer depois?
 
-Para entender os papéis da equipe, leia [Entenda o projeto](entenda-o-projeto.md).
+Para entender a execução com assistência de Codex, leia [Entenda o projeto](entenda-o-projeto.md).
 
 Para preparar uma pesquisa com documentos reais, siga o [guia de execução](execucao.md). Essa etapa exige revisão das fontes, instalação dos modelos e participação de avaliadores.
 

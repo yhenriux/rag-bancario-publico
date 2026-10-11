@@ -1,0 +1,121 @@
+{
+  "kind": "technical_access_preflight",
+  "sources": [
+    {
+      "bank": "bb",
+      "host": "www.bb.com.br",
+      "checked_at": "2026-10-11T16:45:19.542799+00:00",
+      "collection_permission": "pending",
+      "agent": "RAGBankingStudy/0.3 (+https://github.com/yhenriux/rag-bancario-publico)",
+      "urls": [
+        {
+          "url": "https://www.bb.com.br/site/pra-voce/contas/",
+          "robots_allowed": true
+        },
+        {
+          "url": "https://www.bb.com.br/site/contratos-e-tabelas-cartoes/",
+          "robots_allowed": true
+        },
+        {
+          "url": "https://www.bb.com.br/docs/pub/contrato.pdf",
+          "robots_allowed": false
+        }
+      ],
+      "corpus_downloaded": false,
+      "robots_url": "https://www.bb.com.br/robots.txt",
+      "robots_status": 200,
+      "robots_sha256": "2a8429110df561949a773a4d0885c25443326656626404a755b82daef303573e"
+    },
+    {
+      "bank": "itau",
+      "host": "www.itau.com.br",
+      "checked_at": "2026-10-11T16:45:25.870126+00:00",
+      "collection_permission": "pending",
+      "agent": "RAGBankingStudy/0.3 (+https://github.com/yhenriux/rag-bancario-publico)",
+      "urls": [
+        {
+          "url": "https://www.itau.com.br/atendimento-itau/para-voce/conta-corrente",
+          "robots_allowed": true
+        },
+        {
+          "url": "https://www.itau.com.br/cartoes",
+          "robots_allowed": true
+        },
+        {
+          "url": "https://www.itau.com.br/contrato.pdf",
+          "robots_allowed": false
+        }
+      ],
+      "corpus_downloaded": false,
+      "robots_url": "https://www.itau.com.br/robots.txt",
+      "robots_status": 200,
+      "robots_sha256": "4b2ee98a36f2f5522d1ec9349c893cd046fbe8fe5ec373c43ec51f95ffa3507c"
+    },
+    {
+      "bank": "inter",
+      "host": "inter.co",
+      "checked_at": "2026-10-11T16:45:31.967425+00:00",
+      "collection_permission": "pending",
+      "agent": "RAGBankingStudy/0.3 (+https://github.com/yhenriux/rag-bancario-publico)",
+      "urls": [
+        {
+          "url": "https://inter.co/conta-digital/pessoa-fisica/",
+          "robots_allowed": true
+        },
+        {
+          "url": "https://inter.co/pra-voce/cartoes/",
+          "robots_allowed": true
+        }
+      ],
+      "corpus_downloaded": false,
+      "robots_url": "https://inter.co/robots.txt",
+      "robots_status": 200,
+      "robots_sha256": "0b90739d730051057dbf7fe77a170b76b3cee413582d59d983629628075abd4b"
+    },
+    {
+      "bank": "caixa",
+      "host": "www.caixa.gov.br",
+      "checked_at": "2026-10-11T16:45:37.955125+00:00",
+      "collection_permission": "pending",
+      "agent": "RAGBankingStudy/0.3 (+https://github.com/yhenriux/rag-bancario-publico)",
+      "urls": [],
+      "corpus_downloaded": false,
+      "error": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nObject Moved"
+    },
+    {
+      "bank": "santander",
+      "host": "www.santander.com.br",
+      "checked_at": "2026-10-11T16:46:16.425992+00:00",
+      "collection_permission": "pending",
+      "agent": "RAGBankingStudy/0.3 (+https://github.com/yhenriux/rag-bancario-publico)",
+      "urls": [
+        {
+          "url": "https://www.santander.com.br/conta-corrente-pessoa-fisica",
+          "robots_allowed": true
+        }
+      ],
+      "corpus_downloaded": false,
+      "robots_url": "https://www.santander.com.br/robots.txt",
+      "robots_status": 200,
+      "robots_sha256": "84a0125f374eb3c5d58ec090ef2ecb7034d1496f7795b95fa812149b453cc692"
+    },
+    {
+      "bank": "nubank",
+      "host": "nubank.com.br",
+      "checked_at": "2026-10-11T16:46:22.542447+00:00",
+      "collection_permission": "pending",
+      "agent": "RAGBankingStudy/0.3 (+https://github.com/yhenriux/rag-bancario-publico)",
+      "urls": [
+        {
+          "url": "https://nubank.com.br/contratos",
+          "robots_allowed": true
+        }
+      ],
+      "corpus_downloaded": false,
+      "robots_url": "https://nubank.com.br/robots.txt",
+      "robots_status": 200,
+      "robots_sha256": "0fd7d455b28b4a3064a08a5ae3296e49b193fdb7ff2adc59a736149a9caf3fcf"
+    }
+  ],
+  "warning": "Robots.txt não autoriza coleta. Conferir termos e registrar decisão separadamente."
+}
