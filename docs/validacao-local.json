@@ -1,24 +1,24 @@
 {
   "checked_at": "2026-10-11",
-  "local_tests": 24,
+  "local_tests": 28,
   "local_tests_status": "passed",
   "syntax_check": "passed",
   "demo_status": "passed_with_fictional_sources",
   "local_document_links": "passed",
   "protocol_integrity": "passed",
-  "model_execution_status": "not_executed",
-  "live_collection_status": "not_executed_corpus",
-  "integrated_extraction_status": "passed_fictional_html_batch",
+  "model_execution_status": "e5_real_passed_qwen_gguf_7_generations_passed_operation_check",
+  "live_collection_status": "partial_17_real_documents_two_banks",
+  "integrated_extraction_status": "passed_real_html_with_partial_errors_recorded",
   "human_evaluation_status": "not_executed",
   "plain_language_reader_test": "pending",
   "planning_simulation_status": "pending",
-  "note": "Consultas reais de robots.txt não são coleta do corpus. Lote de coleta, extração HTML e catálogo testado com fontes fictícias. E5/Qwen, preparação semântica e julgamento por IA ainda pendentes.",
+  "note": "Primeira coleta real registrada em execucao-20261011.md. E5 real validado, tokenizadores e processador conferidos; Qwen GGUF em teste técnico. Piloto completo, adequação e estudo final pendentes.",
   "real_access_preflight_status": "executed_six_candidates_five_robots_returned_one_network_error",
-  "catalog_status": "passed_fictional_records_and_integrated_html",
+  "catalog_status": "17_real_documents_326_candidates",
   "ai_judgment_status": "not_implemented",
   "python": "3.12.14",
   "light_dependencies": {
     "beautifulsoup4": "4.15.0",
-    "pypdf": "6.10.0"
+    "pypdf": "6.20.0"
   }
 }

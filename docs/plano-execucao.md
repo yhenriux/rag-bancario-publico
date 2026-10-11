@@ -20,9 +20,9 @@ Coleta e catalogação são a prioridade da jornada. PDFs digitalizados, página
 
 ## O que já começou
 
-A [pré-conferência técnica](access-preflight.json) registra consultas reais a robots.txt, sem baixar o corpus ou aprovar permissões. A [situação das fontes](fontes-e-acesso.md) reúne a análise inicial de termos e caminhos.
+A [pré-conferência técnica](access-preflight.json) registra consultas reais a robots.txt, sem baixar o corpus ou aprovar permissões. A [situação das fontes](fontes-e-acesso.md) registra decisões e limites de acesso. A [primeira execução](execucao-20261011.md) já produziu 17 documentos reais de dois bancos.
 
-Banco do Brasil, Itaú e Inter são candidatos, com Caixa e Santander em análise como alternativas. Nubank depende de uma definição compatível do escopo institucional e da modalidade da conta. A combinação final de três bancos ainda não está definida.
+Inter e Bradesco já fornecem documentos ao lote limitado. Banco do Brasil e Caixa continuam em análise; Itaú, Santander e C6 estão suspensos pelas restrições encontradas. Nubank depende de uma definição compatível do escopo institucional e da modalidade da conta. A combinação final de três bancos ainda não está definida.
 
 ## Coleta e catálogo em um comando
 
@@ -32,7 +32,7 @@ Após resolver e registrar as condições das fontes em `private/sources.json`:
 python batch.py run private/sources.json data/day-01 --user-agent "RAGBankingStudy/0.3 (email-real@instituicao.edu)"
 ```
 
-Esse comando encadeia coleta, extração e catálogo. O cadastro precisa conter somente URLs oficiais aprovadas. O programa mantém o intervalo entre acessos; não acelera por meio de acessos massivos. Erros de coleta interrompem o lote e deixam o registro de falhas.
+Esse comando encadeia coleta, extração e catálogo. O cadastro precisa conter somente URLs oficiais aprovadas. O programa mantém o intervalo entre acessos; não acelera por meio de acessos massivos. Por padrão, erros interrompem o lote e deixam o registro de falhas. A opção `--allow-partial` conserva documentos utilizáveis e registra pendências, sem congelar uma coleção final.
 
 O catálogo entrega:
 
@@ -48,7 +48,7 @@ O código não deduz nomes exatos de produtos nem o público por essas regras. E
 
 ## Preparação assistida e julgamento
 
-Codex prepara propostas com evidência; Yago não precisa preencher fichas documento por documento. Essa preparação ainda precisa ser executada sobre a coleção real. Conservar as instruções, a ferramenta usada, a data e as passagens de suporte.
+Codex prepara propostas com evidência; Yago não precisa preencher fichas documento por documento. Um caso técnico real já foi preparado; a preparação do piloto completo continua pendente. Conservar as instruções, a ferramenta usada, a data e as passagens de suporte.
 
 Perguntas e referências são congeladas antes das saídas. A origem sintética ou assistida das perguntas fica explícita. Criar paráfrases não aumenta o número de famílias independentes. A alegação de falta de evidência exige busca na coleção completa; não pode resultar de uma passagem isolada.
 
@@ -58,11 +58,11 @@ Avaliações por IA ficam identificadas como automáticas e exploratórias. Veri
 
 1. Conferir Python, dependências, hardware e espaço disponível antes de baixar arquivos grandes.
 2. Fixar as revisões do [E5](https://huggingface.co/intfloat/multilingual-e5-large-instruct) e [Qwen](https://huggingface.co/Qwen/Qwen3-8B), com licenças e parâmetros.
-3. Executar uma pergunta nas seis configurações com dados fictícios; medir tempo e memória.
+3. Executar um caso técnico nas seis configurações, identificar a origem dos dados e medir tempo e memória.
 4. Verificar limites de entrada, IDs de fontes, repetição e fidelidade de números.
 5. Projetar a duração do piloto com base no tempo medido. Se houver impedimento, registrar a execução pendente e a infraestrutura necessária.
 
-O ambiente atual ainda não tem PyTorch e Transformers. O piloto com E5/Qwen não foi executado. Não há contratação de infraestrutura ou uso de API paga previsto sem decisão específica.
+PyTorch e Transformers estão instalados. O E5 foi executado com pesos reais. O ambiente tem 8 GiB e nenhuma GPU exposta; o Qwen completo excede essa memória. A alternativa oficial GGUF Q4_K_M concluiu sete gerações técnicas em llama.cpp, separada do piloto completo. Não há contratação de infraestrutura ou uso de API paga previsto sem decisão específica.
 
 Se houver repetição degenerada, o teste mantém a penalidade global em 1,0 e examina a penalidade 1,05 apenas sobre tokens gerados. Conferir valores e identificadores antes e depois. A implementação precisa ser validada na [versão 4.57.1 de Transformers](https://huggingface.co/docs/transformers/v4.57.1/en/internal/generation_utils). Uma perda de fidelidade impede aceitar o ajuste.
 

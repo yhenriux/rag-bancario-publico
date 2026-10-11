@@ -1,0 +1,63 @@
+[
+  {
+    "terms_checked_at": "2026-10-11T17:07:00.119775+00:00",
+    "collection_permission": "approved",
+    "reviewer": "Codex, revisão assistida por IA solicitada pelo pesquisador",
+    "approval_kind": "project_operational_clearance_for_listed_urls_only",
+    "express_permission_from_bank": false,
+    "redistribution": "not_approved",
+    "scope": "Lote limitado de pesquisa em documentação pública; sem login, dados de clientes, publicação de cópias ou reutilização comercial. Respeitar robots.txt, intervalos e falhas de acesso.",
+    "review_limitation": "A revisão assistida não encontrou restrição específica aplicável à coleta limitada destas páginas públicas. Políticas de privacidade não concedem licença de coleta. Direitos das fontes permanecem preservados.",
+    "checked_at": "2026-10-11T17:07:00.119775+00:00",
+    "bank": "inter",
+    "host": "ajuda.inter.co",
+    "urls": [
+      "https://ajuda.inter.co/conta-digital-pessoa-fisica-e-mei/o-inter-cobra-tarifas-dos-clientes-da-conta-digital",
+      "https://ajuda.inter.co/cartao/qual-a-taxa-para-realizar-um-saque",
+      "https://ajuda.inter.co/cartao/onde-posso-fazer-saques-de-valores-disponiveis-na-minha-conta/",
+      "https://ajuda.inter.co/pix/o-pix-saque-e-pix-troco-sao-gratuitos",
+      "https://ajuda.inter.co/sobre-o-inter/quais-sao-os-tipos-de-conta-que-o-inter-oferece-para-os-clientes/",
+      "https://ajuda.inter.co/cartao/o-inter-cobra-alguma-anuidade-no-cartao-de-credito",
+      "https://ajuda.inter.co/cartao/quais-as-caracteristicas-do-cartao-mastercard-do-inter/",
+      "https://ajuda.inter.co/cartao/como-funciona-a-analise-do-limite-de-credito-no-inter/",
+      "https://ajuda.inter.co/cartao/como-ajustar-o-limite-de-credito-do-cartao-na-regua",
+      "https://ajuda.inter.co/cartao/como-solicitar-limite-de-credito-no-cartao-da-conta-pf",
+      "https://ajuda.inter.co/cartao/qual-o-prazo-para-a-analise-de-credito-do-meu-cartao-mastercard",
+      "https://ajuda.inter.co/cartao/quais-as-taxas-do-saque-de-limite/"
+    ],
+    "terms_host": "inter.co",
+    "terms_url": "https://inter.co/politica-de-privacidade/privacidade/",
+    "policy_sha256": "a494985ee0118de1766c80d0c60ed70b96e6a1d851972abe9709b099bd0f92ed",
+    "terms_kind": "privacy_policy_and_public_help_footer_review",
+    "permission_evidence": "Fontes oficiais de ajuda em português, sem autenticação. Conferidos robots.txt da central, rodapé, política de privacidade e política de segurança do Inter; busca por termos gerais sem localização de uma licença ou proibição específica para o lote. Liberação operacional limitada, não autorização concedida pelo banco.",
+    "conflict_of_interest": "O pesquisador trabalha no Inter; o estudo usa somente páginas públicas e não expressa posicionamento institucional."
+  },
+  {
+    "terms_checked_at": "2026-10-11T17:07:00.119775+00:00",
+    "collection_permission": "approved",
+    "reviewer": "Codex, revisão assistida por IA solicitada pelo pesquisador",
+    "approval_kind": "project_operational_clearance_for_listed_urls_only",
+    "express_permission_from_bank": false,
+    "redistribution": "not_approved",
+    "scope": "Lote limitado de pesquisa em documentação pública; sem login, dados de clientes, publicação de cópias ou reutilização comercial. Respeitar robots.txt, intervalos e falhas de acesso.",
+    "review_limitation": "A revisão assistida não encontrou restrição específica aplicável à coleta limitada destas páginas públicas. Políticas de privacidade não concedem licença de coleta. Direitos das fontes permanecem preservados.",
+    "checked_at": "2026-10-11T17:07:00.119775+00:00",
+    "bank": "bradesco",
+    "host": "banco.bradesco",
+    "urls": [
+      "https://banco.bradesco/html/classic/produtos-servicos/tipos-de-conta/conta-corrente.shtm",
+      "https://banco.bradesco/html/classic/produtos-servicos/tipos-de-conta/conta-salario.shtm",
+      "https://banco.bradesco/html/classic/produtos-servicos/tipos-de-conta/bradesco-universitario.shtm",
+      "https://banco.bradesco/html/classic/produtos-servicos/tarifas/index.shtm",
+      "https://banco.bradesco/cidadania-financeira/educacao-financeira/produtos-e-servicos-financeiros/contas-bancarias/index.shtm",
+      "https://banco.bradesco/html/principal/cartoes/servicoseseguros/pagamento-de-contas-com-o-cartao/",
+      "https://banco.bradesco/html/classic/canais-digitais/horarios-e-limites/index.shtm",
+      "https://banco.bradesco/soliciteseucartao/",
+      "https://banco.bradesco/assets/classic/pdf/produtos-servicos/tipos-de-conta/regulamento-para-abertura-de-contas-de-depositos-produtos-e-servicos-pessoa-fisica.pdf"
+    ],
+    "terms_url": "https://banco.bradesco/assets/common/inc/diretiva_privacidade_lgpd.shtm",
+    "policy_sha256": "9f33f9df0fa47087bfb7ef8f080083321ce82144b4004c4f6f9032dcf1357540",
+    "terms_kind": "privacy_directive_and_public_site_footer_review",
+    "permission_evidence": "Páginas públicas oficiais de produtos, tarifas e regulamento, sem autenticação. Conferidos robots.txt, rodapés, diretiva de privacidade e termos de Internet Banking. Estes termos se delimitam aos serviços de Internet Banking, que ficam fora do lote. Não replicar conteúdo, marcas ou telas em outro site. Liberação operacional limitada, não licença concedida pelo banco."
+  }
+]

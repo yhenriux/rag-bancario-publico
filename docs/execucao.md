@@ -30,7 +30,7 @@ Codex prepara o cadastro completo com as fontes e decisões documentadas. O mode
 python batch.py run private/sources.json data/day-01 --user-agent "RAGBankingStudy/0.3 (email-real@instituicao.edu)"
 ```
 
-Cada execução usa uma pasta nova. Somente fontes aprovadas entram no lote. O programa mantém os controles de domínio, redirecionamento, robots.txt e intervalo de acesso. Falhas de coleta interrompem a sequência e ficam em `snapshot/errors.jsonl`.
+Cada execução usa uma pasta nova. Somente fontes aprovadas entram no lote. O programa mantém os controles de domínio, redirecionamento, robots.txt e intervalo de acesso. Por padrão, falhas de coleta interrompem a sequência e ficam em `snapshot/errors.jsonl`. Com `--allow-partial`, o lote conserva documentos utilizáveis e registra erros de coleta e extração. Esse modo não congela a coleção final.
 
 Arquivos entregues:
 
@@ -63,7 +63,9 @@ python experiment.py index data/pilot-chunks.jsonl private/pilot-metadata.json p
 python experiment.py run private/study.json data/pilot-chunks.jsonl private/pilot-metadata.json private/pilot-questions.jsonl data/pilot-index runs/pilot --phase pilot
 ```
 
-Esses comandos exigem dependências, modelos e arquivos reais já preparados. `segment` conserva o controle anterior de extração humana aprovada. O piloto totalmente automático precisa de uma extensão explícita desse controle antes da execução integrada; não mudar `extraction_review` para simular revisão. Os exemplos fictícios não são uma coleção pronta para rodar esse piloto.
+Esses comandos exigem dependências, modelos e arquivos reais já preparados. `segment` aceita revisão humana aprovada ou, com `--allow-assisted`, revisão `assisted_checked` que informe origem e registro. O rótulo assistido não representa revisão humana. O controle da etapa final ainda exige uma extensão registrada para aceitá-lo. Os exemplos fictícios não são uma coleção pronta para rodar esse piloto.
+
+O [teste técnico de 11/10/2026](execucao-20261011.md) usa `technical.py prepare` e `technical.py generate`, com E5 e servidor local llama.cpp. O comando `technical.py local` inicia e encerra o servidor em uma só execução, recebendo o caminho do executável e dos pesos. Ele registra a alternativa GGUF e fica separado do piloto. Os caminhos das entradas são informados na linha de comando; pesos e bibliotecas são pré-requisitos.
 
 A meta é 60 perguntas, quatro por banco e classe. A geração principal produz 360 saídas e a estabilidade acrescenta 90. Uma execução menor é registrada como teste técnico.
 

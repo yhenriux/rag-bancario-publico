@@ -86,13 +86,24 @@ def catalog(documents_path, output):
     return summary
 
 
-def run_batch(sources, output, agent):
+def run_batch(sources, output, agent, allow_partial=False):
     out = Path(output)
     out.mkdir(parents=True, exist_ok=False)
     # collect valida todos os cadastros antes do primeiro pedido de documento.
-    collect(sources, out / 'snapshot', agent)
-    extract(out / 'snapshot', out / 'documents.jsonl')
-    return catalog(out / 'documents.jsonl', out / 'catalog')
+    try:
+        collect(sources, out / 'snapshot', agent)
+    except SystemExit:
+        if not allow_partial or not (out / 'snapshot' / 'errors.jsonl').exists():
+            raise
+    extract(out / 'snapshot', out / 'documents.jsonl', allow_partial=allow_partial)
+    summary = catalog(out / 'documents.jsonl', out / 'catalog')
+    failures = records(out / 'snapshot' / 'errors.jsonl')
+    extraction_errors = records(str(out / 'documents.jsonl') + '.errors.jsonl')
+    summary.update(collection_errors=len(failures), extraction_errors=len(extraction_errors),
+                   complete=not failures and not extraction_errors,
+                   frozen_for_final_experiment=False)
+    write(out / 'completion.json', summary)
+    return summary
 
 
 if __name__ == '__main__':
@@ -101,9 +112,10 @@ if __name__ == '__main__':
     for name in ('preflight', 'run'):
         c = s.add_parser(name)
         c.add_argument('sources'); c.add_argument('output'); c.add_argument('--user-agent', required=True)
+        if name == 'run': c.add_argument('--allow-partial', action='store_true')
     c = s.add_parser('catalog'); c.add_argument('documents'); c.add_argument('output')
     a = p.parse_args()
     if a.command == 'preflight': result = preflight(a.sources, a.output, a.user_agent)
-    elif a.command == 'run': result = run_batch(a.sources, a.output, a.user_agent)
+    elif a.command == 'run': result = run_batch(a.sources, a.output, a.user_agent, a.allow_partial)
     else: result = catalog(a.documents, a.output)
     print(json.dumps(result, ensure_ascii=False))

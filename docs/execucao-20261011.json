@@ -1,0 +1,207 @@
+{
+  "date": "2026-10-11",
+  "phase": "partial_collection_and_technical_smoke",
+  "banks": {
+    "inter": 12,
+    "bradesco": 5
+  },
+  "catalog": {
+    "documents": 17,
+    "unique_per_bank": 17,
+    "critical_candidates": 326,
+    "flagged_documents": 0,
+    "human_validated": 0,
+    "collection_permission_changed": false
+  },
+  "collection": {
+    "initial_urls": 21,
+    "initial_downloads": 17,
+    "canonical_downloads": 1,
+    "collection_errors": 4,
+    "initial_extraction_errors": 1,
+    "canonical_redirect_document_not_counted": 1
+  },
+  "permission": {
+    "review_origin": "Codex",
+    "kind": "operational_clearance_for_listed_urls",
+    "express_permission_from_bank": false,
+    "redistribution_approved": false
+  },
+  "e5": {
+    "kind": "e5_real_model_smoke_with_fictional_passages",
+    "model": "intfloat/multilingual-e5-large-instruct",
+    "revision": "274baa43b0e13e37fafa6428dbc7938e62e5c439",
+    "device": "cpu",
+    "dtype": "float32",
+    "shape": [
+      4,
+      1024
+    ],
+    "finite": true,
+    "norms": [
+      0.9999999403953552,
+      0.9999999403953552,
+      1.0,
+      0.9999999403953552
+    ],
+    "similarities": [
+      0.8939815163612366,
+      0.7941551208496094,
+      0.820226788520813
+    ],
+    "top_passage": 0,
+    "elapsed_seconds_including_model_load": 30.572757152999657,
+    "pilot_completed": false
+  },
+  "tokenizers": [
+    {
+      "model": "intfloat/multilingual-e5-large-instruct",
+      "revision": "274baa43b0e13e37fafa6428dbc7938e62e5c439",
+      "tokens": 16,
+      "decode": "O cartão conserva o valor de R$ 1.000 e a referência [E1].",
+      "roundtrip_equal": true,
+      "elapsed_seconds": 21.55024239500017
+    },
+    {
+      "model": "Qwen/Qwen3-8B",
+      "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "tokens": 24,
+      "decode": "O cartão conserva o valor de R$ 1.000 e a referência [E1].",
+      "roundtrip_equal": true,
+      "elapsed_seconds": 6.470125683999868
+    }
+  ],
+  "repetition_processor": {
+    "version": "4.57.1",
+    "default_prompt_penalized": true,
+    "prompt_exclusion_verified": true,
+    "generated_tokens_still_penalized": true
+  },
+  "qwen_quantized": {
+    "model": "Qwen/Qwen3-8B-GGUF",
+    "revision": "7c41481f57cb95916b40956ab2f0b139b296d974",
+    "file": "Qwen3-8B-Q4_K_M.gguf",
+    "sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "bytes": 5027783488,
+    "download_and_hash_seconds": 66.0779909060002
+  },
+  "runtime": {
+    "memory_limit_bytes": 8589934592,
+    "gpu_exposed": false,
+    "backend": "llama.cpp b11557 5c8854fd8",
+    "archive_sha256": "421fef77e12d5a97202ed838d5f6a509c76737dcd8fa7a5afed7688d05a699c0"
+  },
+  "pilot_completed": false,
+  "human_validated": false,
+  "unit_tests_passed": 28,
+  "technical_smoke": {
+    "configurations": 6,
+    "generations": 7,
+    "repeat_identical": true,
+    "human_validated": false,
+    "pilot_completed": false,
+    "max_output_tokens": 512,
+    "backend": "llama.cpp",
+    "precision": "Q4_K_M",
+    "prompts_sha256": "d6fbae7f4581d6e24e50f9cae4f5c92a7f2e0f192f228210ac38cc454db33033",
+    "cases": 1,
+    "source_documents": 3,
+    "diagnostics": [
+      {
+        "config": "A",
+        "repeat": false,
+        "seconds": 87.81,
+        "tokens_predicted": 152,
+        "tokens_evaluated": 1069,
+        "stop_type": "eos",
+        "context_truncated": false,
+        "source_citations": 1,
+        "unknown_citations": [],
+        "literal_value_6_40_present": true,
+        "adequacy_judgment": null
+      },
+      {
+        "config": "B",
+        "repeat": false,
+        "seconds": 81.06,
+        "tokens_predicted": 152,
+        "tokens_evaluated": 1069,
+        "stop_type": "eos",
+        "context_truncated": false,
+        "source_citations": 1,
+        "unknown_citations": [],
+        "literal_value_6_40_present": true,
+        "adequacy_judgment": null
+      },
+      {
+        "config": "C",
+        "repeat": false,
+        "seconds": 66.85,
+        "tokens_predicted": 121,
+        "tokens_evaluated": 873,
+        "stop_type": "eos",
+        "context_truncated": false,
+        "source_citations": 1,
+        "unknown_citations": [],
+        "literal_value_6_40_present": true,
+        "adequacy_judgment": null
+      },
+      {
+        "config": "Bp",
+        "repeat": false,
+        "seconds": 87.61,
+        "tokens_predicted": 146,
+        "tokens_evaluated": 1069,
+        "stop_type": "eos",
+        "context_truncated": false,
+        "source_citations": 1,
+        "unknown_citations": [],
+        "literal_value_6_40_present": true,
+        "adequacy_judgment": null
+      },
+      {
+        "config": "L",
+        "repeat": false,
+        "seconds": 90.03,
+        "tokens_predicted": 152,
+        "tokens_evaluated": 1069,
+        "stop_type": "eos",
+        "context_truncated": false,
+        "source_citations": 1,
+        "unknown_citations": [],
+        "literal_value_6_40_present": true,
+        "adequacy_judgment": null
+      },
+      {
+        "config": "S",
+        "repeat": false,
+        "seconds": 42.35,
+        "tokens_predicted": 201,
+        "tokens_evaluated": 171,
+        "stop_type": "eos",
+        "context_truncated": false,
+        "source_citations": 0,
+        "unknown_citations": [],
+        "literal_value_6_40_present": false,
+        "adequacy_judgment": null
+      },
+      {
+        "config": "A",
+        "repeat": true,
+        "seconds": 84.02,
+        "tokens_predicted": 152,
+        "tokens_evaluated": 1069,
+        "stop_type": "eos",
+        "context_truncated": false,
+        "source_citations": 1,
+        "unknown_citations": [],
+        "literal_value_6_40_present": true,
+        "adequacy_judgment": null
+      }
+    ],
+    "total_generation_seconds": 539.7261481640007,
+    "median_main_generation_seconds": 84.33444696400011,
+    "frozen_inputs_unchanged": true,
+    "adequacy_evaluated": false
+  }
+}

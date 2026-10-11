@@ -12,7 +12,7 @@ Uma página informa que um cartão oferece isenção de anuidade quando a fatura
 
 O sistema precisa encontrar a regra certa e explicar o limite de gasto. Citar a página e omitir esse limite pode levar a uma resposta inadequada.
 
-Os valores e os cartões usados nos exemplos deste repositório são fictícios.
+Os exemplos de demonstração são fictícios. A execução de 11/10/2026 usa fontes públicas reais, identificadas em relatório próprio.
 
 ## Comece por aqui
 
@@ -25,6 +25,7 @@ Os valores e os cartões usados nos exemplos deste repositório são fictícios.
 | Entender verificações e avaliações | [Guia de avaliação](docs/avaliacao.md) |
 | Entender uma palavra técnica | [Glossário](docs/glossario.md) |
 | Acompanhar o que já está pronto | [Plano de trabalho](docs/roadmap.md) |
+| Ver a coleta real e os testes dos modelos | [Primeira execução](docs/execucao-20261011.md) |
 | Consultar o desenho científico completo | [Adendo individual ativo](docs/protocolo-individual.md) |
 
 ## Veja a demonstração
@@ -69,7 +70,7 @@ As descrições adicionais ajudam a buscar. O modelo que produz a resposta receb
 - Cálculos de cobertura das fontes, concordância entre avaliadores e diferenças entre sistemas.
 - Testes automáticos e guias para executar cada etapa.
 
-**O corpus real e o piloto dos modelos ainda não foram executados.** A pré-conferência de acesso já começou. Codex auxilia no trabalho operacional; Yago é o único pesquisador. [Veja as fontes e os bloqueios](docs/fontes-e-acesso.md).
+**A primeira coleta real produziu 17 documentos de Inter e Bradesco.** O E5 passou na validação inicial; o Qwen compacto concluiu sete gerações de teste técnico. O piloto completo continua pendente. Codex executa as operações e Yago é o único pesquisador. [Veja o relatório e o catálogo](docs/execucao-20261011.md).
 
 ## Execução em lote
 
@@ -81,7 +82,7 @@ python batch.py run private/sources.json data/day-01 --user-agent "RAGBankingStu
 
 O comando gera textos extraídos, catálogo CSV/JSONL, duplicatas e passagens literais com valores e condições. Requer Beautiful Soup e pypdf, além do cadastro aprovado. [Veja os comandos e seus pré-requisitos](docs/execucao.md).
 
-Descrições semânticas, perguntas, referências e julgamento por IA ainda precisam de integração sobre os dados reais. Os modelos dependem de infraestrutura validada. Avaliações automáticas são identificadas como automáticas; o estudo assistido é exploratório. Validação humana fica como etapa adicional.
+Um caso real já tem pergunta, metadados e referência assistidos, preparados antes da geração. A preparação do piloto completo e o julgamento por IA continuam pendentes. O modelo completo depende de infraestrutura adicional ou de mudança metodológica registrada. Avaliações automáticas são identificadas como automáticas; o estudo assistido é exploratório. Validação humana fica como etapa adicional.
 
 O [adendo ativo](docs/protocolo-individual.md) registra essa mudança. A meta de uma jornada não garante executar o experimento completo quando permissões ou equipamento estiverem pendentes.
 

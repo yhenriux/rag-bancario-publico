@@ -114,7 +114,7 @@ def collect(sources_path, output, agent):
     sources = load(sources_path)
     if not sources:
         raise ValueError('Nenhuma fonte aprovada; preencher cadastro de fontes')
-    if 'contato' in agent.lower() or '@' not in agent:
+    if 'contato' in agent.lower() or not ('@' in agent or re.search(r'https://[^ )]+', agent)):
         raise ValueError('Preencher User-Agent de pesquisa com contato real')
     for source in sources:
         for field in ('bank', 'host', 'urls', 'terms_url', 'terms_checked_at', 'collection_permission',
@@ -123,7 +123,8 @@ def collect(sources_path, output, agent):
                 raise ValueError(f'Cadastro incompleto: {field}')
         if source['collection_permission'] != 'approved':
             raise ValueError('Fonte pendente ou excluída exige resolução antes da coleta')
-        check_url(source['terms_url'], source['host'])
+        # Política em outro domínio oficial exige cadastro explícito desse domínio.
+        check_url(source['terms_url'], source.get('terms_host', source['host']))
         for url in source['urls']:
             check_url(url, source['host'])
     out = Path(output)
@@ -170,42 +171,52 @@ def collect(sources_path, output, agent):
         raise SystemExit(f'Coleta incompleta: {len(errors)} pendências registradas; resolver antes de congelar.')
 
 
-def extract(snapshot, output):
+def extract(snapshot, output, allow_partial=False):
     from bs4 import BeautifulSoup
     from pypdf import PdfReader
     snapshot = Path(snapshot)
-    documents = []
+    documents, errors = [], []
     for item in [json.loads(s) for s in (snapshot / 'manifest.jsonl').read_text().splitlines()]:
         path = snapshot / item['raw_path']
         if not path.resolve().is_relative_to(snapshot.resolve()):
             raise ValueError('O arquivo de origem precisa estar dentro da pasta da coleta')
         if hashlib.sha256(path.read_bytes()).hexdigest() != item['sha256']:
             raise ValueError('Instantâneo alterado')
-        sections = []
-        title = item['url']
-        if item['mime'] == 'application/pdf':
-            for i, page in enumerate(PdfReader(path).pages, 1):
-                text = page.extract_text() or ''
-                if not text.strip():
-                    raise ValueError(f'PDF sem texto na página {i}; requer OCR revisado e registrado')
-                sections.append({'section': f'Página {i}', 'location': f'page:{i}', 'text': text})
-        elif item['mime'] == 'text/html':
-            soup = BeautifulSoup(path.read_bytes(), 'html.parser')
-            title = soup.title.get_text(' ', strip=True) if soup.title else title
-            for node in soup(['script', 'style', 'noscript']):
-                node.decompose()
-            root = soup.find('main') or soup.find('article') or soup.body or soup
-            # ponytail: extração linear conserva tabelas/notas como texto; auditoria humana decide segmentação final.
-            text = root.get_text('\n', strip=True)
-            sections.append({'section': 'Corpo do documento', 'location': 'html:body', 'text': text})
-        else:
-            sections.append({'section': 'Documento', 'location': 'text:body',
-                             'text': path.read_text(encoding='utf-8')})
-        if not any(s['text'].strip() for s in sections):
-            raise ValueError('Documento sem conteúdo extraído')
-        documents.append({**item, 'title': title, 'sections': sections,
-                          'extraction_review': 'pending', 'notes': 'Conferir números, notas, tabelas e cabeçalhos na fonte.'})
+        try:
+            sections = []
+            title = item['url']
+            if item['mime'] == 'application/pdf':
+                for i, page in enumerate(PdfReader(path).pages, 1):
+                    text = page.extract_text() or ''
+                    if not text.strip():
+                        raise ValueError(f'PDF sem texto na página {i}; requer OCR revisado e registrado')
+                    sections.append({'section': f'Página {i}', 'location': f'page:{i}', 'text': text})
+            elif item['mime'] == 'text/html':
+                soup = BeautifulSoup(path.read_bytes(), 'html.parser')
+                title = soup.title.get_text(' ', strip=True) if soup.title else title
+                for node in soup(['script', 'style', 'noscript']):
+                    node.decompose()
+                # Um main vazio não pode esconder conteúdo presente em outro contêiner.
+                candidates = (soup.find('main'), soup.find('article'), soup.body)
+                root = next((node for node in candidates if node is not None and node.get_text(strip=True)), soup)
+                # ponytail: extração linear conserva tabelas/notas como texto; auditoria humana decide segmentação final.
+                text = root.get_text('\n', strip=True)
+                sections.append({'section': 'Corpo do documento', 'location': 'html:body', 'text': text})
+            else:
+                sections.append({'section': 'Documento', 'location': 'text:body',
+                                 'text': path.read_text(encoding='utf-8')})
+            if not any(s['text'].strip() for s in sections):
+                raise ValueError('Documento sem conteúdo extraído')
+            documents.append({**item, 'title': title, 'sections': sections,
+                              'extraction_review': 'pending', 'notes': 'Conferir números, notas, tabelas e cabeçalhos na fonte.'})
+        except Exception as error:
+            if not allow_partial:
+                raise
+            errors.append({'document_id': item['document_id'], 'url': item['url'],
+                           'stage': 'extraction', 'error': str(error), 'status': 'pending'})
     write_records(output, documents)
+    write_records(str(output) + '.errors.jsonl', errors)
+
 
 
 if __name__ == '__main__':

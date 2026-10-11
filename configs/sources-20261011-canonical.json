@@ -1,0 +1,24 @@
+[
+  {
+    "terms_checked_at": "2026-10-11T17:07:00.119775+00:00",
+    "collection_permission": "approved",
+    "reviewer": "Codex, revisão assistida por IA solicitada pelo pesquisador",
+    "approval_kind": "project_operational_clearance_for_listed_urls_only",
+    "express_permission_from_bank": false,
+    "redistribution": "not_approved",
+    "scope": "Lote limitado de pesquisa em documentação pública; sem login, dados de clientes, publicação de cópias ou reutilização comercial. Respeitar robots.txt, intervalos e falhas de acesso.",
+    "review_limitation": "A revisão assistida não encontrou restrição específica aplicável à coleta limitada destas páginas públicas. Políticas de privacidade não concedem licença de coleta. Direitos das fontes permanecem preservados.",
+    "checked_at": "2026-10-11T17:07:00.119775+00:00",
+    "bank": "inter",
+    "host": "ajuda.inter.co",
+    "urls": [
+      "https://ajuda.inter.co/cartao/o-cartao-inter-funciona-como-debito-ou-credito/"
+    ],
+    "terms_host": "inter.co",
+    "terms_url": "https://inter.co/politica-de-privacidade/privacidade/",
+    "policy_sha256": "a494985ee0118de1766c80d0c60ed70b96e6a1d851972abe9709b099bd0f92ed",
+    "terms_kind": "privacy_policy_and_public_help_footer_review",
+    "permission_evidence": "Fontes oficiais de ajuda em português, sem autenticação. Conferidos robots.txt da central, rodapé, política de privacidade e política de segurança do Inter; busca por termos gerais sem localização de uma licença ou proibição específica para o lote. Liberação operacional limitada, não autorização concedida pelo banco. Endereço canônico indicado no meta refresh da página inicial, confirmado na conferência de fonte oficial.",
+    "conflict_of_interest": "O pesquisador trabalha no Inter; o estudo usa somente páginas públicas e não expressa posicionamento institucional."
+  }
+]

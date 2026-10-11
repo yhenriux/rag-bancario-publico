@@ -28,3 +28,11 @@
 - Registro explícito das etapas científicas ainda pendentes.
 
 O piloto e o estudo final ainda não foram executados.
+
+## 11/10/2026: primeira execução real
+
+- Coleta e catálogo de 17 documentos de Inter e Bradesco, com bloqueios e decisões registrados.
+- Correção da extração de HTML com campo principal vazio e opção de lote parcial.
+- Segmentação assistida identificada, sem aprovação humana implícita.
+- E5 real validado e teste técnico separado para Qwen GGUF em CPU.
+- Novos testes de extração, integridade e revisão assistida; total de 28 aprovados.

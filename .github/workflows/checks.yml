@@ -15,4 +15,4 @@ jobs:
       - run: python study.py check examples/questions.jsonl
       - run: python study.py budget
       - run: python demo.py
-      - run: python -m compileall -q study.py collect.py experiment.py audit.py fidelity.py prepare.py demo.py batch.py
+      - run: python -m compileall -q study.py collect.py experiment.py audit.py fidelity.py prepare.py demo.py batch.py technical.py

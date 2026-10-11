@@ -2,7 +2,7 @@
 
 [Voltar ao início](../README.md) · [Plano de um dia](plano-execucao.md) · [Protocolo original](protocolo.md)
 
-**Atualizado em 11/10/2026, antes da coleta do corpus.** Yago é o único pesquisador. Codex auxilia na seleção de fontes, programação, catalogação, preparação de perguntas e análise. O plano operacional usa entregas em lote. Não exige equipe, carga semanal, centenas de marcações manuais ou espera de 14 dias.
+**Atualizado em 11/10/2026.** Yago é o único pesquisador. Codex auxilia na seleção de fontes, programação, catalogação, preparação de perguntas e análise. O plano operacional usa entregas em lote. Não exige equipe, carga semanal, centenas de marcações manuais ou espera de 14 dias.
 
 Este adendo substitui o planejamento individual anterior nos pontos abaixo. O protocolo original conserva seu arquivo e hash. A mudança de método precisa entrar no manuscrito: os resultados de avaliação automática têm origem e interpretação próprias.
 
@@ -47,4 +47,8 @@ O tamanho final depende do número real de famílias, dos resultados técnicos e
 
 Uma validação humana futura requer procedimento e amostra próprios. Ela fica separada da jornada rápida. A revisão temporal após 14 dias e o orçamento manual do planejamento anterior deixam de ser requisitos ativos.
 
-O código de segmentação ainda exige extração humana aprovada. Para um piloto inteiramente automático, esse controle precisa de uma extensão explícita, com origem e limitações registradas, antes de executar a cadeia completa. Não contornar o controle alterando rótulos. O registro público final e as decisões metodológicas continuam pendentes.
+A segmentação aceita `assisted_checked` somente com a opção `--allow-assisted`, origem e registro de revisão. Esse rótulo não representa aprovação humana. A etapa final ainda requer uma extensão registrada para esse tipo de revisão. O registro público final e as decisões metodológicas continuam pendentes.
+
+## Registro da primeira execução
+
+O [relatório de 11/10/2026](execucao-20261011.md) registra 17 documentos de dois bancos e um caso técnico real assistido. O E5 foi executado em CPU. A versão oficial Qwen3-8B GGUF Q4_K_M foi selecionada somente para teste técnico em llama.cpp, porque o modelo completo não cabe nos 8 GiB disponíveis. Precisão, revisão, hash e implementação são registrados separadamente. Essa alternativa não equivale à execução completa do protocolo. A adoção no piloto exige fixar e justificar o método antes das comparações.

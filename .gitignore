@@ -12,3 +12,5 @@ private/
 private_key.jsonl
 *.docx
 *.pdf
+
+.venv-execution/

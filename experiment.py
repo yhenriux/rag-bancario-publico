@@ -23,13 +23,14 @@ def tokenizer(config, model):
     return AutoTokenizer.from_pretrained(config[model + '_model'], revision=config[model + '_revision'])
 
 
-def segment(documents, config, output):
+def segment(documents, config, output, allow_assisted=False):
     revisions(config)
     tok = tokenizer(config, 'e5')
     chunks = []
     for doc in records(documents):
-        if doc['extraction_review'] != 'approved':
-            raise ValueError('Extração requer revisão humana antes da segmentação experimental')
+        assisted = doc.get('extraction_review') == 'assisted_checked' and doc.get('review_origin') and doc.get('review_record')
+        if doc['extraction_review'] != 'approved' and not (allow_assisted and assisted):
+            raise ValueError('Extração requer revisão registrada; a opção assistida exige origem e registro explícitos')
         for section in doc['sections']:
             text = section['text']
             encoded = tok(text, add_special_tokens=False, return_offsets_mapping=True)
@@ -43,7 +44,8 @@ def segment(documents, config, output):
                     'bank': doc['bank'], 'title': doc['title'], 'section': section['section'],
                     'url': doc['final_url'], 'location': section['location'],
                     'token_start': start, 'token_end': end, 'char_start': first, 'char_end': last,
-                    'text': text[first:last], 'source_sha256': doc['sha256']})
+                    'text': text[first:last], 'source_sha256': doc['sha256'],
+                    'extraction_review': doc['extraction_review'], 'review_origin': doc.get('review_origin')})
                 if end == len(offsets): break
                 start = end - 48
     write_records(output, chunks)
@@ -158,6 +160,8 @@ def run(config_path, chunks_path, metadata_path, questions_path, indices, output
     if indexed['config'] != config:
         raise ValueError('Reconstruir índices com a mesma configuração')
     if phase == 'final':
+        if any(c.get('extraction_review') != 'approved' for c in chunks):
+            raise ValueError('Trechos com revisão assistida exigem extensão registrada do controle da etapa final; disponíveis somente para teste/piloto')
         if not gate_path: raise ValueError('Etapa final exige congelamento documentado')
         if not config.get('pilot_families'):
             raise ValueError('Registre as famílias do piloto que devem ficar fora da etapa final')
@@ -246,11 +250,12 @@ if __name__ == '__main__':
     p = argparse.ArgumentParser(description=__doc__)
     s = p.add_subparsers(dest='command', required=True)
     c = s.add_parser('segment'); c.add_argument('documents'); c.add_argument('config'); c.add_argument('output')
+    c.add_argument('--allow-assisted', action='store_true')
     c = s.add_parser('index'); c.add_argument('chunks'); c.add_argument('metadata'); c.add_argument('config'); c.add_argument('output')
     c = s.add_parser('run')
     for name in ('config','chunks','metadata','questions','indices','output'): c.add_argument(name)
     c.add_argument('--phase', choices=('pilot','final'), default='pilot'); c.add_argument('--gate')
     a = p.parse_args()
-    if a.command == 'segment': segment(a.documents, load(a.config), a.output)
+    if a.command == 'segment': segment(a.documents, load(a.config), a.output, a.allow_assisted)
     elif a.command == 'index': index(a.chunks, a.metadata, load(a.config), a.output)
     else: run(a.config, a.chunks, a.metadata, a.questions, a.indices, a.output, a.phase, a.gate)
