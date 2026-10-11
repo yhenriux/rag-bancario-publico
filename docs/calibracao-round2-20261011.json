@@ -1,0 +1,149 @@
+{
+  "cases": 20,
+  "correct": 17,
+  "passed": false,
+  "details": [
+    {
+      "id": "round2-cal-num-0-1",
+      "valid": true,
+      "expected": "1",
+      "observed": "1",
+      "correct": true
+    },
+    {
+      "id": "round2-cal-num-0-0",
+      "valid": true,
+      "expected": "0",
+      "observed": "0",
+      "correct": true
+    },
+    {
+      "id": "round2-cal-num-1-1",
+      "valid": true,
+      "expected": "1",
+      "observed": "1",
+      "correct": true
+    },
+    {
+      "id": "round2-cal-num-1-0",
+      "valid": true,
+      "expected": "0",
+      "observed": "0",
+      "correct": true
+    },
+    {
+      "id": "round2-cal-num-2-1",
+      "valid": true,
+      "expected": "1",
+      "observed": "1",
+      "correct": true
+    },
+    {
+      "id": "round2-cal-num-2-0",
+      "valid": true,
+      "expected": "0",
+      "observed": "0",
+      "correct": true
+    },
+    {
+      "id": "round2-cal-num-3-1",
+      "valid": true,
+      "expected": "1",
+      "observed": "1",
+      "correct": true
+    },
+    {
+      "id": "round2-cal-num-3-0",
+      "valid": true,
+      "expected": "0",
+      "observed": "0",
+      "correct": true
+    },
+    {
+      "id": "round2-cal-num-4-1",
+      "valid": true,
+      "expected": "1",
+      "observed": "1",
+      "correct": true
+    },
+    {
+      "id": "round2-cal-num-4-0",
+      "valid": true,
+      "expected": "0",
+      "observed": "0",
+      "correct": true
+    },
+    {
+      "id": "round2-cal-fonte",
+      "valid": true,
+      "expected": "0",
+      "observed": "1",
+      "correct": false
+    },
+    {
+      "id": "round2-cal-cond",
+      "valid": true,
+      "expected": "0",
+      "observed": "0",
+      "correct": true
+    },
+    {
+      "id": "round2-cal-omissao",
+      "valid": true,
+      "expected": "0",
+      "observed": "0",
+      "correct": true
+    },
+    {
+      "id": "round2-cal-data",
+      "valid": true,
+      "expected": "0",
+      "observed": "inconclusive",
+      "correct": false
+    },
+    {
+      "id": "round2-cal-amb-ok",
+      "valid": true,
+      "expected": "1",
+      "observed": "1",
+      "correct": true
+    },
+    {
+      "id": "round2-cal-amb-bad",
+      "valid": true,
+      "expected": "0",
+      "observed": "0",
+      "correct": true
+    },
+    {
+      "id": "round2-cal-aus-ok",
+      "valid": true,
+      "expected": "1",
+      "observed": "1",
+      "correct": true
+    },
+    {
+      "id": "round2-cal-aus-bad",
+      "valid": true,
+      "expected": "0",
+      "observed": "0",
+      "correct": true
+    },
+    {
+      "id": "round2-cal-inc",
+      "valid": true,
+      "expected": "inconclusive",
+      "observed": "inconclusive",
+      "correct": true
+    },
+    {
+      "id": "round2-cal-exc",
+      "valid": true,
+      "expected": "1",
+      "observed": "inconclusive",
+      "correct": false
+    }
+  ],
+  "human_validated": false,
+  "limitation": "Controles sintéticos limitados; não estimam a acurácia em respostas bancárias naturais."
+}

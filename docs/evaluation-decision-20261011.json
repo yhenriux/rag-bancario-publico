@@ -1,0 +1,16 @@
+{
+  "round1_correct": 10,
+  "round2_correct": 17,
+  "minimum_correct": 19,
+  "rounds_completed": 2,
+  "allowed_repairs_used": 1,
+  "automatic_adequacy_enabled": false,
+  "decision": "Documentary retrieval and technical diagnostics are primary; no bank-answer LLM judging or adequacy rate is reported.",
+  "bank_judgments_executed": 0,
+  "human_validated": false,
+  "reason": "O juiz aceitou citação inventada e produziu inconclusivos em falhas decidíveis. O ganho na segunda rodada não atingiu o critério congelado.",
+  "reports": [
+    "docs/calibracao-20261011.json",
+    "docs/calibracao-round2-20261011.json"
+  ]
+}
