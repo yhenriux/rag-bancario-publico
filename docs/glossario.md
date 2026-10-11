@@ -13,7 +13,7 @@
 | Atributo | Característica descrita no documento ou necessária à pergunta, como o tipo de cartão. |
 | Filtro | Regra que decide quais documentos podem entrar na busca. |
 | Geral | Alcance que vale para todos os valores do atributo, quando a fonte comprova isso. |
-| Desconhecido | Valor que a equipe não conseguiu determinar na fonte. O filtro conserva esse documento. |
+| Desconhecido | Valor que o pesquisador não conseguiu determinar na fonte. O filtro conserva esse documento. |
 | Configuração | Uma das seis formas de busca e resposta comparadas no estudo. |
 | Dossiê | Referência que reúne o que a resposta exige e as fontes que sustentam esses requisitos. |
 | Família de perguntas | Perguntas que dependem da mesma regra e da mesma evidência. |
@@ -24,7 +24,7 @@
 | Cobertura | Presença de todas as fontes de pelo menos um conjunto suficiente para responder. |
 | Recall | Parcela das evidências de referência encontrada pela busca. Repetições da mesma evidência contam uma vez. |
 | Avaliação cega | Avaliação em que a pessoa não vê o nome do sistema que produziu a resposta. |
-| Concordância | Quanto duas pessoas chegam à mesma classificação de forma independente. |
+| Concordância | Quanto avaliações coincidem. Neste estudo, duas passagens de Yago medem consistência intra-avaliador; não há acordo entre pessoas independentes. |
 | Kappa | Medida de concordância que considera o acordo esperado pelo acaso. |
 | Jaccard | Medida que compara o que dois conjuntos têm em comum. |
 | Reamostragem ou bootstrap | Repetição do cálculo com novas seleções dos grupos observados, para estimar incerteza. |

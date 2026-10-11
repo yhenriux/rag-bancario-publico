@@ -254,7 +254,9 @@ def stability_sample(questions, fraction=.25):
     return selected
 
 
-def blind(run_path, out, seed):
+def blind(run_path, out, seed, judges=1):
+    if judges not in (1, 2):
+        raise ValueError('Escolha um ou dois julgadores reais')
     runs = records(run_path)
     if not runs:
         raise ValueError('Não há respostas para preparar os formulários')
@@ -273,7 +275,7 @@ def blind(run_path, out, seed):
                      'support': '', 'failures': '', 'notes': ''})
     root = Path(out)
     write_records(root / 'private_key.jsonl', key)
-    for j in ('J1', 'J2'):
+    for j in ('J1', 'J2')[:judges]:
         copied = list(rows)
         rng.shuffle(copied)
         write_csv(root / f'{j}.csv', copied, list(rows[0]) if rows else ['blind_id'])
@@ -291,7 +293,7 @@ def analyze(questions_path, judgments_path, out):
         if row['question_id'] not in question_ids:
             raise ValueError('Julgamento sem pergunta na amostra declarada')
         if key in values or row['adequacy'] not in ('0', '1') or row['config'] not in CONFIGS:
-            raise ValueError('Julgamentos principais conciliados: um 0/1 por pergunta/configuração')
+            raise ValueError('Julgamentos principais: um 0/1 por pergunta/configuração')
         values[key] = int(row['adequacy'])
     result = {}
     for name, left, right in [('H1', 'B', 'A'), ('H2', 'C', 'B'), ('H3', 'B', 'Bp')]:
@@ -315,6 +317,7 @@ def main():
     p.add_argument('--pilot-families')
     p = subs.add_parser('blind')
     p.add_argument('runs'); p.add_argument('output'); p.add_argument('--seed', type=int, default=2026)
+    p.add_argument('--judges', type=int, choices=(1, 2), default=1)
     p = subs.add_parser('analyze')
     p.add_argument('questions'); p.add_argument('judgments'); p.add_argument('output')
     p = subs.add_parser('combine', help='Reunir respostas de uma execução completa')
@@ -324,13 +327,14 @@ def main():
     p.add_argument('--annotators', nargs=2, required=True)
     p.add_argument('--set-attributes', nargs='*', default=[])
     p = subs.add_parser('budget')
-    p.add_argument('--questions', type=int, default=660)
+    p.add_argument('--questions', type=int, default=120)
+    p.add_argument('--judges', type=int, choices=(1, 2), default=1)
     a = parser.parse_args()
     if a.command == 'check':
         validate_questions(records(a.questions), load(a.pilot_families) if a.pilot_families else ())
         print('Estrutura das perguntas e exclusão das famílias: OK')
     elif a.command == 'blind':
-        blind(a.runs, a.output, a.seed)
+        blind(a.runs, a.output, a.seed, a.judges)
     elif a.command == 'analyze':
         analyze(a.questions, a.judgments, a.output)
     elif a.command == 'combine':
@@ -343,9 +347,9 @@ def main():
         n = a.questions
         z = NormalDist()
         power = (z.inv_cdf(1-.05/6)*math.sqrt(.25)+z.inv_cdf(.8)*math.sqrt(.25-.1**2))**2/.1**2
-        print(json.dumps({'questions': n, 'main_judgments': n*6*2,
-              'main_hours_at_3min': n*6*2*3/60, 'illustrative_stability_questions': n*.25,
-              'illustrative_total_judgments': n*15, 'illustrative_total_hours': n*15*3/60,
+        print(json.dumps({'questions': n, 'judges': a.judges, 'main_judgments': n*6*a.judges,
+              'main_hours_at_3min': n*6*a.judges*3/60, 'illustrative_stability_questions': n*.25,
+              'illustrative_total_judgments': n*7.5*a.judges, 'illustrative_total_hours': n*7.5*a.judges*3/60,
               'independent_power_pairs': power, 'precision_pairs': math.ceil(z.inv_cdf(.975)**2*.25/.1**2),
               'warning': 'Estabilidade efetiva depende do arredondamento estratificado; famílias não são perguntas.'}, indent=2))
 

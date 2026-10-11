@@ -18,11 +18,11 @@ flowchart TD
     D --> E["Avaliação humana da resposta e das fontes"]
 ```
 
-A equipe verifica as fontes e prepara as perguntas antes de produzir as respostas. Ela registra o endereço de cada documento e conserva uma cópia da data de coleta.
+Yago verifica as fontes e prepara as perguntas antes de produzir as respostas. Ela registra o endereço de cada documento e conserva uma cópia da data de coleta.
 
 ## O que significa organizar os documentos?
 
-A equipe descreve o que cada documento trata. Essa descrição pode incluir o cartão, o público, o canal de atendimento e o período da regra.
+Yago descreve o que cada documento trata. Essa descrição pode incluir o cartão, o público, o canal de atendimento e o período da regra.
 
 Essas descrições são chamadas de **metadados**. Pense nelas como etiquetas que ajudam a localizar e interpretar um documento.
 
@@ -42,17 +42,13 @@ Três perguntas orientam as comparações:
 
 L ajuda a entender o desempenho da busca por palavras. S mostra como o modelo responde quando recebe a pergunta sem documentos.
 
-## Quem faz o quê?
+## Quem faz o trabalho?
 
-| Pessoas | Trabalho |
-|---|---|
-| M1 e M2 | Descrevem os documentos, cada uma de forma independente. |
-| R1 e R2 | Preparam as referências: o que a resposta precisa conter e quais fontes sustentam a regra. |
-| J1 e J2 | Avaliam as respostas sem saber qual configuração as produziu. |
+Yago é o único pesquisador. Ele coleta e revisa documentos, prepara referências, descreve os trechos, executa modelos, avalia respostas e analisa resultados em etapas separadas.
 
-São seis pessoas com papéis distintos. A separação reduz a influência de quem descreveu os documentos sobre quem avalia as respostas.
+As referências ficam congeladas antes das respostas. O formulário oculta configuração e semente, com ordem aleatória. Uma amostra é reavaliada depois. O conhecimento prévio de Yago continua presente; o estudo declara a ausência de avaliação independente.
 
-A coordenação organiza os arquivos e conserva a chave que relaciona respostas e configurações.
+[Consulte o adendo individual](protocolo-individual.md).
 
 ## O que é uma referência de avaliação?
 
@@ -62,7 +58,7 @@ No texto científico, ele se chama **dossiê**. Para uma pergunta incompleta, po
 
 ## Como sabemos se uma resposta é adequada?
 
-Os avaliadores verificam se a resposta atende a todos os requisitos da referência. Também verificam se os valores e as condições foram preservados.
+Yago verifica se a resposta atende a todos os requisitos da referência. Também verificam se os valores e as condições foram preservados.
 
 O estudo separa duas verificações:
 
@@ -73,11 +69,11 @@ Uma regra pode estar completa e se referir a outro cartão. Uma regra do cartão
 
 ## Por que começar com um piloto?
 
-O piloto é um teste inicial de 60 perguntas. Ele permite revisar os procedimentos e medir o esforço da equipe.
+O piloto é um teste inicial de 60 perguntas. Ele permite revisar os procedimentos e medir o esforço pessoal.
 
 As perguntas pertencem a cinco grupos: resposta direta, condição, exceção, ambiguidade e falta de informação na coleção. Há quatro perguntas de cada grupo por banco.
 
-Cada resposta recebe duas avaliações independentes. O piloto prevê 900 avaliações, contando as respostas adicionais de estabilidade. Se houver ajuste contra repetição, as conferências técnicas de fidelidade são adicionais.
+Cada resposta recebe uma avaliação de Yago. O piloto tem 450 avaliações iniciais e 90 reavaliações após no mínimo 14 dias. Isso exige cerca de 27 horas a três minutos por marcação. O teste técnico de fidelidade, quando necessário, é adicional.
 
 ## Quantas perguntas entram na etapa final?
 
@@ -85,20 +81,20 @@ A quantidade depende das regras encontradas, das famílias independentes e dos r
 
 Uma **família** reúne perguntas que dependem da mesma regra e da mesma evidência. Fazer muitas versões da mesma pergunta não cria novas famílias independentes.
 
-O protocolo apresenta um cenário de 660 perguntas. Nesse cenário, o trabalho chega a 9.900 avaliações e cerca de 495 horas, considerando três minutos por avaliação. Esse número é uma estimativa, a revisar com o piloto.
+O plano individual considera inicialmente até 120 perguntas finais, a decidir pelo piloto. São 900 avaliações iniciais e 180 reavaliações, aproximadamente 54 horas de marcação. A análise é exploratória; a precisão depende das famílias e da amostra disponíveis.
 
 ## O que fica registrado?
 
 - Fontes, endereços, datas e condições de coleta.
-- Descrições dos documentos e decisões entre anotadores.
+- Descrições dos documentos e revisões individuais.
 - Perguntas, famílias e referências de avaliação.
 - Versões do código e dos modelos.
 - Fontes encontradas, fontes retiradas e respostas.
-- Avaliações individuais, decisões conjuntas e cálculos.
+- Primeiras avaliações, reavaliações, justificativas e cálculos.
 - Problemas encontrados e mudanças no plano.
 
 ## O que ainda precisa acontecer?
 
-Selecionar os bancos, validar os modelos, recrutar a equipe e executar o piloto. A equipe também precisa definir a amostra final e registrar o plano antes da execução final.
+Selecionar os bancos, validar os modelos e executar o piloto. Yago define a amostra final e registra o plano antes da etapa final.
 
 [Veja o plano de trabalho](roadmap.md).

@@ -2,18 +2,13 @@
 
 [Voltar ao início](../README.md) · [Consultar palavras técnicas](glossario.md)
 
-A equipe avalia se cada resposta preserva o que a pergunta exige. Os modelos produzem respostas; as pessoas fazem os julgamentos de adequação.
+Yago avalia se cada resposta preserva o que a pergunta exige. Os modelos produzem respostas; as pessoas fazem os julgamentos de adequação.
 
-## Separe os papéis
+## Separe as etapas
 
-| Pessoas | Recebem | Produzem | Trabalham sem acesso a |
-|---|---|---|---|
-| M1 e M2 | Fontes e trechos | Descrições dos documentos | Respostas e julgamentos de J |
-| R1 e R2 | Perguntas e fontes originais | Referências e famílias de regras | Descrições de M e respostas dos sistemas |
-| J1 e J2 | Perguntas, respostas sem identificação do sistema e referências | Avaliações individuais | Configuração e semente |
-| Coordenação | Registros completos | Arquivos, decisões e relatório | Controla o acesso e guarda a chave de identificação |
+O [adendo individual](protocolo-individual.md) define a execução ativa. Yago prepara referências nos documentos originais, congela os requisitos antes das saídas e faz descrições e julgamentos em arquivos e momentos separados.
 
-O protocolo exige seis pessoas distintas nos papéis M/R/J.
+O formulário J1 oculta configuração e semente. Yago mantém a chave separada e evita consultá-la durante as marcações. Isso limita a identificação explícita do sistema, enquanto a familiaridade com as fontes e procedimentos limita o cegamento. Não há avaliação humana independente.
 
 ## Confira a adequação
 
@@ -56,13 +51,13 @@ Uma resposta pode ter mais de um problema:
 
 Registre também fontes retiradas por limite de tamanho da entrada do modelo. Esse é um evento técnico separado.
 
-## Preserve as avaliações individuais
+## Preserve a primeira passagem e reavalie a amostra
 
-J1 e J2 avaliam de forma independente. A coordenação conserva os formulários originais, a decisão conjunta e sua justificativa.
+Yago avalia todas as respostas uma vez. Depois de no mínimo 14 dias, reavalia a amostra previamente fixada de 20%, em outra ordem e sem consultar as primeiras marcações. As duas passagens ficam preservadas.
 
-Faça o mesmo com M1/M2 e R1/R2. Compare as pessoas antes da decisão conjunta.
+A primeira avaliação é a principal. A segunda é diagnóstico de consistência. Erros materiais comprovados recebem justificativa e análise de sensibilidade. Evitar escolher uma rodada pelo resultado favorável a uma hipótese.
 
-O comando `study.py agreement` calcula acordo exato e kappa por atributo. Para campos que representam conjuntos, também calcula Jaccard. [Veja o comando no guia](execucao.md#11-compare-as-avaliações-e-calcule-os-resultados).
+O comando `study.py agreement` compara `rodada1` e `rodada2` do mesmo pesquisador. Reportar acordo e eventual kappa como intra-avaliador, com tamanho, categorias e limite de memória. Conjuntos também recebem Jaccard. [Veja o comando](execucao.md#11-compare-as-avaliações-e-calcule-os-resultados).
 
 ## Compare as configurações
 
@@ -82,11 +77,11 @@ Os intervalos de 95% usam os percentis 0,025 e 0,975. Os intervalos de 98,33% us
 
 O relatório separa a direção do efeito e sua magnitude. Informa se a estimativa chega à diferença de interesse de dez pontos percentuais.
 
-A interpretação automática é exploratória. Uma interpretação confirmatória exige dimensionamento por simulação e pré-registro. Esses requisitos estão no [protocolo](protocolo.md).
+O desenho individual é exploratório. Os intervalos descrevem variação entre famílias condicionada às avaliações de Yago; não incluem variabilidade entre julgadores independentes. [Veja o adendo](protocolo-individual.md).
 
 ## Verifique a fidelidade técnica
 
-Se o piloto exigir um ajuste contra repetição, J1/J2 também conferem os doze casos técnicos. O programa produz 72 saídas e dois formulários.
+Se o piloto exigir ajuste contra repetição, Yago confere os doze casos técnicos. O programa produz 72 saídas e um formulário individual J1.
 
 Verifique valores, unidades, datas e identificadores antes e depois do ajuste. Qualquer item antes preservado que se perde impede aceitar a mudança.
 

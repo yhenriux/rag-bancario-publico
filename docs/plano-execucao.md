@@ -1,47 +1,44 @@
 # Planejamento completo da pesquisa
 
-[Voltar ao início](../README.md) · [Comandos de execução](execucao.md) · [Protocolo científico](protocolo.md) · [Glossário](glossario.md)
+[Voltar ao início](../README.md) · [Comandos de execução](execucao.md) · [Protocolo individual ativo](protocolo-individual.md) · [Glossário](glossario.md)
 
 **Objetivo:** selecionar três bancos, reunir documentos públicos permitidos, validar os modelos e executar um piloto de 60 perguntas. O piloto informa a amostra, o custo e as decisões da etapa final.
 
-**Situação em 11/10/2026:** planejamento preparado. A seleção definitiva, a conferência de permissões, a execução dos modelos e os julgamentos humanos permanecem pendentes. A existência de páginas públicas confirma candidatos para análise; a autorização de coleta exige uma decisão documentada por fonte.
+**Situação em 11/10/2026:** planejamento preparado. A seleção definitiva, a conferência de permissões, a execução dos modelos e os julgamentos individuais permanecem pendentes. A existência de páginas públicas confirma candidatos para análise; a autorização de coleta exige uma decisão documentada por fonte.
 
-Este plano organiza o protocolo existente. As estimativas de prazo, esforço e os procedimentos de gestão são propostas operacionais. A coordenação registra sua adoção antes das tarefas correspondentes. Mudanças no desenho científico recebem um adendo datado. O protocolo original e seu código de integridade permanecem preservados.
+Este plano organiza a execução por Yago, como único pesquisador, conforme o [adendo individual](protocolo-individual.md). O protocolo anterior fica preservado como histórico. As estimativas de prazo, esforço e os procedimentos de gestão são propostas operacionais. Yago registra sua adoção antes das tarefas correspondentes. Mudanças no desenho científico recebem um adendo datado. O protocolo original e seu código de integridade permanecem preservados.
 
 ## 1. Resultado esperado e decisões de avanço
 
 | Decisão | Evidência necessária | Quem registra |
 |---|---|---|
-| D1. Aprovar três bancos | Critérios atendidos, fontes utilizáveis e candidatos excluídos justificados | Coordenação e revisor de fontes |
-| D2. Liberar a coleção do piloto | Permissões resolvidas, coleta completa e extração revisada | Responsável pela coleta |
-| D3. Liberar a execução | Modelos, equipamento, índices e controles técnicos conferidos | Responsável técnico |
-| D4. Encerrar o piloto | 450 respostas, 900 julgamentos, concordância e esforço documentados | Coordenação, M/R/J e análise |
-| D5. Liberar a etapa final | Amostra viável, simulação revisada, famílias reservadas e registro público real | Coordenação e responsável estatístico |
-| D6. Publicar resultados | Análise revisada, rastreabilidade e direitos de publicação conferidos | Autor e revisores |
+| D1. Aprovar três bancos | Critérios atendidos, fontes utilizáveis e candidatos excluídos justificados | Yago |
+| D2. Liberar a coleção do piloto | Permissões resolvidas, coleta completa e extração revisada | Yago |
+| D3. Liberar a execução | Modelos, equipamento, índices e controles técnicos conferidos | Yago |
+| D4. Encerrar o piloto | 450 respostas, 450 avaliações iniciais, 90 reavaliações e esforço documentado | Yago |
+| D5. Liberar a etapa final | Amostra viável, simulação revisada, famílias reservadas e registro público real | Yago |
+| D6. Publicar resultados | Análise revisada, rastreabilidade e direitos de publicação conferidos | Yago |
 
 Resultado ruim de uma configuração é um achado possível. As decisões de avanço verificam a validade dos dados e dos procedimentos. Nenhuma delas exige que B ou C supere outra configuração.
 
-## 2. Equipe e separação de responsabilidades
+## 2. Um pesquisador, etapas separadas
 
-O protocolo exige **seis pessoas distintas** nos papéis M1, M2, R1, R2, J1 e J2. Se elas ainda não estiverem disponíveis, a preparação técnica continua e a execução científica aguarda a composição da equipe.
+Yago realiza seleção, revisão de permissões, coleta, preparação de perguntas, descrição documental, operação dos modelos, julgamento e análise. Não há contratação ou formação de equipe como condição de início.
 
-| Papel | Trabalho | Acesso necessário | Separação preservada |
-|---|---|---|---|
-| Coordenação, proposta: Yago | Organizar pessoas, decisões, orçamento e registro | Inventário, cronograma e decisões | Não entregar a chave dos sistemas a J durante os julgamentos |
-| Coleta e revisão de fontes | Conferir termos, domínios, cópias e extração | Fontes públicas e registros de permissão | Não usar documentos internos ou sessões de clientes |
-| M1 e M2 | Descrever documentos e trechos de forma independente | Coleção e esquema de atributos | Não construir as referências usadas para justificar suas próprias descrições |
-| R1 e R2 | Preparar perguntas, respondibilidade, referências e famílias | Documentos originais e perguntas | Sem acesso às anotações de M e às respostas dos sistemas |
-| J1 e J2 | Avaliar respostas individualmente, depois conciliar | Formulário próprio, perguntas e referências congeladas | Sem acesso à configuração, à semente e à chave privada |
-| Técnico | Instalar ambiente, executar coleta e modelos, preservar registros | Arquivos técnicos e índices | Não substituir julgamentos humanos por escores de modelo |
-| Análise e revisão estatística | Conferir pares, dependências, amostra e intervalos | Dados conciliados e anotações originais | Não ampliar amostra após conhecer o efeito final |
+| Etapa pessoal | Entrega | Controle |
+|---|---|---|
+| Examinar as fontes | Inventário e permissões | Evidência, data e justificativa |
+| Preparar referências | Perguntas, famílias e dossiês | Fonte original; congelar antes das saídas |
+| Descrever documentos | Metadados e mapa de trechos | Arquivos separados e revisão de amostra |
+| Operar o experimento | Modelos, índices e respostas | Versões fixas e controles técnicos |
+| Julgar respostas | Uma marcação por resposta | Ordem aleatória, rótulos ocultos e chave separada |
+| Reavaliar e analisar | Consistência, diferenças e limitações | Segunda passagem em amostra fixada; conservar a primeira |
 
-Coordenação, coleta, operação técnica e análise podem compartilhar pessoas, desde que a separação M/R/J continue íntegra e os acessos sejam registrados. Não há modelo de linguagem como juiz.
+A separação temporal ajuda a documentar as decisões. A mesma pessoa conhece documentos e procedimentos; por isso, o estudo declara a ausência de avaliação independente e o limite do cegamento. Não há modelo de linguagem como juiz.
 
-Antes de começar, registrar: nomes, formação, disponibilidade semanal, treinamento, interesses profissionais, remuneração se houver e quem resolve divergências persistentes. A coordenação organiza a conciliação; justificativas e avaliações originais permanecem conservadas.
+Caso o Inter seja incluído, declarar o vínculo profissional do autor e usar apenas fontes públicas. Registrar as decisões aplicando os mesmos critérios aos demais bancos. Uma auditoria externa futura pode ser acrescentada, sem ser requisito do desenho atual.
 
-Caso o Inter seja incluído, declarar o vínculo profissional do autor e manter a pesquisa restrita às fontes públicas. Registrar quem faz a revisão independente das decisões que afetam esse banco. A inclusão depende dos mesmos critérios aplicados aos demais.
-
-**Entrega:** registro de papéis e acessos. Usar o [modelo de registros](../examples/planning-records.template.json) como lista de campos; preencher uma cópia em `private/`.
+**Entrega:** registro do pesquisador e das etapas. Preencher uma cópia do [modelo de registros](../examples/planning-records.template.json) em `private/`.
 
 ## 3. Selecionar os bancos
 
@@ -102,7 +99,7 @@ O [RFC 9309](https://www.rfc-editor.org/rfc/rfc9309.html) distingue as regras de
 4. Conferir `robots.txt` para o agente da pesquisa e cada caminho escolhido. Guardar a versão examinada.
 5. Separar os estados `approved`, `pending` e `excluded`, sempre com justificativa. `approved` registra a decisão interna baseada em evidência; uma resposta de autorização do titular, quando necessária, fica anexada separadamente.
 6. Se a autorização necessária permanecer incerta, preparar consulta ao responsável pelo site ou à instância institucional competente. O envio dessa consulta é uma tarefa a atribuir e registrar.
-7. Fazer uma segunda conferência das decisões de liberação antes da primeira coleta. Repetir a conferência antes de um novo instantâneo ou se as condições mudarem.
+7. Fazer uma segunda passagem pessoal de conferência das decisões de liberação antes da primeira coleta; ela não constitui uma revisão independente. Repetir a conferência antes de um novo instantâneo ou se as condições mudarem.
 
 **Não marcar uma fonte como aprovada apenas porque está aberta na internet.** Fontes com restrições incompatíveis ficam excluídas; fontes ainda em análise ficam pendentes.
 
@@ -110,9 +107,9 @@ O [RFC 9309](https://www.rfc-editor.org/rfc/rfc9309.html) distingue as regras de
 
 O coletor trabalha com uma lista de endereços previamente cadastrados. Não percorre automaticamente todo o site. Ele exige HTTPS, domínio exato, agente com contato real, termos conferidos e decisão de inclusão preenchida. Aplica pelo menos dois segundos entre pedidos e aumenta o intervalo quando as regras do site exigem.
 
-O limite é 20 MiB por documento. HTML, PDF com texto e texto simples são os formatos previstos. Erros, bloqueios e coleta incompleta são registrados. A equipe resolve as pendências antes de congelar a coleção. Não contornar autenticação, CAPTCHA, bloqueio de automação ou restrição de domínio.
+O limite é 20 MiB por documento. HTML, PDF com texto e texto simples são os formatos previstos. Erros, bloqueios e coleta incompleta são registrados. O pesquisador resolve as pendências antes de congelar a coleção. Não contornar autenticação, CAPTCHA, bloqueio de automação ou restrição de domínio.
 
-**Limite técnico a conferir:** `terms_url` precisa pertencer ao mesmo domínio da fonte. Um PDF hospedado em outro domínio exige origem oficial comprovada e cadastro próprio. Termos gerais em um domínio diferente podem exigir uma adaptação pequena e testada do cadastro antes da coleta. A ausência de `robots.txt` ou uma falha ao consultá-lo deixa a fonte pendente na implementação atual. Uma captura alternativa exige decisão registrada; a equipe não troca de método silenciosamente.
+**Limite técnico a conferir:** `terms_url` precisa pertencer ao mesmo domínio da fonte. Um PDF hospedado em outro domínio exige origem oficial comprovada e cadastro próprio. Termos gerais em um domínio diferente podem exigir uma adaptação pequena e testada do cadastro antes da coleta. A ausência de `robots.txt` ou uma falha ao consultá-lo deixa a fonte pendente na implementação atual. Uma captura alternativa exige decisão registrada; o pesquisador não troca de método silenciosamente.
 
 **Entrega:** `private/sources.json` contém somente fontes aprovadas para a execução. O inventário separado conserva também as pendentes e excluídas. A publicação das cópias continua dependendo de sua própria decisão.
 
@@ -170,7 +167,7 @@ Quantização, mudança de precisão, execução distribuída ou troca de modelo
 | Repetibilidade | Repetir entradas idênticas no mesmo ambiente | Saídas principais idênticas ou execução suspensa para investigar |
 | Fidelidade | Conferir valores, unidades, datas e identificadores | Falhas identificadas e decisão técnica registrada |
 | Continuidade | Simular interrupção e examinar arquivos parciais | Nenhuma execução incompleta apresentada como concluída |
-| Cegamento | Inspecionar os formulários de J1/J2 | Configuração, semente e chave privadas ocultas |
+| Identificação dos sistemas | Inspecionar o formulário individual J1 | Rótulos ocultos; conhecimento prévio e consultas à chave registrados |
 
 Resultados sem sentido em casos de validação técnica levam à investigação do ambiente, do formato de entrada e do procedimento. O controle não funciona como uma competição entre configurações.
 
@@ -182,7 +179,7 @@ Detectar repetição degenerada antes de entregar respostas para julgamento de a
 
 Se ocorrer no piloto, testar a penalidade 1,05 somente sobre tokens gerados, mantendo a penalidade global em 1,0. A documentação de [Transformers 4.57.1](https://huggingface.co/docs/transformers/v4.57.1/en/internal/generation_utils) informa que a implementação inclui o prompt por padrão e oferece `prompt_ignore_length` para excluí-lo. O teste do projeto precisa confirmar esse comportamento no ambiente instalado.
 
-Os 12 casos técnicos fixados produzem 72 respostas: duas políticas de penalidade e três condições de geração. J1/J2 fazem 144 conferências técnicas. Comparar antes e depois valores, unidades, datas e identificadores; qualquer perda de item antes preservado impede aceitar o ajuste. Repetição persistente ou falha de implementação também suspende a liberação.
+Os 12 casos técnicos fixados produzem 72 respostas: duas políticas de penalidade e três condições de geração. Yago faz 72 conferências técnicas individuais. Comparar antes e depois valores, unidades, datas e identificadores; qualquer perda de item antes preservado impede aceitar o ajuste. Repetição persistente ou falha de implementação também suspende a liberação.
 
 Se o ajuste passar, reconstruir índices quando a configuração exigir e repetir o piloto inteiro sob a política única antes dos escores de adequação. Arquivar a primeira execução como diagnóstico. A repetição acrescenta processamento; julgamentos de adequação duplicados, se já tiverem ocorrido, acrescentam esforço e precisam ser registrados. As mesmas famílias continuam excluídas da etapa final.
 
@@ -203,7 +200,7 @@ Se o ajuste passar, reconstruir índices quando a configuração exigir e repeti
 
 Uma condição modifica quando a regra vale. Uma exceção define uma situação em que a regra geral muda. Pergunta ambígua exige esclarecimento. Ausência de evidência exige reconhecer a limitação da coleção.
 
-R1/R2 constroem perguntas com base no corpus e registram sua origem. Não usar conversas reais de clientes. Para cada pergunta, preparar o dossiê: situação consultada, resposta ou comportamento esperado, requisitos indispensáveis e conjuntos de evidência suficientes. Dois documentos podem oferecer caminhos alternativos para sustentar a mesma resposta.
+Yago constrói perguntas com base no corpus e registra sua origem. Não usar conversas reais de clientes. Para cada pergunta, preparar o dossiê: situação consultada, resposta ou comportamento esperado, requisitos indispensáveis e conjuntos de evidência suficientes. Dois documentos podem oferecer caminhos alternativos para sustentar a mesma resposta.
 
 Nas perguntas sem evidência, verificar toda a coleção daquele banco e registrar a busca. Nas ambíguas, fixar o esclarecimento necessário. Mapear evidências originais para trechos antes da geração, evitando decidir suficiência com base na resposta do sistema.
 
@@ -213,30 +210,31 @@ Cada família reúne perguntas dependentes da mesma regra e de evidências indis
 
 O inventário de candidatos à etapa final registra, por banco e contraste: famílias disponíveis, perguntas por família e motivo de exclusão. O número de perguntas nunca substitui essa contagem.
 
-### 7.3 Treinamento e concordância
+### 7.3 Calibração e consistência individual
 
-1. Explicar a rubrica com exemplos fictícios e casos de dúvida.
-2. Aplicar uma rodada curta individual e comparar interpretações.
-3. Corrigir instruções ambíguas antes da execução científica. Se a calibração utilizar regras reais, excluir suas famílias da etapa final.
-4. Congelar os critérios e preservar as versões anteriores.
-5. M1/M2 e R1/R2 fazem suas anotações independentes. Calcular concordância antes da conciliação.
-6. J1/J2 recebem ordens aleatórias próprias e referências congeladas. Guardar avaliações individuais antes de produzir a decisão conjunta.
+1. Estudar a rubrica usando exemplos fictícios e registrar dúvidas.
+2. Preparar referências nas fontes originais; congelar antes das descrições de busca e concluir o mapa de evidências antes da geração.
+3. Rever 20% dos metadados e dossiês em outra passagem. Registrar o mesmo pesquisador nas duas rodadas e conservar versões.
+4. Exportar somente J1. Ocultar configuração e semente; manter a chave em arquivo separado. O conhecimento prévio de Yago limita o cegamento.
+5. Avaliar todas as respostas e conservar essa primeira passagem como análise principal.
+6. Reavaliar 20% após no mínimo 14 dias, em ordem diferente e sem consultar as primeiras marcações. Fixar previamente 72 respostas principais e 18 de estabilidade no piloto, total de 90. Distribuir a amostra por banco, classe e configuração, com regra de alocação e IDs registrada antes dos julgamentos. A seleção e a segunda exportação ainda precisam ser preparadas; não há comando integrado para essa etapa.
+7. Reportar consistência intra-avaliador, tamanho, categorias, divergências e casos reconhecidos. Kappa ou Jaccard compara rodadas do mesmo pesquisador, sem afirmar concordância entre pessoas.
 
-Reportar acordo exato, kappa, tamanho e frequência das categorias. Para conjuntos, reportar igualdade normalizada e Jaccard. Kappa baixo pode acompanhar categorias raras; investigar causas em conjunto com os demais registros. Não existe corte numérico de concordância estabelecido no protocolo. Uma nova regra de aprovação precisa ser fixada antes do julgamento correspondente.
+Não escolher entre rodadas pelo resultado favorável a uma hipótese. A segunda passagem é diagnóstico. Erro material comprovado recebe registro e análise de sensibilidade. A amostra de reavaliação não valida de forma independente todo o conjunto.
 
-**Entrega:** 60 perguntas válidas, famílias identificadas, metadados e dossiês conciliados, anotações originais preservadas, treinamento registrado e conjunto final reservado.
+**Entrega:** referências, descrições, rubrica e amostra de segunda passagem fixadas; histórico individual preservado.
 
 ## 8. Executar e encerrar o piloto
 
 ### 8.1 Ordem de execução
 
-1. Conferir a liberação de fontes, coleção, papéis e validação técnica.
+1. Conferir a liberação de fontes, coleção, etapas individuais e validação técnica.
 2. Fixar a versão do código, configuração, perguntas, trechos, índices, metadados e dossiês. Calcular seus códigos de integridade.
 3. Executar as seis configurações nas 60 perguntas e a estabilidade prevista. Guardar duração, erros, remoções de contexto e registros de repetição.
 4. Resolver a decisão técnica de repetição antes dos escores de adequação.
 5. Conferir completude, reunir as respostas e criar os formulários cegos.
-6. Realizar julgamentos individuais em blocos curtos, com pausas. Registrar tempo por bloco e dificuldades da rubrica.
-7. Calcular concordância anterior à conciliação. Registrar decisões conjuntas e justificativas.
+6. Yago realiza julgamentos em blocos curtos, com pausas. Registrar tempo por bloco e dificuldades da rubrica.
+7. Calcular consistência entre as duas passagens da amostra. Preservar a primeira como principal, com histórico de correções e justificativas.
 8. Separar resultados principais, estabilidade e testes técnicos. Calcular métricas de recuperação e resposta conforme a população elegível de cada contraste.
 9. Produzir o relatório do piloto e a decisão de amostra. Preservar um histórico das mudanças; não apagar resultados que motivaram uma revisão.
 
@@ -246,18 +244,18 @@ Reportar acordo exato, kappa, tamanho e frequência das categorias. Para conjunt
 |---|---|---:|
 | Respostas principais | 60 perguntas × 6 configurações | 360 |
 | Respostas de estabilidade | 15 perguntas × 3 configurações × 2 sementes | 90 |
-| **Respostas do piloto** | 360 + 90 | **450** |
-| Julgamentos principais | 360 × 2 pessoas | 720 |
-| Julgamentos de estabilidade | 90 × 2 pessoas | 180 |
-| **Julgamentos de respostas** | 720 + 180 | **900** |
-| Anotações iniciais de dossiês | 60 × R1/R2 | 120 |
-| Conferências técnicas adicionais, se o ajuste for testado | 72 × J1/J2 | 144 |
+| Avaliações iniciais por Yago | 360 + 90 | 450 |
+| Reavaliações individuais | 20% de 450 | 90 |
+| **Marcações de respostas** | 450 + 90 | **540** |
+| Dossiês iniciais | Um por pergunta | 60 |
+| Revisão proposta de dossiês | 20% de 60 | 12 |
+| Conferências técnicas adicionais, se necessário | 12 casos × 2 políticas × 3 condições | 72 |
 
-A subamostra de estabilidade tem uma pergunta por banco e classe: 15 perguntas. A regra de seleção é fixa e precisa ser registrada; selecionar manualmente respostas convenientes invalidaria esse controle.
+A estabilidade tem uma pergunta por banco e classe: 15 perguntas. Sua seleção é fixa. A reavaliação individual usa outra amostra, definida antes dos julgamentos, sem mudar as respostas geradas.
 
 ### 8.3 Relatório mínimo do piloto
 
-Registrar bancos e fontes; número de documentos e famílias; perdas de coleta e extração; distribuição das classes; procedimentos de treinamento; concordância de M/R/J; adequação e atributos de aplicabilidade; cobertura e exclusões indevidas; repetição e fidelidade; instabilidade entre sementes; duração do processamento; esforço humano; limitações e decisões de revisão.
+Registrar bancos e fontes; número de documentos e famílias; perdas de coleta e extração; distribuição das classes; procedimentos de calibração pessoal; consistência individual entre passagens; adequação e atributos de aplicabilidade; cobertura e exclusões indevidas; repetição e fidelidade; instabilidade entre sementes; duração do processamento; esforço humano; limitações e decisões de revisão.
 
 O piloto produz análise exploratória. Falhas reais de respostas permanecem nos resultados. Erros de implementação motivam uma correção e uma nova execução identificada. Mudanças da rubrica após observar respostas exigem histórico e reavaliação uniforme dos itens afetados.
 
@@ -277,101 +275,98 @@ Contar separadamente as famílias elegíveis de cada contraste e banco, após to
 
 ### 9.2 Simulação ainda a implementar
 
-O projeto ainda precisa do programa e da revisão independente de dimensionamento por simulação. A conta aproximada de 260 pares independentes orienta H1/H3, mas a dependência dentro das famílias pode elevar a necessidade. Não converter perguntas repetidas em famílias independentes.
+O projeto ainda precisa do programa e da validação do dimensionamento de precisão por simulação. A conta histórica de poder com 260 pares permanece como referência. O estudo individual dimensiona a precisão exploratória, considerando a dependência dentro das famílias. Não converter perguntas repetidas em famílias independentes.
 
-Plano de implementação: gerar pares de adequação binária com composição por banco, famílias e tamanhos de agrupamento compatíveis com o inventário; variar discordância e dependência em cenários plausíveis; incluir diferença nula e diferença de interesse de dez pontos percentuais; reproduzir o estimador e os intervalos usados na análise. Verificar controle de falso positivo, poder, cobertura do intervalo e meia largura. Sob H1/H3, reproduzir somente as classes elegíveis.
+Plano de implementação: gerar pares de adequação binária com composição por banco, famílias e tamanhos de agrupamento compatíveis com o inventário; variar discordância e dependência em cenários plausíveis; incluir diferença nula e diferenças plausíveis; reproduzir o estimador e os intervalos usados na análise. Verificar cobertura e meia largura dos intervalos. Sob H1/H3, reproduzir somente as classes elegíveis. Fixar a regra de escolha da amostra antes das respostas finais.
 
-Como orçamento inicial de simulação, usar uma busca de cenários com 1.000 conjuntos simulados e confirmar os candidatos com pelo menos 2.000, ampliando se o erro de Monte Carlo dificultar a decisão. Cada análise definitiva mantém as 5.000 reamostragens previstas. O responsável estatístico fixa cenários, sementes e regra de escolha antes da etapa final. Os números de simulação são proposta operacional e precisam de validação computacional.
+Como orçamento inicial de simulação, usar uma busca de cenários com 1.000 conjuntos simulados e confirmar os candidatos com pelo menos 2.000, ampliando se o erro de Monte Carlo dificultar a decisão. Cada análise definitiva mantém as 5.000 reamostragens previstas. Yago fixa cenários, sementes e regra de escolha antes da etapa final. Os números de simulação são proposta operacional e precisam de validação computacional.
 
-Avaliar a incerteza da própria simulação: uma estimativa de poder de 80% em 2.000 simulações tem erro padrão de cerca de 0,9 ponto percentual. Registrar esse erro e a regra usada na decisão. Simulação onerosa requer ajuste do orçamento computacional e registro, com revisão de equivalência do método.
+Avaliar a incerteza da própria simulação e a distribuição das meias larguras, com regra de decisão registrada previamente. Simulação onerosa requer ajuste do orçamento computacional e registro, com revisão de equivalência do método. O tamanho viável pode implicar precisão menor que o alvo original.
 
-### 9.3 Dois caminhos de análise
+### 9.3 Análise exploratória individual
 
-- **Exploratório com alvo de precisão:** quando houver menos de 260 famílias elegíveis em um contraste, ou quando a simulação ou o orçamento não sustentarem poder. O alvo é meia largura de até dez pontos percentuais no intervalo de 95%. A aproximação de 97 pares independentes é ilustrativa; a simulação define a necessidade considerando dependência.
-- **Confirmatório por contraste:** exige famílias suficientes, poder de 80% confirmado pelo dimensionamento, critérios e amostra fixados, além do registro prévio. Os intervalos ajustados de 98,33% usam o procedimento previsto e correção para três contrastes. Informar separadamente apoio direcional e se a estimativa atinge dez pontos percentuais.
+O desenho atual é exploratório. Planejar a amostra pela disponibilidade de famílias, esforço e simulação de precisão. A reamostragem descreve variação entre famílias condicionada às avaliações de Yago; ela não mede variabilidade entre julgadores independentes.
 
-Conservar o desenho exploratório para comparações adicionais, estabilidade e sensibilidade. Uma amostra menor também pode gerar informação útil sobre falhas e incerteza; seus limites precisam aparecer no relato.
+O alvo inicial é meia largura de até dez pontos percentuais no intervalo de 95%, sujeito a dimensionamento. A conta de 97 pares independentes é ilustrativa e exige ajuste à estrutura encontrada. O cenário inicial de até 120 perguntas pode produzir intervalos mais amplos. Fixar e relatar a precisão viável antes da etapa final.
+
+As contas históricas de poder e os intervalos de 98,33% permanecem como referência técnica. Atingir 260 famílias não transforma a execução individual atual em estudo confirmatório. Qualquer mudança desse enquadramento exige novo desenho e registro antes da avaliação correspondente.
 
 ### 9.4 Congelamento e depósito
 
 Antes da coleta final, depositar o plano público datado, com versões, hipóteses, critérios, regras de famílias, dimensão pretendida, orçamento e procedimentos. Documentar o fluxo de triagem/inventário anterior e o cronograma do instantâneo final. Preservar a posterior rastreabilidade da coleção coletada e dos arquivos congelados.
 
-Antes da geração final, completar a revisão da coleção, as referências e os índices; fixar a amostra efetiva e suas justificativas, sem acesso às respostas finais. Se a coleta revelar falta de famílias, registrar o adendo de precisão e disponibilidade antes dessa geração, preservando o depósito anterior.
+Antes da geração final, completar a revisão da coleção, as referências e os índices; fixar a amostra efetiva e suas justificativas, sem acesso às respostas finais. Se a coleta revelar falta de famílias, registrar a decisão de precisão e disponibilidade antes dessa geração, preservando o depósito anterior.
 
-Preencher o [registro de congelamento](../examples/freeze.template.json) com URL real, data, registro de revisão ética aplicável, papéis, decisão do piloto, dimensão da amostra, fidelidade e códigos dos arquivos. Documentação pública não dispensa registrar a decisão institucional sobre o enquadramento ético do estudo e a participação dos avaliadores. Não declarar aprovação ou dispensa sem evidência.
+Preencher o [registro de congelamento](../examples/freeze.template.json) com URL real, data, registro de enquadramento ético aplicável, etapas individuais, decisão do piloto, dimensão da amostra, fidelidade e códigos dos arquivos. Registrar as exigências institucionais e editoriais aplicáveis à pesquisa. Uma eventual participação futura de pessoas recebe análise própria. Não declarar aprovação ou dispensa sem evidência.
 
-O programa verifica campos e integridade. A coordenação confere o conteúdo das decisões e a anterioridade do depósito. Não preencher os registros com declarações genéricas apenas para liberar a execução.
+O programa verifica campos e integridade. Yago confere o conteúdo das decisões e a anterioridade do depósito. Não preencher os registros com declarações genéricas apenas para liberar a execução.
 
 **Entrega D5:** plano depositado, dimensão justificável, orçamento aprovado internamente, dados congelados e famílias do piloto excluídas. Intervalo final mais amplo que o alvo é reportado; não se acrescentam perguntas após conhecer o efeito.
 
 ### 9.5 Execução, análise e encerramento da etapa final
 
 1. Conferir novamente as permissões e o instantâneo final. Revisar todos os documentos utilizados e as evidências dos dossiês. Preservar o mesmo conjunto de candidatos por banco nas configurações comparadas.
-2. Preparar metadados e referências com a separação M/R/J; verificar ausência de famílias do piloto, treinamento e testes reais. Congelar arquivos e índices antes das respostas finais.
+2. Preparar metadados e referências em etapas individuais separadas; verificar ausência de famílias do piloto, treinamento e testes reais. Congelar arquivos e índices antes das respostas finais.
 3. Executar as seis configurações e a estabilidade com a política aprovada. Conferir totais, versões e erros; uma falha técnica exige nova execução identificada ou decisão de exclusão justificada e aplicada aos pares afetados, sem selecionar respostas pelo resultado.
-4. Entregar formulários cegos a J1/J2. Preservar julgamentos individuais, medir esforço e conciliar divergências conforme a rubrica congelada. Pendências impedem tratar a base como concluída.
+4. Gerar J1 com rótulos ocultos. Yago avalia, mede esforço e reavalia a amostra após o intervalo previsto. Preservar a primeira passagem e registrar divergências. Pendências impedem tratar a base como concluída.
 5. Analisar adequação por contraste e sua população elegível; atributos filtrados e não filtrados; cobertura, exclusão indevida, sustentação e completude. Preservar pares e famílias em 5.000 reamostragens dentro de cada banco. Os quantis são 0,025/0,975 para 95% e 0,008333/0,991667 para 98,33%, com interpolação linear.
 6. Relatar também estabilidade e sensibilidade de recuperação em três, cinco e dez trechos, como análises exploratórias. Apresentar falhas de representação, recuperação, filtragem e uso de evidência, com casos e denominadores.
-7. Conferir resultados com um revisor independente. Publicar tabelas, limitações, decisões documentais recomendadas, versões e materiais permitidos. Atualizar o manuscrito de protocolo para relatar o experimento efetivamente executado, sem preservar afirmações de execução futura como resultados.
+7. Conferir resultados em uma segunda passagem de auditoria pessoal, com testes de integridade e registro das limitações. Auditoria externa futura é opcional. Publicar tabelas, limitações, decisões documentais recomendadas, versões e materiais permitidos. Atualizar o manuscrito de protocolo para relatar o experimento efetivamente executado, sem preservar afirmações de execução futura como resultados.
 
-Preparar testes de compreensão da documentação com três a cinco leitores iniciantes como rodada qualitativa proposta. Pedir que expliquem o objetivo, localizem o próximo passo, executem a demonstração e distingam exemplos fictícios de resultados reais. Registrar dúvidas, falhas e revisões. Essa rodada verifica a clareza editorial, em paralelo com a avaliação científica, e não produz uma estimativa estatística de compreensão da população.
+Como melhoria futura opcional, testar a compreensão da documentação com três a cinco leitores iniciantes. Essa participação não é requisito para a execução individual. Pedir que expliquem o objetivo, localizem o próximo passo, executem a demonstração e distingam exemplos fictícios de resultados reais. Registrar dúvidas, falhas e revisões. Essa rodada verifica a clareza editorial, em paralelo com a avaliação científica, e não produz uma estimativa estatística de compreensão da população.
 
-## 10. Cronograma proposto
+## 10. Cronograma por disponibilidade pessoal
 
-O calendário começa quando há equipe e equipamento disponíveis. Os prazos são estimativas; autorizações externas e recrutamento podem alongá-los. Tarefas técnicas com material fictício podem avançar enquanto permissões são analisadas.
+O prazo depende das horas semanais de Yago, das permissões e do equipamento. A preparação técnica com exemplos fictícios pode avançar durante a análise das fontes. O orçamento de preparação e piloto abaixo equivale a cerca de 16 a 27 semanas com oito horas semanais, ou 11 a 18 semanas com doze. O intervalo de reavaliação pode coincidir com outras tarefas.
 
-| Período | Trabalho | Dependência e entrega |
+| Ordem | Trabalho | Condição para avançar |
 |---|---|---|
-| Semana 1 | Papéis, enquadramento ético, inventário dos candidatos, teste de equipamento | Lista de pessoas e diagnóstico inicial |
-| Semana 2 | Termos e regras de acesso, composição dos bancos, fontes aprovadas | D1; coleta aguarda permissões |
-| Semana 3 | Coleta, revisão da extração e segmentação | D2; fontes essenciais resolvidas |
-| Semana 4 | Metadados, perguntas, dossiês, famílias e treinamento | Referências e avaliações independentes |
-| Semana 5 | Testes completos dos modelos, índices e execução técnica | D3 e geração do piloto |
-| Semana 6 | Julgamentos, concordância, conciliação e análise do piloto | D4; esforço real medido |
-| Semana 7 | Simulação de amostra, orçamento final e decisões metodológicas | Dimensionamento revisado |
-| Semana 8 | Depósito do plano e preparação do instantâneo final | D5 após completar as dependências |
-| Depois de D5 | Coleta/revisão final, congelamento, geração, julgamentos e publicação | Prazo recalculado pela amostra e capacidade reais |
+| 1 | Inventário de candidatos e permissões | Fontes essenciais liberadas |
+| 2 | Equipamento e teste técnico fictício, em paralelo | Capacidade e versões verificadas |
+| 3 | Coleta, extração e referências | Texto correto e dossiês registrados |
+| 4 | Metadados, revisão de amostra, famílias e índices | Arquivos congelados antes das saídas |
+| 5 | Geração do piloto e auditoria técnica | Execução completa e decisão de fidelidade |
+| 6 | 450 avaliações iniciais | Primeira passagem preservada |
+| 7 | 90 reavaliações, após pelo menos 14 dias | Consistência e divergências documentadas |
+| 8 | Relatório, simulação de precisão e registro | Amostra final viável fixada |
+| 9 | Etapa final e publicação | Prazo recalculado pelo esforço real |
 
-As etapas da última linha incluem preparação de referências e dimensionamento efetivo antes da geração. Uma execução confirmatória pode exigir semanas adicionais. O calendário de oito semanas pressupõe dedicação suficiente para o orçamento abaixo.
+A disponibilidade semanal é um parâmetro a preencher. Não existe compromisso de oito semanas de calendário nem dependência de recrutamento.
 
 ## 11. Esforço e custos
 
 ### 11.1 Preparação e piloto
 
-| Trabalho | Horas de pessoas, estimativa inicial |
+| Trabalho realizado por Yago | Horas, estimativa inicial |
 |---|---:|
-| Coordenação, decisões, inventário de candidatos e permissões | 32 a 48 |
-| Coleta, extração e revisão documental | 20 a 40 |
-| Metadados M1/M2 e conciliação | 24 a 48 |
-| Perguntas, referências R1/R2 e famílias | 24 a 48 |
-| 900 julgamentos de respostas a 3 minutos | 45 |
-| Treinamento de J e conciliação, adicional | 3 a 6 |
-| Ambiente, validação, execução e auditoria técnica | 16 a 32 |
-| Análise, simulações e revisão estatística | 16 a 28 |
-| Documentação, revisão e teste de compreensão | 6 a 10 |
-| **Total ilustrativo** | **186 a 305** |
+| Inventário e permissões | 12 a 20 |
+| Coleta, extração e revisão | 12 a 24 |
+| Metadados e revisão individual | 12 a 24 |
+| Perguntas, dossiês e famílias | 12 a 24 |
+| Ambiente e execução técnica | 10 a 18 |
+| Calibração e registros de revisão | 8 a 16 |
+| Análise e simulação de precisão | 10 a 18 |
+| Documentação e auditoria pessoal | 4 a 8 |
+| 450 avaliações iniciais e 90 reavaliações, a 3 minutos | 27 |
+| **Total ilustrativo** | **107 a 179** |
 
-Essas horas se somam entre pessoas; elas não representam a jornada individual do autor. Acrescentar uma reserva inicial de 20% resulta em cerca de **223 a 366 horas de pessoas**. O teste técnico adicional de 144 conferências, se necessário, soma 7,2 horas a três minutos, além da preparação e conciliação. Corpus extenso, extração difícil e novas execuções aumentam o orçamento.
+Com reserva de 20%, planejar aproximadamente **128 a 215 horas pessoais**. O teste técnico de 72 conferências, quando necessário, acrescenta 3,6 horas de marcação, além de preparação e processamento. Coleta difícil e novas execuções aumentam o orçamento. As durações são hipóteses a medir pelo piloto.
 
-Medir tempo real por atividade. Cada membro registra início, fim, tarefa, itens concluídos e motivo de retrabalho. Usar mediana e faixa de duração por julgamento, além do total. A hipótese de três minutos precisa ser atualizada pelo piloto.
+### 11.2 Etapa final exploratória
 
-### 11.2 Etapa final
+Como cenário inicial de viabilidade, considerar até **120 perguntas**, oito por banco e classe, com tamanho definitivo decidido após o piloto. São 720 respostas principais e 180 de estabilidade: 900 avaliações iniciais. A reavaliação de 20% acrescenta 180 marcações; total de 1.080, ou **54 horas pessoais** a três minutos, além da preparação e análise.
 
-O cenário ilustrativo do protocolo tem 660 perguntas, 44 por banco e classe. Ele produz 3.960 respostas principais e 990 de estabilidade, com 9.900 julgamentos entre duas pessoas. A três minutos, são **495 horas de julgamentos**, além de coleta, metadados, 1.320 anotações iniciais de dossiês, preparação, conciliação, simulação e análise.
+Condição e exceção somam 48 perguntas nesse cenário, com número de famílias igual ou menor. A análise é exploratória e a precisão precisa ser dimensionada. O alvo de dez pontos percentuais não está garantido. O número 120 é hipótese de planejamento, sem compromisso de executar a amostra antes do piloto.
 
-As classes condição e exceção somam 264 perguntas. Elas atendem ao limiar de 260 somente se representam pelo menos 260 famílias elegíveis distintas, após excluir o piloto, e se a simulação sustenta poder. **660 perguntas são uma ilustração de orçamento, sem constituir a amostra já aprovada.**
+O cenário histórico de 660 perguntas corresponde, com um pesquisador, a 4.950 avaliações iniciais e 990 reavaliações: 297 horas de marcação. Ele permanece uma referência de custo e não é uma meta obrigatória.
 
-No cenário completo, medir tempo por resposta nas 450 saídas do piloto. Estimar processamento das 4.950 saídas finais pela composição das classes e configurações. A projeção simples multiplica a duração do piloto por onze; corrigir pela coleção e comprimento das entradas. Acrescentar indexação, download, armazenamento e margem de repetição.
-
-Calcular custo em reais com valores efetivos: horas de pessoas × valor acordado, horas de equipamento × preço vigente, armazenamento e registro. Ainda não há orçamento monetário, fornecedor contratado ou gasto autorizado neste plano. Antes de contratar, fixar teto de desembolso e alternativas viáveis.
-
-Com disponibilidade conjunta de 30 horas de julgadores por semana, 495 horas de julgamento exigem aproximadamente 16,5 semanas, antes das outras tarefas. Essa conta ajuda a decidir entre o cenário completo e uma amostra exploratória de precisão.
+Medir tempo de GPU e duração por atividade. Estimar custo financeiro com equipamento, armazenamento e eventual contratação efetiva. Não há gasto autorizado ou fornecedor contratado. Registrar disponibilidade semanal e teto de desembolso antes de decidir a dimensão final.
 
 ## 12. Dados, acesso e publicação
 
-Usar o GitHub público para código, guias, decisões publicáveis e resultados agregados. Manter `private/`, `data/` e `runs/` em armazenamento com acesso restrito e cópia de segurança. A regra de exclusão do Git não faz uma cópia de segurança. Conservar originais, avaliações individuais e versões conciliadas em arquivos distintos.
+Usar o GitHub público para código, guias, decisões publicáveis e resultados agregados. Manter `private/`, `data/` e `runs/` em armazenamento com acesso restrito e cópia de segurança. A regra de exclusão do Git não faz uma cópia de segurança. Conservar originais, primeiras avaliações, reavaliações e correções justificadas em arquivos distintos.
 
-A chave de identificação fica com a coordenação. J recebe somente o próprio formulário e as referências. Dados pessoais de avaliadores e documentos com direitos de redistribuição pendentes ficam fora do repositório público.
+Yago mantém a chave separada do formulário e evita consultá-la durante os julgamentos. Dados pessoais e documentos com direitos de redistribuição pendentes ficam fora do repositório público.
 
 Quando a publicação de cópias não estiver autorizada, publicar os endereços, datas, identificadores e códigos de integridade permitidos, com instruções de coleta e a limitação de reprodução. Definir a licença do código antes de apresentar o projeto como reutilizável sob uma licença específica. Não inventar DOI ou aprovação institucional.
 
@@ -383,27 +378,27 @@ Ao encerrar cada etapa, registrar decisão, responsável, data, evidência, arqu
 |---|---|
 | Permissão indeterminada ou restrição incompatível | Manter a fonte pendente ou excluí-la; verificar alternativa oficial |
 | Falta de fontes para conta ou cartão | Reavaliar a elegibilidade do banco e documentar substituição antes das execuções |
-| Falta de pessoas para M/R/J | Continuar preparação técnica; recrutar antes da execução científica |
+| Falta de tempo pessoal | Redimensionar calendário e amostra antes da etapa final |
 | Extração perde nota, tabela ou condição | Corrigir com referência ao original e reconstruir trechos e índices |
 | GPU sem memória ou erro de execução | Medir, corrigir ambiente e registrar nova tentativa; mudança de modelo ou precisão exige revisão |
 | Repetição degenerada | Aplicar a sequência de fidelidade; ajuste reprovado bloqueia a liberação |
-| Falha de cegamento | Corrigir exportação; identificar pessoas e itens afetados e decidir reavaliação independente |
-| Rubrica confusa ou muita divergência | Revisar treinamento, registrar versão e reavaliar uniformemente os itens afetados |
+| Identificação de configuração durante a avaliação | Registrar ocorrência, itens e impacto; conservar o limite de cegamento no relato |
+| Rubrica confusa ou inconsistência entre passagens | Revisar treinamento, registrar versão e reavaliar uniformemente os itens afetados |
 | Poucas famílias elegíveis | Adotar análise exploratória e dimensionamento de precisão por contraste |
 | Custo acima do teto | Redimensionar antes da etapa final e registrar o impacto na inferência |
 | Documento muda depois do instantâneo | Preservar a cópia estudada e registrar a diferença; nova coleta recebe nova versão |
 
 ## 14. Primeiras tarefas para colocar o plano em andamento
 
-1. Atribuir responsáveis e disponibilidade; confirmar as seis pessoas distintas M/R/J.
-2. Criar o inventário dos seis candidatos e conferir as fontes de conta e cartão.
-3. Preencher registros de permissões por domínio e documento, sem antecipar aprovações.
-4. Executar a demonstração e testar E5/Qwen com material fictício no equipamento escolhido.
-5. Definir as fontes liberadas, coletar o piloto e revisar integralmente os textos incluídos.
-6. Preparar as 60 perguntas, as referências e a reserva de famílias.
-7. Executar, avaliar e relatar o piloto; recalcular prazo, esforço e amostra.
+1. Registrar as horas semanais disponíveis e o equipamento de Yago.
+2. Abrir o inventário dos candidatos e os registros de permissões.
+3. Executar a demonstração e validar os modelos com material fictício.
+4. Liberar fontes, coletar e preparar as referências antes das saídas.
+5. Preparar metadados, 60 perguntas, famílias e índices.
+6. Executar o piloto individual, incluindo reavaliação de amostra.
+7. Fixar uma etapa final exploratória compatível com o tempo e a precisão viáveis.
 
-O [guia de execução](execucao.md) contém os comandos. O [modelo de registros](../examples/planning-records.template.json) reúne os campos de gestão e decisões. Ele complementa os formatos específicos de fontes, perguntas, avaliações e congelamento.
+O [guia de execução](execucao.md) contém os comandos. O [adendo individual](protocolo-individual.md) documenta a mudança metodológica. O [modelo de registros](../examples/planning-records.template.json) parte de um único pesquisador, com decisões pendentes.
 
 ## Fontes de referência
 

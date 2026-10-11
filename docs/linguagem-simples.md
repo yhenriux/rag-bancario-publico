@@ -33,7 +33,7 @@ O protocolo conserva sua versão científica revisada. Os guias oferecem explica
 
 ## Como testar com leitores
 
-A equipe precisa testar a compreensão com pessoas do público-alvo. Esse teste ainda está pendente.
+Testar a compreensão com pessoas do público-alvo é uma melhoria editorial futura. Esse teste está pendente e não condiciona a execução individual do experimento. A revisão de clareza pelo próprio pesquisador continua prevista, com seus limites registrados.
 
 Convide leitores sem experiência em RAG. Peça que usem a documentação para fazer estas tarefas:
 

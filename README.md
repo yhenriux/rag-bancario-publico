@@ -21,11 +21,11 @@ Os valores e os cartões usados nos exemplos deste repositório são fictícios.
 | Entender a ideia, sem programar | [O estudo em linguagem simples](docs/entenda-o-projeto.md) |
 | Ver um exemplo no seu computador | [Primeiros passos](docs/primeiros-passos.md) |
 | Preparar e executar a pesquisa | [Guia de execução](docs/execucao.md) |
-| Planejar equipe, bancos, permissões, modelos e piloto | [Planejamento completo](docs/plano-execucao.md) |
+| Planejar tempo pessoal, bancos, permissões, modelos e piloto | [Planejamento completo](docs/plano-execucao.md) |
 | Saber como as pessoas avaliam as respostas | [Guia de avaliação](docs/avaliacao.md) |
 | Entender uma palavra técnica | [Glossário](docs/glossario.md) |
 | Acompanhar o que já está pronto | [Plano de trabalho](docs/roadmap.md) |
-| Consultar o desenho científico completo | [Protocolo de pesquisa](docs/protocolo.md) |
+| Consultar o desenho científico completo | [Adendo individual ativo](docs/protocolo-individual.md) |
 
 ## Veja a demonstração
 
@@ -68,25 +68,25 @@ As descrições adicionais ajudam a buscar. O modelo que produz a resposta receb
 - Cálculos de cobertura das fontes, concordância entre avaliadores e diferenças entre sistemas.
 - Testes automáticos e guias para executar cada etapa.
 
-**A pesquisa com bancos reais ainda não foi executada.** Os modelos precisam ser validados no equipamento do piloto. A equipe também precisa selecionar as fontes, preparar as perguntas e realizar as avaliações humanas.
+**A pesquisa com bancos reais ainda não foi executada.** Os modelos precisam ser validados no equipamento do piloto. Yago seleciona as fontes, prepara as perguntas e realiza as avaliações individuais.
 
 ## Como a pesquisa avança
 
 1. Selecionar três bancos e conferir suas fontes oficiais.
 2. Coletar e revisar os documentos.
 3. Preparar um teste inicial, chamado piloto, com 60 perguntas.
-4. Verificar as buscas, as respostas, o esforço da equipe e os problemas técnicos.
+4. Verificar as buscas, as respostas, o esforço pessoal e os problemas técnicos.
 5. Definir a quantidade de perguntas da etapa final e registrar o plano publicamente.
 6. Executar a etapa final com perguntas e famílias de regras reservadas.
 7. Avaliar as respostas, analisar os resultados e publicar os materiais permitidos.
 
-O plano prevê duas pessoas para descrever documentos, duas para preparar referências e duas para avaliar respostas. [Veja os papéis e o orçamento](docs/entenda-o-projeto.md).
+O plano ativo prevê um pesquisador em etapas separadas de preparação, julgamento e reavaliação. O estudo é exploratório e declara a ausência de avaliação independente. [Veja os papéis e o orçamento](docs/entenda-o-projeto.md).
 
 ## Documentação em linguagem simples
 
 Usamos frases diretas, palavras comuns e exemplos próximos do problema. Explicamos os termos técnicos quando aparecem. A [política de linguagem simples](docs/linguagem-simples.md) adota como referência a Lei nº 15.263/2025 e inclui um roteiro para testar os textos com leitores iniciantes.
 
-O protocolo científico conserva a versão revisada do desenho. Os guias explicam como aplicar esse desenho no projeto.
+O [adendo individual](docs/protocolo-individual.md) define o desenho ativo. O [protocolo anterior](docs/protocolo.md) permanece preservado como histórico; seus requisitos de equipe e orçamento foram substituídos pelo adendo.
 
 ## Contribua
 

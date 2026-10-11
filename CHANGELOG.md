@@ -2,6 +2,12 @@
 
 ## Preparação do repositório, 11 de outubro de 2026
 
+- Correção para execução por Yago como único pesquisador.
+- Adendo individual ativo, referências congeladas e reavaliação de amostra.
+- Remoção da exigência de equipe e do julgamento duplo no planejamento ativo.
+- Formulários e orçamento usam um julgador por padrão; opção explícita para dois julgadores reais.
+- Desenho exploratório, limites de independência e cegamento e cenário final de até 120 perguntas.
+
 - Planejamento completo de seleção, permissões, modelos, piloto e etapa final.
 - Cronograma, orçamento de esforço, decisões de avanço e modelo de registros pendentes.
 

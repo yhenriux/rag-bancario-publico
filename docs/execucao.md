@@ -2,7 +2,7 @@
 
 [Voltar ao início](../README.md) · [Consultar palavras técnicas](glossario.md)
 
-Este guia serve à equipe que vai executar a pesquisa. O código está preparado; a seleção dos bancos, o piloto e os julgamentos humanos ainda precisam acontecer.
+Este guia serve à execução individual por Yago. O [adendo individual](protocolo-individual.md) define o desenho ativo. O código está preparado; a seleção dos bancos, o piloto e os julgamentos humanos ainda precisam acontecer.
 
 Antes dos comandos, consulte o [planejamento completo](plano-execucao.md). Ele define os responsáveis, as entregas e as decisões necessárias para cada etapa.
 
@@ -28,7 +28,7 @@ Se o PowerShell bloquear a ativação, use o Prompt de Comando. Instale as depen
 python -m pip install -r requirements.txt
 ```
 
-PyTorch precisa corresponder ao equipamento. A geração usa precisão FP16 na GPU e FP32 na CPU. Esses nomes indicam a forma de representar números nos cálculos. A equipe precisa verificar a memória disponível antes de baixar e executar os modelos.
+PyTorch precisa corresponder ao equipamento. A geração usa precisão FP16 na GPU e FP32 na CPU. Esses nomes indicam a forma de representar números nos cálculos. Yago precisa verificar a memória disponível antes de baixar e executar os modelos.
 
 Uma mudança de precisão ou quantização precisa ser testada e registrada para todas as configurações. Quantização é uma forma de reduzir a memória dos modelos.
 
@@ -44,7 +44,7 @@ Confira o campo `device` no arquivo criado. Use `cuda:0` para uma GPU compatíve
 
 Conserve esse arquivo. O código exige versões identificadas por SHA, um código que aponta para uma revisão dos arquivos. [Veja o glossário](glossario.md).
 
-As instruções de busca e resposta estão nessa configuração. A equipe revisa e fixa seu texto antes da etapa final. Registre também as versões instaladas:
+As instruções de busca e resposta estão nessa configuração. Yago revisa e fixa seu texto antes da etapa final. Registre também as versões instaladas:
 
 ```bash
 python -m pip freeze > private/dependencias.txt
@@ -100,9 +100,9 @@ O registro conserva o documento, a seção, as posições no texto e o código d
 
 ## 7. Prepare as anotações e perguntas
 
-M1 e M2 descrevem os documentos de forma independente. Depois, conservam as anotações originais e produzem uma versão conjunta em `private/pilot-metadata.json`.
+Yago prepara e congela as referências nas fontes originais antes das descrições de busca e das saídas. Depois descreve os documentos em `private/pilot-metadata.json`, preserva a versão inicial e registra a revisão individual.
 
-R1 e R2 preparam as perguntas e as referências nas fontes originais. Eles trabalham sem acesso às descrições de M ou às respostas dos sistemas.
+Perguntas, famílias, dossiês e mapa de evidências ficam fixados antes da geração. A mesma pessoa conhece as fontes e os procedimentos; o estudo declara esse limite de independência.
 
 O piloto tem 60 perguntas: quatro de cada grupo por banco. Use o formato de `examples/questions.jsonl`, mantendo o campo `origin` para indicar a origem real de cada pergunta.
 
@@ -123,7 +123,7 @@ E5 representa o sentido dos textos. Qwen recebe a pergunta e o texto original do
 
 O gerador recebe até 4.096 tokens e produz até 512 tokens de resposta. Se a entrada exceder o limite, o código retira os últimos trechos inteiros e registra a retirada.
 
-A geração principal usa uma política fixa sem amostragem. O código usa duas sementes adicionais, 43 e 44, para verificar estabilidade em 25% das perguntas de A, B e C. A equipe precisa aprovar e registrar a regra de arredondamento antes da etapa final.
+A geração principal usa uma política fixa sem amostragem. O código usa duas sementes adicionais, 43 e 44, para verificar estabilidade em 25% das perguntas de A, B e C. Yago precisa aprovar e registrar a regra de arredondamento antes da etapa final.
 
 ## 9. Confira os problemas técnicos
 
@@ -131,14 +131,14 @@ O piloto precisa verificar se contextos idênticos produzem respostas idênticas
 
 O código registra repetição degenerada: um bloco de pelo menos vinte tokens repetido três vezes seguidas.
 
-Se esse problema exigir ajuste, a equipe executa o teste da penalidade e os doze casos de fidelidade:
+Se esse problema exigir ajuste, Yago executa o teste da penalidade e os doze casos de fidelidade:
 
 ```bash
 python audit.py processor private/processor-check.json
 python fidelity.py private/study.json examples/fidelity_cases.json runs/fidelity
 ```
 
-O segundo comando produz 72 saídas técnicas e formulários cegos para J1 e J2. Eles conferem valores, unidades, datas e identificadores. O piloto pode exigir até 144 conferências adicionais.
+O segundo comando produz 72 saídas técnicas e um formulário individual J1 com os rótulos ocultos. Yago confere valores, unidades, datas e identificadores. O piloto pode exigir 72 conferências adicionais.
 
 Qualquer perda de um item antes preservado impede aceitar o ajuste. Persistência da repetição, falha de fidelidade ou incompatibilidade da implementação suspende a etapa final até revisão registrada.
 
@@ -150,24 +150,24 @@ Depois que a execução terminar, reúna as respostas e prepare os formulários:
 
 ```bash
 python study.py combine runs/pilot private/pilot-runs.jsonl
-python study.py blind private/pilot-runs.jsonl private/pilot-judging
+python study.py blind private/pilot-runs.jsonl private/pilot-judging --judges 1
 ```
 
 O primeiro comando verifica a conclusão da execução. O segundo oculta configuração e semente e muda a ordem das respostas para cada avaliador.
 
-Entregue a J1 e J2 somente os respectivos formulários e as referências necessárias. A coordenação conserva a chave de identificação.
+Yago usa somente J1 e as referências necessárias. Guarda a chave em arquivo separado e evita consultá-la durante o julgamento. O conhecimento anterior limita o cegamento.
 
-Registre as avaliações individuais. Depois, registre a decisão conjunta e a justificativa. Separe os julgamentos principais das respostas adicionais de estabilidade.
+Preserve a primeira avaliação e reavalie 20% após no mínimo 14 dias, sem consultar a primeira marcação. Use a segunda passagem como diagnóstico de consistência. Separe respostas principais e estabilidade.
 
 ## 11. Compare as avaliações e calcule os resultados
 
-Para comparar M1 e M2 antes da decisão conjunta:
+Para comparar duas passagens da mesma pessoa na amostra revisada:
 
 ```bash
-python study.py agreement private/metadata-annotations.csv runs/metadata-agreement.json --annotators M1 M2 --set-attributes product public
+python study.py agreement private/metadata-annotations.csv runs/metadata-agreement.json --annotators rodada1 rodada2 --set-attributes product public
 ```
 
-Use o mesmo comando para R1/R2 ou J1/J2, informando os nomes e os campos correspondentes. Campos que representam conjuntos precisam de listas JSON no CSV.
+Use o mesmo comando para descrições, referências ou julgamentos reavaliados. `rodada1` e `rodada2` identificam Yago em dois momentos. Relate consistência intra-avaliador; não são pessoas independentes. Campos que representam conjuntos precisam de listas JSON no CSV.
 
 Para analisar as respostas principais já avaliadas:
 
@@ -194,7 +194,7 @@ Calcule os códigos dos arquivos:
 python prepare.py hashes private/input-hashes.json config=private/study.json chunks=data/final-chunks.jsonl metadata=private/final-metadata.json questions=private/final-questions.jsonl index_inputs=data/final-index/inputs.json index_A=data/final-index/A.pt index_B=data/final-index/B.pt index_Bp=data/final-index/Bp.pt
 ```
 
-Inclua esses códigos no campo `input_hashes` de `private/freeze.json`. O código confere os arquivos. A coordenação verifica o conteúdo das decisões e a anterioridade do depósito.
+Inclua esses códigos no campo `input_hashes` de `private/freeze.json`. O código confere os arquivos. Yago verifica o conteúdo das decisões e a anterioridade do depósito.
 
 Execute a etapa final:
 
@@ -202,4 +202,4 @@ Execute a etapa final:
 python experiment.py run private/study.json data/final-chunks.jsonl private/final-metadata.json private/final-questions.jsonl data/final-index runs/final --phase final --gate private/freeze.json
 ```
 
-Repita os controles de geração, avaliação e análise. Uma conclusão confirmatória exige os requisitos estatísticos e de registro do [protocolo](protocolo.md).
+Repita os controles de geração, avaliação e análise. A análise permanece exploratória conforme o [adendo individual](protocolo-individual.md).

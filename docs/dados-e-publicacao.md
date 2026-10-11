@@ -15,7 +15,7 @@ Cada arquivo precisa ter uma origem e uma versão identificadas. A publicação 
 | `private/` | Anotações, referências, decisões e chaves | A coordenação define quem pode acessar. |
 | `runs/` | Resultados e registros das execuções | Ficam fora do Git por padrão. |
 
-O arquivo `.gitignore` evita a inclusão automática dessas pastas no Git. Ele não controla o acesso das pessoas no computador ou no armazenamento da equipe.
+O arquivo `.gitignore` evita a inclusão automática dessas pastas no Git. Ele não controla o acesso ao computador ou ao armazenamento do pesquisador.
 
 ## O que o registro de uma fonte contém?
 
@@ -31,7 +31,7 @@ Conserve o arquivo original. Gere o texto revisado em outro arquivo. Registre o 
 
 ## O que publicar primeiro?
 
-Código, guias, exemplos fictícios e regras do estudo. Quando a equipe revisar as fontes, poderá publicar o cadastro de endereços e os códigos de conferência permitidos.
+Código, guias, exemplos fictícios e regras do estudo. Após revisar as fontes, Yago pode publicar o cadastro de endereços e os códigos de conferência permitidos.
 
 Documentos coletados e respostas de avaliação precisam de revisão específica antes da publicação. Uma página disponível para leitura pode ter limites para redistribuição.
 

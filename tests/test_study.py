@@ -77,6 +77,10 @@ class StudyChecks(unittest.TestCase):
             write_records(root/'questions.jsonl',qs)
             write_records(root/'runs.jsonl',rs)
             blind(root/'runs.jsonl',root/'judging',2026)
+            self.assertFalse((root/'judging'/'J2.csv').exists())
+            blind(root/'runs.jsonl',root/'two-judges',2026,judges=2)
+            self.assertTrue((root/'two-judges'/'J2.csv').exists())
+            with self.assertRaises(ValueError):blind(root/'runs.jsonl',root/'invalid',2026,judges=0)
             with (root/'judging'/'J1.csv').open() as f:
                 reader=csv.DictReader(f);rows=list(reader)
                 self.assertNotIn('config',reader.fieldnames)

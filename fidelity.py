@@ -1,4 +1,4 @@
-"""72 saídas técnicas, contexto fixo; julgamento humano J1/J2 separado da adequação."""
+"""72 saídas técnicas, contexto fixo; conferência individual separada da adequação."""
 import argparse
 import os
 import json
@@ -7,7 +7,8 @@ from pathlib import Path
 from study import digest, load, write, write_csv, write_records
 
 
-def main(config_path,cases_path,output):
+def main(config_path,cases_path,output,judges=1):
+    if judges not in (1,2):raise ValueError('Escolha um ou dois julgadores reais')
     os.environ.setdefault('CUBLAS_WORKSPACE_CONFIG',':4096:8')
     import torch
     from transformers import AutoModelForCausalLM,LogitsProcessorList,RepetitionPenaltyLogitsProcessor
@@ -50,7 +51,7 @@ def main(config_path,cases_path,output):
         rows.append({'blind_id':blind_id,'answer':r['answer'],'required_items':json.dumps(r['required_items'],ensure_ascii=False),
                      'preserved_items':'','omissions':'','alterations':'','invented_identifiers':'','notes':''})
     write_records(out/'private_key.jsonl',key)
-    for judge in ('J1','J2'):
+    for judge in ('J1','J2')[:judges]:
         ordered=list(rows);rng.shuffle(ordered)
         write_csv(out/(judge+'.csv'),ordered,list(rows[0]))
 
@@ -58,4 +59,5 @@ def main(config_path,cases_path,output):
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     for name in ('config','cases','output'):p.add_argument(name)
-    a=p.parse_args();main(a.config,a.cases,a.output)
+    p.add_argument('--judges',type=int,choices=(1,2),default=1)
+    a=p.parse_args();main(a.config,a.cases,a.output,a.judges)

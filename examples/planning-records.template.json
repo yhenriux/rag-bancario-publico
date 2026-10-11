@@ -3,14 +3,20 @@
   "status": "pending",
   "plan_version": null,
   "recorded_at": null,
-  "coordination": null,
   "roles": [
-    {"role": "M1", "person": null, "hours_per_week": null, "training_record": null},
-    {"role": "M2", "person": null, "hours_per_week": null, "training_record": null},
-    {"role": "R1", "person": null, "hours_per_week": null, "training_record": null},
-    {"role": "R2", "person": null, "hours_per_week": null, "training_record": null},
-    {"role": "J1", "person": null, "hours_per_week": null, "training_record": null},
-    {"role": "J2", "person": null, "hours_per_week": null, "training_record": null}
+    {
+      "person": "Yago Henrique Andrade Almeida",
+      "stages": [
+        "source_review",
+        "collection",
+        "reference_preparation",
+        "metadata",
+        "model_execution",
+        "judgment",
+        "analysis"
+      ],
+      "training_record": null
+    }
   ],
   "bank_candidates": [
     {
@@ -21,7 +27,11 @@
       "card_evidence": null,
       "public_portuguese_documents": null,
       "candidate_documents": null,
-      "eligible_reserved_families_by_contrast": {"H1": null, "H2": null, "H3": null},
+      "eligible_reserved_families_by_contrast": {
+        "H1": null,
+        "H2": null,
+        "H3": null
+      },
       "decision": "pending",
       "reason": null,
       "reviewer": null,
@@ -68,46 +78,80 @@
     "fidelity_decision_record": null,
     "blinding_check": null,
     "decision": "pending",
-    "reviewer": null
+    "reviewer": null,
+    "blinding_limitation": "same researcher prepares and judges; system labels hidden"
   },
   "pilot": {
     "questions_expected": 60,
     "main_answers_expected": 360,
     "stability_answers_expected": 90,
-    "answer_judgments_expected": 900,
-    "initial_dossier_annotations_expected": 120,
-    "optional_technical_checks_expected": 144,
+    "answer_judgments_expected": 450,
+    "initial_dossier_annotations_expected": 60,
+    "optional_technical_checks_expected": 72,
     "collection_record": null,
     "questions_record": null,
     "metadata_record": null,
     "dossiers_record": null,
     "family_inventory_record": null,
     "training_record": null,
-    "agreement_records": {"M": null, "R": null, "J": null},
+    "agreement_records": {
+      "metadata_intrarater": null,
+      "reference_intrarater": null,
+      "judgment_intrarater": null
+    },
     "individual_judgments_record": null,
-    "adjudicated_judgments_record": null,
     "effort_record": null,
     "analysis_record": null,
     "excluded_families_record": null,
-    "decision_record": null
+    "decision_record": null,
+    "repeat_judgments_expected": 90,
+    "repeat_judgments_record": null,
+    "minimum_repeat_interval_days": 14
   },
   "final_stage": {
     "sample_simulation_record": null,
-    "independent_statistical_review": null,
     "sample_decision_record": null,
-    "analysis_status_by_contrast": {"H1": "pending", "H2": "pending", "H3": "pending"},
+    "analysis_status_by_contrast": {
+      "H1": "exploratory",
+      "H2": "exploratory",
+      "H3": "exploratory"
+    },
     "ethics_review_record": null,
     "roles_record": null,
     "public_registration_url": null,
     "registered_at": null,
     "budget_record": null,
     "freeze_record": null,
-    "decision": "pending"
+    "decision": "pending",
+    "statistical_validation_record": null,
+    "illustrative_questions": 120,
+    "illustrative_initial_judgments": 900,
+    "illustrative_repeat_judgments": 180
   },
   "effort_entries": [
-    {"person": null, "task": null, "started_at": null, "ended_at": null, "items_completed": null, "rework_reason": null}
+    {
+      "person": null,
+      "task": null,
+      "started_at": null,
+      "ended_at": null,
+      "items_completed": null,
+      "rework_reason": null
+    }
   ],
   "decisions": [
-    {"id": null, "stage": null, "decision": "pending", "reason": null, "evidence": [], "responsible": null, "recorded_at": null, "affected_files": [], "next_action": null}
-  ]
+    {
+      "id": null,
+      "stage": null,
+      "decision": "pending",
+      "reason": null,
+      "evidence": [],
+      "responsible": null,
+      "recorded_at": null,
+      "affected_files": [],
+      "next_action": null
+    }
+  ],
+  "research_design": "single_researcher_exploratory",
+  "researcher": "Yago Henrique Andrade Almeida",
+  "hours_per_week": null
 }

@@ -33,8 +33,8 @@ Modelo: [questions.jsonl](../examples/questions.jsonl).
 | `family` | Família da regra, com identificação do banco. |
 | `class` | Grupo principal da pergunta. |
 | `question` | Texto da pergunta. |
-| `query_attributes` | Produto e público explícitos na pergunta, já codificados pela equipe. |
-| `origin` | Origem da pergunta: canal oficial ou elaboração da equipe. |
+| `query_attributes` | Produto e público explícitos na pergunta, já codificados pelo pesquisador. |
+| `origin` | Origem da pergunta: canal oficial ou elaboração do pesquisador. |
 
 Os grupos aceitos pelo código são `direta`, `condicao`, `excecao`, `ambiguidade` e `insuficiencia`.
 
@@ -44,11 +44,11 @@ Se produto e público não estiverem explícitos, use `{}` em `query_attributes`
 
 Modelo: [metadata.json](../examples/metadata.json).
 
-O arquivo usa o ID de cada trecho como chave. Cada descrição contém listas de produto e público, tipo de documento, evidência textual e registro da decisão conjunta.
+O arquivo usa o ID de cada trecho como chave. Cada descrição contém listas de produto e público, tipo de documento, evidência textual e registro da decisão documentada.
 
 Use `geral` quando a fonte comprovar alcance geral. Use `desconhecido` quando o valor não puder ser determinado. Essas categorias ficam sozinhas na lista do atributo.
 
-A fonte precisa justificar os valores. M1 e M2 conservam as anotações individuais antes da decisão conjunta.
+A fonte precisa justificar os valores. Yago conserva a versão inicial e as revisões individuais. `adjudication_id` mantém o nome técnico do campo e identifica uma decisão registrada, sem implicar consenso entre pessoas.
 
 ## Referência de avaliação
 
@@ -63,7 +63,7 @@ Modelo: [dossiers.jsonl](../examples/dossiers.jsonl).
 | `reference_units` | Códigos das passagens de referência. |
 | `sufficient_sets` | Conjuntos alternativos de passagens que bastam para responder. |
 | `expected_action` | Resposta, esclarecimento ou reconhecimento da falta de evidência. |
-| `adjudication_id` | Registro da decisão conjunta de R1/R2. |
+| `adjudication_id` | Registro da decisão individual sobre a referência. |
 
 O arquivo [unit_map.json](../examples/unit_map.json) liga os IDs dos trechos às passagens de referência. Passagens repetidas em trechos sobrepostos usam o mesmo código de evidência.
 
@@ -71,11 +71,11 @@ O arquivo [unit_map.json](../examples/unit_map.json) liga os IDs dos trechos às
 
 Modelo: [annotations.template.csv](../examples/annotations.template.csv).
 
-Cada linha registra item, atributo, pessoa, valor, evidência e tempo. Para campos que são conjuntos, escreva uma lista JSON na célula. Exemplos: `["alfa", "beta"]` ou `["E1", "E2"]`.
+Cada linha registra item, atributo, pessoa ou rodada, valor, evidência e tempo. No estudo individual, `rodada1` e `rodada2` correspondem ao mesmo pesquisador. Para campos que são conjuntos, escreva uma lista JSON na célula. Exemplos: `["alfa", "beta"]` ou `["E1", "E2"]`.
 
 O comando `study.py agreement` exige duas anotações por item e atributo. Ele interrompe o cálculo se faltar um par.
 
-## Julgamento principal já conciliado
+## Julgamento principal individual
 
 Modelo: [judgments.template.csv](../examples/judgments.template.csv).
 
@@ -83,7 +83,7 @@ Cada linha contém `question_id`, `config`, `adequacy`, `adjudication_id` e `rea
 
 Use `0` ou `1` para adequação. Inclua somente a resposta principal de cada pergunta e configuração. Guarde as respostas de estabilidade em outra tabela.
 
-Esse arquivo registra a decisão conjunta. Os formulários originais de J1/J2 permanecem preservados.
+Esse arquivo registra a primeira avaliação individual. O formulário J1 e a segunda passagem da amostra permanecem preservados. A chave privada relaciona IDs com configurações somente após os julgamentos.
 
 ## Liberação da etapa final
 
