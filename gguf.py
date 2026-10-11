@@ -119,7 +119,7 @@ def local(inputs, executable, model_file, output, threads=8, gate_path=None):
     check_final(inputs,gate_path)
     out = Path(output)
     out.mkdir(parents=True, exist_ok=True)
-    args = [executable, '-m', model_file, '-c', '8192', '-b', '512', '-ub', '128', '-t', str(threads),
+    args = [executable, '-m', model_file, '-c', '8192', '-b', '512', '-ub', '128', '--no-repack', '-t', str(threads),
             '-tb', str(threads), '-np', '1', '-ngl', '0', '--host', '127.0.0.1',
             '--port', '18771', '--no-webui', '--no-warmup']
     sha=hashlib.sha256()
@@ -127,7 +127,7 @@ def local(inputs, executable, model_file, output, threads=8, gate_path=None):
         for block in iter(lambda:stream.read(8*1024*1024),b''):sha.update(block)
     identity={'backend':'llama.cpp b11557','precision':'Q4_K_M','threads':threads,
               'model_sha256':sha.hexdigest(),'executable_sha256':hashlib.sha256(Path(executable).read_bytes()).hexdigest(),
-              'context_tokens':8192,'gpu_layers':0,'batch_tokens':512,'microbatch_tokens':128}
+              'context_tokens':8192,'gpu_layers':0,'batch_tokens':512,'microbatch_tokens':128,'weight_repacking':False}
     atomic(out / 'runtime.json', dict(identity,server_command=args,inputs_sha256=digest(json.dumps(inputs,sort_keys=True))))
     with (out / 'server.log').open('a') as log:
         server = subprocess.Popen(args, stdout=log, stderr=log)

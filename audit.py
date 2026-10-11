@@ -50,6 +50,31 @@ def verify_processor():
             'generated_tokens_still_penalized':True}
 
 
+def fidelity_report(answers_path,cases_path,runtime_path,output):
+    from study import write,digest
+    cases=load(cases_path);answers=records(answers_path);runtime=load(runtime_path)
+    expected={f'probe-{i+1}-{s}' for i in range(len(cases)) for s in (None,43,44)}
+    if len(cases)!=12 or {a['id'] for a in answers}!=expected or len(answers)!=36:
+        raise ValueError('Exigir doze controles completos nas três políticas de semente')
+    missing=[];bad=[];trunc=[];count=0
+    for answer in answers:
+        case=cases[int(answer['id'].split('-')[1])-1]
+        for item in case['required_items']:
+            count+=1
+            if not any(x in (answer['answer'] or '') for x in item['equivalents']):
+                missing.append({'run_id':answer['id'],'item_id':item['id']})
+        engine=answer.get('engine_response') or {}
+        if degenerate(engine.get('tokens',[])):bad.append(answer['id'])
+        if engine.get('truncated') or engine.get('stop_type')=='limit':trunc.append(answer['id'])
+    result={'generations':len(answers),'required_item_checks':count,'missing_items':missing,
+        'degenerate_outputs':bad,'truncated_outputs':trunc,'human_validated':False,
+        'passed':not(missing or bad or trunc) and all(a['status']=='completed' for a in answers),
+        'elapsed_seconds':sum(a['elapsed_seconds'] for a in answers),
+        'runtime':{k:v for k,v in runtime.items() if k not in ('server_command',)},
+        'cases_sha256':digest(Path(cases_path).read_text()),'answers_sha256':digest(Path(answers_path).read_text())}
+    write(output,result);return result
+
+
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     s=p.add_subparsers(dest='command',required=True)

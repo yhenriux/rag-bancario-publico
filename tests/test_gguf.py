@@ -1,6 +1,10 @@
 import tempfile
+import json
+import hashlib
+from pathlib import Path
 import unittest
-from gguf import execute
+from gguf import execute,check_final
+from study import digest
 
 
 class Resume(unittest.TestCase):
@@ -26,3 +30,22 @@ class Resume(unittest.TestCase):
             self.assertEqual(rows[0]['status'],'failed')
             self.assertIsNone(rows[0]['answer'])
             self.assertEqual(len(rows[0]['errors']),2)
+
+    def test_final_requires_matching_controls_and_new_families(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder);checks={}
+            data={'fidelity':{'passed':True},'pilot':{'completed':True,'technical_summary':[{'failed':0,'degenerate':0}]},'sources':{'banks':['inter','bradesco']}}
+            for name,value in data.items():
+                p=root/(name+'.json');p.write_text(json.dumps(value))
+                checks[name]={'path':str(p),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()}
+            inputs=[{'phase':'final','family':'new','id':'F1','prompt':'p'}]
+            gate={'method':'assisted_exploratory_final','human_validated':False,
+                'public_registration_url':'https://github.com/yhenriux/rag-bancario-publico/commit/'+'a'*40,
+                'pilot_families':['old'],'inputs_sha256':digest(json.dumps(inputs,sort_keys=True)),'checks':checks}
+            path=root/'gate.json';path.write_text(json.dumps(gate))
+            check_final(inputs,path)
+            checks_file=root/'pilot.json';checks_file.write_text('{}')
+            with self.assertRaises(ValueError):check_final(inputs,path)
+            checks_file.write_text(json.dumps(data['pilot']))
+            inputs[0]['family']='old'
+            with self.assertRaises(ValueError):check_final(inputs,path)

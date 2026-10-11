@@ -1,0 +1,11 @@
+{
+  "reason": "A redução de lote não elimina a pressão de memória. O backend permite desativar a reorganização interna dos pesos (--no-repack), sem mudar arquivo ou quantização. Decisão por viabilidade técnica antes de concluir o piloto.",
+  "discarded_batch512_generations": 18,
+  "all_configurations_same": true,
+  "restart_whole_pilot": true,
+  "batch_tokens": 512,
+  "microbatch_tokens": 128,
+  "weight_repacking": false,
+  "context_tokens": 8192,
+  "requires_fidelity_recheck": true
+}

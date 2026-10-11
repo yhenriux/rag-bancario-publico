@@ -19,10 +19,33 @@ def diagnostics(item,answer):
        'invalid_citations':sorted(set(citations)-evidence),
        'valid_citations':sorted(set(citations)&evidence),
        'evidence_present':bool(evidence),'missing_citation_with_evidence':bool(evidence) and not citations,
-       'truncated':engine.get('truncated',False),'stop_type':engine.get('stop_type'),
+       'truncated':bool(engine.get('truncated')) or engine.get('stop_type')=='limit',
+       'input_truncated':bool(engine.get('truncated')),
+       'output_limited':engine.get('stop_type')=='limit','stop_type':engine.get('stop_type'),
        'output_tokens':engine.get('tokens_predicted'),'degenerate':degenerate(engine.get('tokens',[])),
        'elapsed_seconds':answer['elapsed_seconds'],'answer_sha256':digest(answer['answer'] or ''),
        'human_validated':False}
+
+
+def summarize_retrieval(metrics,qs):
+    means=[]
+    for mode in ('A','B','C','Bp','L'):
+        for k in (3,5,10):
+            rows=[r for r in metrics if r['config']==mode and r.get('k')==k and r.get('recall') is not None]
+            means.append({'config':mode,'k':k,'eligible_questions':len(rows),
+               'mean_anchor_recall':mean(r['recall'] for r in rows) if rows else None,
+               'all_anchors_covered':mean(r['coverage'] for r in rows) if rows else None})
+    lookup={(r['question_id'],r['config'],r.get('k')):r for r in metrics}; contrasts=[]
+    for label,left,right,classes in [('B-A','B','A',{'condicao','excecao'}),('B-Bp','B','Bp',{'condicao','excecao'}),('C-B','C','B',set(q['class'] for q in qs))]:
+        for metric in ('recall','coverage'):
+            pairs=[]
+            for q in qs:
+                if q['class'] not in classes or (label=='C-B' and not q['query_attributes']):continue
+                a=lookup[(q['id'],left,5)].get(metric);b=lookup[(q['id'],right,5)].get(metric)
+                if a is not None and b is not None:pairs.append((q['bank'],q['family'],float(a)-float(b)))
+            contrasts.append({'contrast':label,'metric':metric,'k':5,
+                      'result':paired_bootstrap(pairs) if pairs else None})
+    return means,contrasts
 
 
 def run(root,phase,output):
@@ -53,23 +76,7 @@ def run(root,phase,output):
             'prompt_evidence_ids':row['prompt_evidence_ids']})
     write_records(out/'effective-context.jsonl',effective)
     diag=[diagnostics(p,by[p['id']]) for p in prompts];write_records(out/'diagnostics.jsonl',diag)
-    means=[]
-    for mode in ('A','B','C','Bp','L'):
-        for k in (3,5,10):
-            rows=[r for r in metrics if r['config']==mode and r.get('k')==k and r.get('recall') is not None]
-            means.append({'config':mode,'k':k,'eligible_questions':len(rows),
-               'mean_anchor_recall':mean(r['recall'] for r in rows) if rows else None,
-               'all_anchors_covered':mean(r['coverage'] for r in rows) if rows else None})
-    lookup={(r['question_id'],r['config'],r.get('k')):r for r in metrics}; contrasts=[]
-    for label,left,right,classes in [('B-A','B','A',{'condicao','excecao'}),('B-Bp','B','Bp',{'condicao','excecao'}),('C-B','C','B',set(q['class'] for q in qs))]:
-        for metric in ('recall','coverage'):
-            pairs=[]
-            for q in qs:
-                if q['class'] not in classes or (label=='C-B' and not q['query_attributes']):continue
-                a=lookup[(q['id'],left,5)].get(metric);b=lookup[(q['id'],right,5)].get(metric)
-                if a is not None and b is not None:pairs.append((q['bank'],q['family'],float(a)-float(b)))
-            contrasts.append({'contrast':label,'metric':metric,'k':5,
-                      'result':paired_bootstrap(pairs) if pairs else None})
+    means,contrasts=summarize_retrieval(metrics,qs)
     summary=[]
     for mode in ('A','B','C','Bp','L','S'):
         d=[r for r in diag if r['config']==mode and r['seed'] is None]
@@ -78,7 +85,6 @@ def run(root,phase,output):
            'answers_with_invalid_citations':sum(bool(r['invalid_citations']) for r in d),
            'answers_without_citation_when_evidence_present':sum(r['missing_citation_with_evidence'] for r in d)})
     stable=[]
-    pmap={p['id']:p for p in prompts}
     for q in qs:
         for mode in ('A','B','C'):
             group=[r for r in diag if r['question_id']==q['id'] and r['config']==mode]
