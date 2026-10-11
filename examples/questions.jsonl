@@ -1,0 +1,6 @@
+{"id":"q-direta","bank":"banco-ficticio","family":"banco-ficticio:f1","class":"direta","question":"O cartão Alfa tem anuidade?","query_attributes":{"product":["alfa"],"public":["pf"]},"origin":"ficticia; teste de infraestrutura"}
+{"id":"q-condicao","bank":"banco-ficticio","family":"banco-ficticio:f2","class":"condicao","question":"Tenho cartão Alfa, sou pessoa física e a fatura é R$ 600. Tenho isenção?","query_attributes":{"product":["alfa"],"public":["pf"]},"origin":"ficticia; teste de infraestrutura"}
+{"id":"q-excecao","bank":"banco-ficticio","family":"banco-ficticio:f3","class":"excecao","question":"Após cancelar o cartão Alfa, continuam novos lançamentos de anuidade?","query_attributes":{"product":["alfa"]},"origin":"ficticia; teste de infraestrutura"}
+{"id":"q-ambigua","bank":"banco-ficticio","family":"banco-ficticio:f4","class":"ambiguidade","question":"Tenho isenção de anuidade?","query_attributes":{},"origin":"ficticia; teste de infraestrutura"}
+{"id":"q-insuficiente","bank":"banco-ficticio","family":"banco-ficticio:f5","class":"insuficiencia","question":"Qual será a anuidade do Alfa daqui a dez anos?","query_attributes":{"product":["alfa"]},"origin":"ficticia; teste de infraestrutura"}
+

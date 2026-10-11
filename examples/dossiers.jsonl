@@ -1,0 +1,2 @@
+{"question_id":"q-condicao","class":"condicao","answerable":true,"required_attributes":{"product":"alfa","public":"pf","eligibility":"fatura R$ 600"},"mandatory_requirements":["Informar que R$ 600 é inferior ao requisito de R$ 1.000"],"reference_units":["evidencia-ficticia-1"],"sufficient_sets":[["evidencia-ficticia-1"]],"expected_action":"resposta","adjudication_id":"R-conciliacao-ficticia-1"}
+

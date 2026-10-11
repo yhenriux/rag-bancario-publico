@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Para citar este projeto, informe o repositório e o commit usado. Ainda não há DOI ou resultados finais."
+title: "RAG Bancário Público"
+type: software
+authors:
+  - family-names: "Andrade Almeida"
+    given-names: "Yago Henrique"
+repository-code: "https://github.com/yhenriux/rag-bancario-publico"
+abstract: "Código e documentação de um protocolo sobre busca de evidências e adequação de respostas bancárias. A pesquisa com bancos reais ainda não foi executada."

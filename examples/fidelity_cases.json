@@ -1,0 +1,567 @@
+[
+  {
+    "id": "probe-1",
+    "question": "Informe o valor da tarifa, o percentual e a data de vigência, citando a fonte.",
+    "evidence": [
+      {
+        "id": "F001",
+        "title": "Regra fictícia de teste",
+        "url": "https://example.org/ficticio",
+        "location": "nota:1",
+        "text": "A tarifa é R$ 120,00; o percentual é 1%; a vigência começa em 01/10/2026."
+      }
+    ],
+    "required_items": [
+      {
+        "id": "valor",
+        "value": "R$ 120,00",
+        "equivalents": [
+          "R$ 120,00"
+        ],
+        "rule": "moeda e escala preservadas"
+      },
+      {
+        "id": "percentual",
+        "value": "1%",
+        "equivalents": [
+          "1%"
+        ],
+        "rule": "percentual preservado"
+      },
+      {
+        "id": "data",
+        "value": "01/10/2026",
+        "equivalents": [
+          "01/10/2026"
+        ],
+        "rule": "data preservada"
+      },
+      {
+        "id": "fonte",
+        "value": "F001",
+        "equivalents": [
+          "[F001]"
+        ],
+        "rule": "identificador exato"
+      }
+    ]
+  },
+  {
+    "id": "probe-2",
+    "question": "Informe o valor da tarifa, o percentual e a data de vigência, citando a fonte.",
+    "evidence": [
+      {
+        "id": "F002",
+        "title": "Regra fictícia de teste",
+        "url": "https://example.org/ficticio",
+        "location": "nota:1",
+        "text": "A tarifa é R$ 130,00; o percentual é 2%; a vigência começa em 02/10/2026."
+      }
+    ],
+    "required_items": [
+      {
+        "id": "valor",
+        "value": "R$ 130,00",
+        "equivalents": [
+          "R$ 130,00"
+        ],
+        "rule": "moeda e escala preservadas"
+      },
+      {
+        "id": "percentual",
+        "value": "2%",
+        "equivalents": [
+          "2%"
+        ],
+        "rule": "percentual preservado"
+      },
+      {
+        "id": "data",
+        "value": "02/10/2026",
+        "equivalents": [
+          "02/10/2026"
+        ],
+        "rule": "data preservada"
+      },
+      {
+        "id": "fonte",
+        "value": "F002",
+        "equivalents": [
+          "[F002]"
+        ],
+        "rule": "identificador exato"
+      }
+    ]
+  },
+  {
+    "id": "probe-3",
+    "question": "Informe o valor da tarifa, o percentual e a data de vigência, citando a fonte.",
+    "evidence": [
+      {
+        "id": "F003",
+        "title": "Regra fictícia de teste",
+        "url": "https://example.org/ficticio",
+        "location": "nota:1",
+        "text": "A tarifa é R$ 140,00; o percentual é 3%; a vigência começa em 03/10/2026."
+      }
+    ],
+    "required_items": [
+      {
+        "id": "valor",
+        "value": "R$ 140,00",
+        "equivalents": [
+          "R$ 140,00"
+        ],
+        "rule": "moeda e escala preservadas"
+      },
+      {
+        "id": "percentual",
+        "value": "3%",
+        "equivalents": [
+          "3%"
+        ],
+        "rule": "percentual preservado"
+      },
+      {
+        "id": "data",
+        "value": "03/10/2026",
+        "equivalents": [
+          "03/10/2026"
+        ],
+        "rule": "data preservada"
+      },
+      {
+        "id": "fonte",
+        "value": "F003",
+        "equivalents": [
+          "[F003]"
+        ],
+        "rule": "identificador exato"
+      }
+    ]
+  },
+  {
+    "id": "probe-4",
+    "question": "Informe o valor da tarifa, o percentual e a data de vigência, citando a fonte.",
+    "evidence": [
+      {
+        "id": "F004",
+        "title": "Regra fictícia de teste",
+        "url": "https://example.org/ficticio",
+        "location": "nota:1",
+        "text": "A tarifa é R$ 150,00; o percentual é 4%; a vigência começa em 04/10/2026."
+      }
+    ],
+    "required_items": [
+      {
+        "id": "valor",
+        "value": "R$ 150,00",
+        "equivalents": [
+          "R$ 150,00"
+        ],
+        "rule": "moeda e escala preservadas"
+      },
+      {
+        "id": "percentual",
+        "value": "4%",
+        "equivalents": [
+          "4%"
+        ],
+        "rule": "percentual preservado"
+      },
+      {
+        "id": "data",
+        "value": "04/10/2026",
+        "equivalents": [
+          "04/10/2026"
+        ],
+        "rule": "data preservada"
+      },
+      {
+        "id": "fonte",
+        "value": "F004",
+        "equivalents": [
+          "[F004]"
+        ],
+        "rule": "identificador exato"
+      }
+    ]
+  },
+  {
+    "id": "probe-5",
+    "question": "Informe o valor da tarifa, o percentual e a data de vigência, citando a fonte.",
+    "evidence": [
+      {
+        "id": "F005",
+        "title": "Regra fictícia de teste",
+        "url": "https://example.org/ficticio",
+        "location": "nota:1",
+        "text": "A tarifa é R$ 160,00; o percentual é 5%; a vigência começa em 05/10/2026."
+      }
+    ],
+    "required_items": [
+      {
+        "id": "valor",
+        "value": "R$ 160,00",
+        "equivalents": [
+          "R$ 160,00"
+        ],
+        "rule": "moeda e escala preservadas"
+      },
+      {
+        "id": "percentual",
+        "value": "5%",
+        "equivalents": [
+          "5%"
+        ],
+        "rule": "percentual preservado"
+      },
+      {
+        "id": "data",
+        "value": "05/10/2026",
+        "equivalents": [
+          "05/10/2026"
+        ],
+        "rule": "data preservada"
+      },
+      {
+        "id": "fonte",
+        "value": "F005",
+        "equivalents": [
+          "[F005]"
+        ],
+        "rule": "identificador exato"
+      }
+    ]
+  },
+  {
+    "id": "probe-6",
+    "question": "Informe o valor da tarifa, o percentual e a data de vigência, citando a fonte.",
+    "evidence": [
+      {
+        "id": "F006",
+        "title": "Regra fictícia de teste",
+        "url": "https://example.org/ficticio",
+        "location": "nota:1",
+        "text": "A tarifa é R$ 170,00; o percentual é 6%; a vigência começa em 06/10/2026."
+      }
+    ],
+    "required_items": [
+      {
+        "id": "valor",
+        "value": "R$ 170,00",
+        "equivalents": [
+          "R$ 170,00"
+        ],
+        "rule": "moeda e escala preservadas"
+      },
+      {
+        "id": "percentual",
+        "value": "6%",
+        "equivalents": [
+          "6%"
+        ],
+        "rule": "percentual preservado"
+      },
+      {
+        "id": "data",
+        "value": "06/10/2026",
+        "equivalents": [
+          "06/10/2026"
+        ],
+        "rule": "data preservada"
+      },
+      {
+        "id": "fonte",
+        "value": "F006",
+        "equivalents": [
+          "[F006]"
+        ],
+        "rule": "identificador exato"
+      }
+    ]
+  },
+  {
+    "id": "probe-7",
+    "question": "Informe o valor da tarifa, o percentual e a data de vigência, citando a fonte.",
+    "evidence": [
+      {
+        "id": "F007",
+        "title": "Regra fictícia de teste",
+        "url": "https://example.org/ficticio",
+        "location": "nota:1",
+        "text": "A tarifa é R$ 180,00; o percentual é 7%; a vigência começa em 07/10/2026."
+      }
+    ],
+    "required_items": [
+      {
+        "id": "valor",
+        "value": "R$ 180,00",
+        "equivalents": [
+          "R$ 180,00"
+        ],
+        "rule": "moeda e escala preservadas"
+      },
+      {
+        "id": "percentual",
+        "value": "7%",
+        "equivalents": [
+          "7%"
+        ],
+        "rule": "percentual preservado"
+      },
+      {
+        "id": "data",
+        "value": "07/10/2026",
+        "equivalents": [
+          "07/10/2026"
+        ],
+        "rule": "data preservada"
+      },
+      {
+        "id": "fonte",
+        "value": "F007",
+        "equivalents": [
+          "[F007]"
+        ],
+        "rule": "identificador exato"
+      }
+    ]
+  },
+  {
+    "id": "probe-8",
+    "question": "Informe o valor da tarifa, o percentual e a data de vigência, citando a fonte.",
+    "evidence": [
+      {
+        "id": "F008",
+        "title": "Regra fictícia de teste",
+        "url": "https://example.org/ficticio",
+        "location": "nota:1",
+        "text": "A tarifa é R$ 190,00; o percentual é 8%; a vigência começa em 08/10/2026."
+      }
+    ],
+    "required_items": [
+      {
+        "id": "valor",
+        "value": "R$ 190,00",
+        "equivalents": [
+          "R$ 190,00"
+        ],
+        "rule": "moeda e escala preservadas"
+      },
+      {
+        "id": "percentual",
+        "value": "8%",
+        "equivalents": [
+          "8%"
+        ],
+        "rule": "percentual preservado"
+      },
+      {
+        "id": "data",
+        "value": "08/10/2026",
+        "equivalents": [
+          "08/10/2026"
+        ],
+        "rule": "data preservada"
+      },
+      {
+        "id": "fonte",
+        "value": "F008",
+        "equivalents": [
+          "[F008]"
+        ],
+        "rule": "identificador exato"
+      }
+    ]
+  },
+  {
+    "id": "probe-9",
+    "question": "Informe o valor da tarifa, o percentual e a data de vigência, citando a fonte.",
+    "evidence": [
+      {
+        "id": "F009",
+        "title": "Regra fictícia de teste",
+        "url": "https://example.org/ficticio",
+        "location": "nota:1",
+        "text": "A tarifa é R$ 200,00; o percentual é 9%; a vigência começa em 09/10/2026."
+      }
+    ],
+    "required_items": [
+      {
+        "id": "valor",
+        "value": "R$ 200,00",
+        "equivalents": [
+          "R$ 200,00"
+        ],
+        "rule": "moeda e escala preservadas"
+      },
+      {
+        "id": "percentual",
+        "value": "9%",
+        "equivalents": [
+          "9%"
+        ],
+        "rule": "percentual preservado"
+      },
+      {
+        "id": "data",
+        "value": "09/10/2026",
+        "equivalents": [
+          "09/10/2026"
+        ],
+        "rule": "data preservada"
+      },
+      {
+        "id": "fonte",
+        "value": "F009",
+        "equivalents": [
+          "[F009]"
+        ],
+        "rule": "identificador exato"
+      }
+    ]
+  },
+  {
+    "id": "probe-10",
+    "question": "Informe o valor da tarifa, o percentual e a data de vigência, citando a fonte.",
+    "evidence": [
+      {
+        "id": "F010",
+        "title": "Regra fictícia de teste",
+        "url": "https://example.org/ficticio",
+        "location": "nota:1",
+        "text": "A tarifa é R$ 210,00; o percentual é 10%; a vigência começa em 10/10/2026."
+      }
+    ],
+    "required_items": [
+      {
+        "id": "valor",
+        "value": "R$ 210,00",
+        "equivalents": [
+          "R$ 210,00"
+        ],
+        "rule": "moeda e escala preservadas"
+      },
+      {
+        "id": "percentual",
+        "value": "10%",
+        "equivalents": [
+          "10%"
+        ],
+        "rule": "percentual preservado"
+      },
+      {
+        "id": "data",
+        "value": "10/10/2026",
+        "equivalents": [
+          "10/10/2026"
+        ],
+        "rule": "data preservada"
+      },
+      {
+        "id": "fonte",
+        "value": "F010",
+        "equivalents": [
+          "[F010]"
+        ],
+        "rule": "identificador exato"
+      }
+    ]
+  },
+  {
+    "id": "probe-11",
+    "question": "Informe o valor da tarifa, o percentual e a data de vigência, citando a fonte.",
+    "evidence": [
+      {
+        "id": "F011",
+        "title": "Regra fictícia de teste",
+        "url": "https://example.org/ficticio",
+        "location": "nota:1",
+        "text": "A tarifa é R$ 220,00; o percentual é 11%; a vigência começa em 11/10/2026."
+      }
+    ],
+    "required_items": [
+      {
+        "id": "valor",
+        "value": "R$ 220,00",
+        "equivalents": [
+          "R$ 220,00"
+        ],
+        "rule": "moeda e escala preservadas"
+      },
+      {
+        "id": "percentual",
+        "value": "11%",
+        "equivalents": [
+          "11%"
+        ],
+        "rule": "percentual preservado"
+      },
+      {
+        "id": "data",
+        "value": "11/10/2026",
+        "equivalents": [
+          "11/10/2026"
+        ],
+        "rule": "data preservada"
+      },
+      {
+        "id": "fonte",
+        "value": "F011",
+        "equivalents": [
+          "[F011]"
+        ],
+        "rule": "identificador exato"
+      }
+    ]
+  },
+  {
+    "id": "probe-12",
+    "question": "Informe o valor da tarifa, o percentual e a data de vigência, citando a fonte.",
+    "evidence": [
+      {
+        "id": "F012",
+        "title": "Regra fictícia de teste",
+        "url": "https://example.org/ficticio",
+        "location": "nota:1",
+        "text": "A tarifa é R$ 230,00; o percentual é 12%; a vigência começa em 12/10/2026."
+      }
+    ],
+    "required_items": [
+      {
+        "id": "valor",
+        "value": "R$ 230,00",
+        "equivalents": [
+          "R$ 230,00"
+        ],
+        "rule": "moeda e escala preservadas"
+      },
+      {
+        "id": "percentual",
+        "value": "12%",
+        "equivalents": [
+          "12%"
+        ],
+        "rule": "percentual preservado"
+      },
+      {
+        "id": "data",
+        "value": "12/10/2026",
+        "equivalents": [
+          "12/10/2026"
+        ],
+        "rule": "data preservada"
+      },
+      {
+        "id": "fonte",
+        "value": "F012",
+        "equivalents": [
+          "[F012]"
+        ],
+        "rule": "identificador exato"
+      }
+    ]
+  }
+]
+

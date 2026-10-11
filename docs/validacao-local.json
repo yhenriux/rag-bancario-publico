@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-10-11",
+  "local_tests": 20,
+  "local_tests_status": "passed",
+  "syntax_check": "passed",
+  "demo_status": "passed_with_fictional_sources",
+  "local_document_links": "passed",
+  "protocol_integrity": "passed",
+  "model_execution_status": "not_executed",
+  "live_collection_status": "not_executed",
+  "integrated_extraction_status": "not_executed",
+  "human_evaluation_status": "not_executed",
+  "plain_language_reader_test": "pending",
+  "planning_simulation_status": "pending",
+  "note": "Os testes usam exemplos fictícios. Os resultados do estudo dependem da coleta, do piloto e da avaliação humana."
+}

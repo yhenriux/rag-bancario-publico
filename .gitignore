@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+data/
+runs/
+private/
+*.pt
+*.safetensors
+*-key.jsonl
+private_key.jsonl
+*.docx
+*.pdf

@@ -1,0 +1,20 @@
+{
+  "public_registration_url": null,
+  "registered_at": null,
+  "ethics_review_record": null,
+  "roles_record": null,
+  "pilot_decision_record": null,
+  "sample_decision_record": null,
+  "fidelity_decision_record": null,
+  "input_hashes": {
+    "config": null,
+    "chunks": null,
+    "metadata": null,
+    "questions": null,
+    "index_inputs": null,
+    "index_A": null,
+    "index_B": null,
+    "index_Bp": null
+  }
+}
+

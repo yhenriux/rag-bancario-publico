@@ -1,0 +1,23 @@
+{
+  "trecho-ficticio-1": {
+    "product": [
+      "alfa"
+    ],
+    "public": [
+      "pf"
+    ],
+    "document_type": "regulamento",
+    "evidence": "Passagem fictícia: cartão Alfa para pessoa física",
+    "adjudication_id": "M-conciliacao-ficticia-1",
+    "eligibility": [
+      "gasto >= R$ 1.000"
+    ],
+    "channel": [
+      "desconhecido"
+    ],
+    "period": [
+      "desconhecido"
+    ]
+  }
+}
+

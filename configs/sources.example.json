@@ -1,0 +1,16 @@
+[
+  {
+    "bank": "banco-a-preencher",
+    "host": "www.example.org",
+    "urls": [
+      "https://www.example.org/documento"
+    ],
+    "terms_url": "https://www.example.org/termos",
+    "terms_checked_at": null,
+    "collection_permission": "pending",
+    "reviewer": null,
+    "permission_evidence": null,
+    "redistribution": "pending"
+  }
+]
+

@@ -1,0 +1,6 @@
+# Instalar PyTorch adequado ao equipamento e congelar pip freeze antes do piloto.
+torch>=2.2,<3
+transformers==4.57.1
+numpy>=1.26,<3
+beautifulsoup4>=4.12,<5
+pypdf>=5,<7
