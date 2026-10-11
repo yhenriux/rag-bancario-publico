@@ -1,0 +1,10 @@
+{
+  "reason": "Pressão de memória com lote padrão 2048 e micro-lote 512; redução operacional fixa, sem escolher pela qualidade das respostas.",
+  "original_completed": 21,
+  "discard_initial_pilot_for_primary_analysis": true,
+  "new_batch_tokens": 512,
+  "new_microbatch_tokens": 128,
+  "all_configurations_same": true,
+  "restart_whole_pilot": true,
+  "model_precision_context_and_generation_parameters_unchanged": true
+}

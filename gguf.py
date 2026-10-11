@@ -2,6 +2,7 @@
 import argparse
 import hashlib
 import json
+import re
 import subprocess
 import time
 import urllib.request
@@ -95,7 +96,7 @@ def check_final(inputs, gate_path):
     if gate.get('method')!='assisted_exploratory_final' or gate.get('human_validated') is not False:
         raise ValueError('Declaração de método inválida')
     url=gate.get('public_registration_url','')
-    if not url.startswith('https://github.com/yhenriux/rag-bancario-publico/commit/') or len(url.rsplit('/',1)[-1])!=40:
+    if not re.fullmatch(r'https://github\.com/yhenriux/rag-bancario-publico/commit/[a-f0-9]{40}',url):
         raise ValueError('Registro exige commit público identificado')
     if any(r.get('family') in gate.get('pilot_families',[]) for r in finals):
         raise ValueError('Família do piloto presente na etapa final')
@@ -110,13 +111,15 @@ def check_final(inputs, gate_path):
         raise ValueError('Fidelidade não aprovada')
     if not load(gate['checks']['pilot']['path']).get('completed'):
         raise ValueError('Piloto incompleto')
+    if any(r['degenerate'] or r['failed'] for r in load(gate['checks']['pilot']['path'])['technical_summary']):
+        raise ValueError('Piloto exige tratamento de falha ou repetição antes da etapa final')
 
 
 def local(inputs, executable, model_file, output, threads=8, gate_path=None):
     check_final(inputs,gate_path)
     out = Path(output)
     out.mkdir(parents=True, exist_ok=True)
-    args = [executable, '-m', model_file, '-c', '8192', '-t', str(threads),
+    args = [executable, '-m', model_file, '-c', '8192', '-b', '512', '-ub', '128', '-t', str(threads),
             '-tb', str(threads), '-np', '1', '-ngl', '0', '--host', '127.0.0.1',
             '--port', '18771', '--no-webui', '--no-warmup']
     sha=hashlib.sha256()
@@ -124,7 +127,7 @@ def local(inputs, executable, model_file, output, threads=8, gate_path=None):
         for block in iter(lambda:stream.read(8*1024*1024),b''):sha.update(block)
     identity={'backend':'llama.cpp b11557','precision':'Q4_K_M','threads':threads,
               'model_sha256':sha.hexdigest(),'executable_sha256':hashlib.sha256(Path(executable).read_bytes()).hexdigest(),
-              'context_tokens':8192,'gpu_layers':0}
+              'context_tokens':8192,'gpu_layers':0,'batch_tokens':512,'microbatch_tokens':128}
     atomic(out / 'runtime.json', dict(identity,server_command=args,inputs_sha256=digest(json.dumps(inputs,sort_keys=True))))
     with (out / 'server.log').open('a') as log:
         server = subprocess.Popen(args, stdout=log, stderr=log)

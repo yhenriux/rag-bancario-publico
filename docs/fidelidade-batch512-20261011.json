@@ -1,0 +1,16 @@
+{
+  "generations": 36,
+  "required_item_checks": 144,
+  "missing_items": [],
+  "human_validated": false,
+  "degenerate_outputs": [],
+  "truncated_outputs": [],
+  "elapsed_seconds": 182.10142895599938,
+  "backend": "llama.cpp b11557",
+  "precision": "Q4_K_M",
+  "repeat_penalty": 1,
+  "threads": 8,
+  "batch_tokens": 512,
+  "microbatch_tokens": 128,
+  "passed": true
+}

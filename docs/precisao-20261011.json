@@ -1,0 +1,131 @@
+{
+  "original_confirmatory_pairs": 258.98413907691577,
+  "original_threshold": 260,
+  "precision_half_width": 0.1,
+  "precision_independent_pairs": 97,
+  "executed_final_condition_exception_families": 4,
+  "formula": "[z(1-alpha/2)*sqrt(q) + z(power)*sqrt(q-delta^2)]^2/delta^2",
+  "simulations": [
+    {
+      "independent_pairs": 4,
+      "discordance": 0.1,
+      "assumed_difference": 0,
+      "simulations": 2000,
+      "seed": 2026,
+      "median_normal_ci95_half_width": 0.0,
+      "simulated_normal_ci95_coverage_at_zero": 0.998,
+      "warning": "Ilustração independente. Não é intervalo do experimento nem corrige referência assistida ou seleção."
+    },
+    {
+      "independent_pairs": 4,
+      "discordance": 0.25,
+      "assumed_difference": 0,
+      "simulations": 2000,
+      "seed": 2026,
+      "median_normal_ci95_half_width": 0.4899909961350134,
+      "simulated_normal_ci95_coverage_at_zero": 0.9865,
+      "warning": "Ilustração independente. Não é intervalo do experimento nem corrige referência assistida ou seleção."
+    },
+    {
+      "independent_pairs": 4,
+      "discordance": 0.4,
+      "assumed_difference": 0,
+      "simulations": 2000,
+      "seed": 2026,
+      "median_normal_ci95_half_width": 0.4899909961350134,
+      "simulated_normal_ci95_coverage_at_zero": 0.959,
+      "warning": "Ilustração independente. Não é intervalo do experimento nem corrige referência assistida ou seleção."
+    },
+    {
+      "independent_pairs": 10,
+      "discordance": 0.1,
+      "assumed_difference": 0,
+      "simulations": 2000,
+      "seed": 2026,
+      "median_normal_ci95_half_width": 0.19599639845400538,
+      "simulated_normal_ci95_coverage_at_zero": 0.988,
+      "warning": "Ilustração independente. Não é intervalo do experimento nem corrige referência assistida ou seleção."
+    },
+    {
+      "independent_pairs": 10,
+      "discordance": 0.25,
+      "assumed_difference": 0,
+      "simulations": 2000,
+      "seed": 2026,
+      "median_normal_ci95_half_width": 0.29217418019219377,
+      "simulated_normal_ci95_coverage_at_zero": 0.914,
+      "warning": "Ilustração independente. Não é intervalo do experimento nem corrige referência assistida ou seleção."
+    },
+    {
+      "independent_pairs": 10,
+      "discordance": 0.4,
+      "assumed_difference": 0,
+      "simulations": 2000,
+      "seed": 2026,
+      "median_normal_ci95_half_width": 0.39199279690801075,
+      "simulated_normal_ci95_coverage_at_zero": 0.898,
+      "warning": "Ilustração independente. Não é intervalo do experimento nem corrige referência assistida ou seleção."
+    },
+    {
+      "independent_pairs": 97,
+      "discordance": 0.1,
+      "assumed_difference": 0,
+      "simulations": 2000,
+      "seed": 2026,
+      "median_normal_ci95_half_width": 0.06369640587538679,
+      "simulated_normal_ci95_coverage_at_zero": 0.9645,
+      "warning": "Ilustração independente. Não é intervalo do experimento nem corrige referência assistida ou seleção."
+    },
+    {
+      "independent_pairs": 97,
+      "discordance": 0.25,
+      "assumed_difference": 0,
+      "simulations": 2000,
+      "seed": 2026,
+      "median_normal_ci95_half_width": 0.09941657612394843,
+      "simulated_normal_ci95_coverage_at_zero": 0.951,
+      "warning": "Ilustração independente. Não é intervalo do experimento nem corrige referência assistida ou seleção."
+    },
+    {
+      "independent_pairs": 97,
+      "discordance": 0.4,
+      "assumed_difference": 0,
+      "simulations": 2000,
+      "seed": 2026,
+      "median_normal_ci95_half_width": 0.12642097287218093,
+      "simulated_normal_ci95_coverage_at_zero": 0.943,
+      "warning": "Ilustração independente. Não é intervalo do experimento nem corrige referência assistida ou seleção."
+    },
+    {
+      "independent_pairs": 260,
+      "discordance": 0.1,
+      "assumed_difference": 0,
+      "simulations": 2000,
+      "seed": 2026,
+      "median_normal_ci95_half_width": 0.038466585863314924,
+      "simulated_normal_ci95_coverage_at_zero": 0.948,
+      "warning": "Ilustração independente. Não é intervalo do experimento nem corrige referência assistida ou seleção."
+    },
+    {
+      "independent_pairs": 260,
+      "discordance": 0.25,
+      "assumed_difference": 0,
+      "simulations": 2000,
+      "seed": 2026,
+      "median_normal_ci95_half_width": 0.06084806216479674,
+      "simulated_normal_ci95_coverage_at_zero": 0.949,
+      "warning": "Ilustração independente. Não é intervalo do experimento nem corrige referência assistida ou seleção."
+    },
+    {
+      "independent_pairs": 260,
+      "discordance": 0.4,
+      "assumed_difference": 0,
+      "simulations": 2000,
+      "seed": 2026,
+      "median_normal_ci95_half_width": 0.07697308813609656,
+      "simulated_normal_ci95_coverage_at_zero": 0.9515,
+      "warning": "Ilustração independente. Não é intervalo do experimento nem corrige referência assistida ou seleção."
+    }
+  ],
+  "claims": "Exploração descritiva. Nem poder nem alvo de precisão atingidos pela amostra final."
+}

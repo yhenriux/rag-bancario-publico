@@ -16,6 +16,8 @@ class Resume(unittest.TestCase):
             self.assertEqual(len(calls),1)
             with self.assertRaises(ValueError):
                 execute([{'id':'f-1','prompt':'outra fonte'}],'http://127.0.0.1:18771',d,call)
+            with self.assertRaises(ValueError):
+                execute(inputs,'http://127.0.0.1:18771',d,call,identity={'model_sha256':'outra-versao'})
 
     def test_failure_is_not_adequacy_zero(self):
         with tempfile.TemporaryDirectory() as d:

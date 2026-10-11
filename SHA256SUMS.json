@@ -1,5 +1,5 @@
 {
-  ".github/workflows/checks.yml": "b1975e184160723ce9976aa5990f8884fdc11e61e96f0b07134a2106554a4651",
+  ".github/workflows/checks.yml": "e1d8dbbdba8b95d4733fc1d45ff7ae8682269485306995e2d586d8e86f8b2e34",
   ".gitignore": "ca7f9f0f8c03a4ec13f76bbec931f3ab6cfd0f6fcaa57912a936f4661440f87e",
   "CHANGELOG.md": "4e1baf9240ad15be95c6967a3483306e3cad6cdfe9222dafba10874debf20b0d",
   "CITATION.cff": "72af8072352d8855051884baf94e146052310c7a00eafd7f6650ca146c42c59a",
@@ -29,7 +29,7 @@
   "demo.py": "f7cd9e7068c07494086876bda0b9d86c07e5648a9621955f306533d1ab5b3675",
   "docs/absence-check-20261011.json": "d50ab150628aae5d8788f86e6084ec23610530fa55d71d6d86b921e788a779c9",
   "docs/access-preflight.json": "1cea2a67729204c27cffb61324fdb29caa5f21d36a217512dde9fac196ff2743",
-  "docs/adendo-execucao-20261011.md": "44e9ab04cf2bb1bb26048bb93936fcd1ec3bea700a0deacf37077f39b47ec312",
+  "docs/adendo-execucao-20261011.md": "aba7062ac43f7ae6749c42a86deed1e9449e3f9fdc9f1a09cec802a8d6b1abe9",
   "docs/avaliacao.md": "8fe012ffae131f5c27dafd1ac9950c340e65142af535b24c1362702b7f8f143f",
   "docs/calibracao-20261011.json": "36f1576ba8b63df9889dac038812837a8123368868cea7b9ce321afce860a5fc",
   "docs/calibracao-round2-20261011.json": "4cbe679303eea45c3ea0ea73ae795adb5d4b4f49d98434b4a9923109f81e2453",
@@ -72,7 +72,7 @@
   "execution.py": "0174c1d583d73f8ce95ede16bb7bd90f062fea34fd5ed423e8e7b3e688298ff2",
   "experiment.py": "7c90f6665d2740d272e3544757e35303eef7b4ef556e3b49da642e64a86a51f6",
   "fidelity.py": "3a5f88196fb3b00dcc6248cf82cff6df14b5bbef69b50a5263ea4f1611ce3164",
-  "gguf.py": "e2ebb7f4eb2f8d0ceb76bafbdac26087d13613429011fb49cea69aa4860a6ed7",
+  "gguf.py": "f0df8840726f4657b3ea3d02dc77d1ea34496763f21a49aac97f2b8bac9c97db",
   "prepare.py": "fedfbd7493c3a2049827c273514794a5a11d4b5d68f98aa227b795d5d7bd1695",
   "requirements.txt": "007bc5ee86ec34d3066bf4c39b572eb70b7d950c64ffb23765e9e05c924bf1bb",
   "study.py": "05fdd4399a24c44caea1647c5e398f5d27297458f8e360c86e2413b216b5bdd6",
@@ -81,6 +81,13 @@
   "tests/test_collect.py": "9f7e5fcd6d6bbc0f1165a4abb0fa2d45f35620916f925a23cc23f4173013ff55",
   "tests/test_docs.py": "cf73a42eea1f27d53de75f636ea020b7dd9cbc0c2998f18e28ff5224d20e71e1",
   "tests/test_execution.py": "88156e4ddfdd76041d913307372eef0848b8697103110b190621d4eb26a1f1d5",
-  "tests/test_gguf.py": "9f743367c1cf3e45a7e751e48e50e29b0ece1d505eff1cfd1c595bf8cf6d7b6c",
-  "tests/test_study.py": "8620de8efeaa0ece6c20c1fdccf43b10726ce70a240ede822a1209d50f6fccbe"
+  "tests/test_gguf.py": "7cff9fcb7a337b40aa6440b18a1407f3dc91120eb269e740957b84166f5958ac",
+  "tests/test_study.py": "8620de8efeaa0ece6c20c1fdccf43b10726ce70a240ede822a1209d50f6fccbe",
+  "analysis_run.py": "ed57ff4d315466c0832ff21e2430f9c520121f8d26f5a62f3501b76f113e06d2",
+  "precision.py": "937cba3c2e9cba3b551b8cd6148a4b49d93e8492dfdaf5b73fdd9e42468b5e6b",
+  "docs/precisao-20261011.json": "4609d3633b3e2a9c0f923183cb24a3c8fb830575bdbb0860c1f9d0426e57e98e",
+  "docs/referencias-verificadas-20261011.json": "c746acbae56d194aeed70e435c7ccb5b353f50be61212aa34bbcde32401bdd45",
+  "docs/decisao-editorial-20261011.md": "cc969538bfdd05b6ea192677802bf3326c773882ad30d717520bd449e7b1bb95",
+  "docs/ajuste-runtime-20261011.json": "62164f5e63e91bc4c676bfb6d7f79d028200fa8ae23b4554fdbe0d516c9823f8",
+  "docs/fidelidade-batch512-20261011.json": "f8c9381ad9736f541c5158e1653c816f70b792357d8f406e5b48e4ee8fef1074"
 }
