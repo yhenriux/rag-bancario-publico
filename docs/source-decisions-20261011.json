@@ -1,0 +1,45 @@
+{
+  "scope": [
+    "inter",
+    "bradesco"
+  ],
+  "human_validated": false,
+  "express_permission_from_banks": false,
+  "redistribution": "not_approved",
+  "decisions": [
+    {
+      "bank": "inter",
+      "status": "operational_clearance_limited_research",
+      "evidence": "configs/sources-20261011.json",
+      "added_urls": 7,
+      "scope": "páginas públicas, sem login, coleta limitada com robots e intervalos"
+    },
+    {
+      "bank": "bradesco",
+      "status": "operational_clearance_limited_research",
+      "evidence": "configs/sources-20261011.json",
+      "added_urls": 6,
+      "scope": "páginas públicas, sem login, coleta limitada; falhas de redirecionamento excluídas"
+    },
+    {
+      "bank": "caixa",
+      "status": "excluded_this_execution",
+      "rounds": 2,
+      "reason": "robots e página de termos com redirecionamento circular nos dois meios de acesso; coleta não liberada",
+      "prohibition_claimed": false
+    },
+    {
+      "bank": "banco_do_brasil",
+      "status": "excluded_this_execution",
+      "rounds": 2,
+      "reason": "Página de políticas oferece conteúdo de privacidade em scripts (23 fragmentos); não concluída trilha comparável de termos, rodapé e extração padronizada no limite do ciclo. Decisão de escopo, sem alegar proibição de coleta.",
+      "robots_status": 200,
+      "policy_sha256": "ded56f33056a4d6294eb5c6c97fbcf29c501992e6862f424dc719fb60b926e06",
+      "prohibition_claimed": false
+    }
+  ],
+  "excluded_files": "docs/extracao-assistida-20261011.json",
+  "collection_errors_resolved_by_exclusion": true,
+  "copyright": "Fontes preservadas em pacote privado. Liberação operacional do projeto não é autorização ou licença do banco.",
+  "conflict_of_interest": "O pesquisador trabalha no Inter; usa somente documentação pública e não representa a instituição."
+}

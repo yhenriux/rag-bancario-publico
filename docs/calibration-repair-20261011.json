@@ -1,0 +1,8 @@
+{
+  "round": 2,
+  "allowed_repairs_used": 1,
+  "instruction_sha256": "fec6650d24e5155c162c610018846f0ab0c396d73f4f02a9ab4366ff376c0348",
+  "new_controls_sha256": "674c8d62635aeeeb3660bcfe1f854a38d7655f31ec4673a2ca2a81402f9656bf",
+  "rule": "19/20 e todos os JSONs válidos; se falhar, adequação automática deixa de ser desfecho principal",
+  "frozen_before_execution": true
+}

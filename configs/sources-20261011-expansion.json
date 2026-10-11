@@ -1,0 +1,59 @@
+[
+  {
+    "terms_checked_at": "2026-10-11T17:07:00.119775+00:00",
+    "collection_permission": "approved",
+    "reviewer": "Codex, revisão assistida por IA solicitada pelo pesquisador",
+    "approval_kind": "project_operational_clearance_for_listed_urls_only",
+    "express_permission_from_bank": false,
+    "redistribution": "not_approved",
+    "scope": "Lote limitado de pesquisa em documentação pública; sem login, dados de clientes, publicação de cópias ou reutilização comercial. Respeitar robots.txt, intervalos e falhas de acesso.",
+    "review_limitation": "A revisão assistida não encontrou restrição específica aplicável à coleta limitada destas páginas públicas. Políticas de privacidade não concedem licença de coleta. Direitos das fontes permanecem preservados.",
+    "checked_at": "2026-10-11T17:07:00.119775+00:00",
+    "bank": "inter",
+    "host": "ajuda.inter.co",
+    "urls": [
+      "https://ajuda.inter.co/cartao/qual-o-prazo-de-entrega-do-cartao-fisico",
+      "https://ajuda.inter.co/cartao/como-saber-se-a-fatura-esta-paga",
+      "https://ajuda.inter.co/cartao/paguei-a-fatura-e-o-limite-do-cartao-nao-foi-liberado-qual-o-prazo",
+      "https://ajuda.inter.co/cartao/quando-posso-contestar-uma-compra-e-quais-documentos-preciso-enviar",
+      "https://ajuda.inter.co/cartao/como-contestar-uma-compra-nao-reconhecida-no-cartao-de-credito",
+      "https://ajuda.inter.co/inter-loop/paguei-a-fatura-do-cartao-e-ainda-nao-recebi-os-pontos-do-inter-loop-o-que-eu-faco",
+      "https://ajuda.inter.co/investimentos/qual-e-o-prazo-para-resgate-do-cdb-mais-limite-ou-poupanca-mais"
+    ],
+    "terms_host": "inter.co",
+    "terms_url": "https://inter.co/politica-de-privacidade/privacidade/",
+    "policy_sha256": "a494985ee0118de1766c80d0c60ed70b96e6a1d851972abe9709b099bd0f92ed",
+    "terms_kind": "privacy_policy_and_public_help_footer_review",
+    "permission_evidence": "Fontes oficiais de ajuda em português, sem autenticação. Conferidos robots.txt da central, rodapé, política de privacidade e política de segurança do Inter; busca por termos gerais sem localização de uma licença ou proibição específica para o lote. Liberação operacional limitada, não autorização concedida pelo banco.",
+    "conflict_of_interest": "O pesquisador trabalha no Inter; o estudo usa somente páginas públicas e não expressa posicionamento institucional.",
+    "extension_checked_at": "2026-10-11T18:27:29.554426+00:00",
+    "extension_review": "Mesmos domínios, políticas e limite operacional; URLs descobertas por busca pública oficial. Cartões PF e garantia vinculada ao cartão. Sem contornar caminhos bloqueados, login ou republicar textos."
+  },
+  {
+    "terms_checked_at": "2026-10-11T17:07:00.119775+00:00",
+    "collection_permission": "approved",
+    "reviewer": "Codex, revisão assistida por IA solicitada pelo pesquisador",
+    "approval_kind": "project_operational_clearance_for_listed_urls_only",
+    "express_permission_from_bank": false,
+    "redistribution": "not_approved",
+    "scope": "Lote limitado de pesquisa em documentação pública; sem login, dados de clientes, publicação de cópias ou reutilização comercial. Respeitar robots.txt, intervalos e falhas de acesso.",
+    "review_limitation": "A revisão assistida não encontrou restrição específica aplicável à coleta limitada destas páginas públicas. Políticas de privacidade não concedem licença de coleta. Direitos das fontes permanecem preservados.",
+    "checked_at": "2026-10-11T17:07:00.119775+00:00",
+    "bank": "bradesco",
+    "host": "banco.bradesco",
+    "urls": [
+      "https://banco.bradesco/cartoes/atendimento/",
+      "https://banco.bradesco/html/principal/cartoes/aeternum/",
+      "https://banco.bradesco/assets/classic/pdf/regulamento-sumario-utilizacao-cartao-credito-pessoa-fisica.pdf",
+      "https://banco.bradesco/assets/prime/pdf/Sumario_Cartoes_Credito_American_Express_Novo.pdf",
+      "https://banco.bradesco/html/classic/produtos-servicos/emprestimo-e-financiamento/credito-flex-bradesco.shtm",
+      "https://banco.bradesco/abrasuaconta/index.shtm"
+    ],
+    "terms_url": "https://banco.bradesco/assets/common/inc/diretiva_privacidade_lgpd.shtm",
+    "policy_sha256": "9f33f9df0fa47087bfb7ef8f080083321ce82144b4004c4f6f9032dcf1357540",
+    "terms_kind": "privacy_directive_and_public_site_footer_review",
+    "permission_evidence": "Páginas públicas oficiais de produtos, tarifas e regulamento, sem autenticação. Conferidos robots.txt, rodapés, diretiva de privacidade e termos de Internet Banking. Estes termos se delimitam aos serviços de Internet Banking, que ficam fora do lote. Não replicar conteúdo, marcas ou telas em outro site. Liberação operacional limitada, não licença concedida pelo banco.",
+    "extension_checked_at": "2026-10-11T18:27:29.554471+00:00",
+    "extension_review": "Mesmos domínios, políticas e limite operacional; URLs descobertas por busca pública oficial. Cartões PF e garantia vinculada ao cartão. Sem contornar caminhos bloqueados, login ou republicar textos."
+  }
+]

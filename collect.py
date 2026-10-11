@@ -197,7 +197,9 @@ def extract(snapshot, output, allow_partial=False):
                 for node in soup(['script', 'style', 'noscript']):
                     node.decompose()
                 # Um main vazio não pode esconder conteúdo presente em outro contêiner.
-                candidates = (soup.find('main'), soup.find('article'), soup.body)
+                # Um artigo parcial (por exemplo, somente o banner) não substitui
+                # o corpo quando o main vem vazio em páginas renderizadas no servidor.
+                candidates = (soup.find('main'), soup.body, soup.find('article'))
                 root = next((node for node in candidates if node is not None and node.get_text(strip=True)), soup)
                 # ponytail: extração linear conserva tabelas/notas como texto; auditoria humana decide segmentação final.
                 text = root.get_text('\n', strip=True)

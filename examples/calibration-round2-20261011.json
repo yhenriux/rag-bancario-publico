@@ -1,0 +1,372 @@
+[
+  {
+    "id": "round2-cal-num-0-1",
+    "question": "Sou pessoa física com conta Gama. Informe a tarifa e a vigência.",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "R$ 240,00",
+        "01/10/2026",
+        "conta Gama e pessoa física"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "Z1",
+        "text": "Para conta Gama de pessoa física: tarifa R$ 240,00 a partir de 01/10/2026. Contas Delta não podem usar o serviço."
+      }
+    ],
+    "answer": "A tarifa para a sua conta Gama é R$ 240,00 a partir de 01/10/2026 [Z1].",
+    "expected_grade": "1"
+  },
+  {
+    "id": "round2-cal-num-0-0",
+    "question": "Sou pessoa física com conta Gama. Informe a tarifa e a vigência.",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "R$ 240,00",
+        "01/10/2026",
+        "conta Gama e pessoa física"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "Z1",
+        "text": "Para conta Gama de pessoa física: tarifa R$ 240,00 a partir de 01/10/2026. Contas Delta não podem usar o serviço."
+      }
+    ],
+    "answer": "A tarifa é R$ 242,00, e contas Delta também podem usar [Z1].",
+    "expected_grade": "0"
+  },
+  {
+    "id": "round2-cal-num-1-1",
+    "question": "Sou pessoa física com conta Gama. Informe a tarifa e a vigência.",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "R$ 260,00",
+        "02/10/2026",
+        "conta Gama e pessoa física"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "Z2",
+        "text": "Para conta Gama de pessoa física: tarifa R$ 260,00 a partir de 02/10/2026. Contas Delta não podem usar o serviço."
+      }
+    ],
+    "answer": "A tarifa para a sua conta Gama é R$ 260,00 a partir de 02/10/2026 [Z2].",
+    "expected_grade": "1"
+  },
+  {
+    "id": "round2-cal-num-1-0",
+    "question": "Sou pessoa física com conta Gama. Informe a tarifa e a vigência.",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "R$ 260,00",
+        "02/10/2026",
+        "conta Gama e pessoa física"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "Z2",
+        "text": "Para conta Gama de pessoa física: tarifa R$ 260,00 a partir de 02/10/2026. Contas Delta não podem usar o serviço."
+      }
+    ],
+    "answer": "A tarifa é R$ 262,00, e contas Delta também podem usar [Z2].",
+    "expected_grade": "0"
+  },
+  {
+    "id": "round2-cal-num-2-1",
+    "question": "Sou pessoa física com conta Gama. Informe a tarifa e a vigência.",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "R$ 280,00",
+        "03/10/2026",
+        "conta Gama e pessoa física"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "Z3",
+        "text": "Para conta Gama de pessoa física: tarifa R$ 280,00 a partir de 03/10/2026. Contas Delta não podem usar o serviço."
+      }
+    ],
+    "answer": "A tarifa para a sua conta Gama é R$ 280,00 a partir de 03/10/2026 [Z3].",
+    "expected_grade": "1"
+  },
+  {
+    "id": "round2-cal-num-2-0",
+    "question": "Sou pessoa física com conta Gama. Informe a tarifa e a vigência.",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "R$ 280,00",
+        "03/10/2026",
+        "conta Gama e pessoa física"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "Z3",
+        "text": "Para conta Gama de pessoa física: tarifa R$ 280,00 a partir de 03/10/2026. Contas Delta não podem usar o serviço."
+      }
+    ],
+    "answer": "A tarifa é R$ 282,00, e contas Delta também podem usar [Z3].",
+    "expected_grade": "0"
+  },
+  {
+    "id": "round2-cal-num-3-1",
+    "question": "Sou pessoa física com conta Gama. Informe a tarifa e a vigência.",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "R$ 300,00",
+        "04/10/2026",
+        "conta Gama e pessoa física"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "Z4",
+        "text": "Para conta Gama de pessoa física: tarifa R$ 300,00 a partir de 04/10/2026. Contas Delta não podem usar o serviço."
+      }
+    ],
+    "answer": "A tarifa para a sua conta Gama é R$ 300,00 a partir de 04/10/2026 [Z4].",
+    "expected_grade": "1"
+  },
+  {
+    "id": "round2-cal-num-3-0",
+    "question": "Sou pessoa física com conta Gama. Informe a tarifa e a vigência.",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "R$ 300,00",
+        "04/10/2026",
+        "conta Gama e pessoa física"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "Z4",
+        "text": "Para conta Gama de pessoa física: tarifa R$ 300,00 a partir de 04/10/2026. Contas Delta não podem usar o serviço."
+      }
+    ],
+    "answer": "A tarifa é R$ 302,00, e contas Delta também podem usar [Z4].",
+    "expected_grade": "0"
+  },
+  {
+    "id": "round2-cal-num-4-1",
+    "question": "Sou pessoa física com conta Gama. Informe a tarifa e a vigência.",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "R$ 320,00",
+        "05/10/2026",
+        "conta Gama e pessoa física"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "Z5",
+        "text": "Para conta Gama de pessoa física: tarifa R$ 320,00 a partir de 05/10/2026. Contas Delta não podem usar o serviço."
+      }
+    ],
+    "answer": "A tarifa para a sua conta Gama é R$ 320,00 a partir de 05/10/2026 [Z5].",
+    "expected_grade": "1"
+  },
+  {
+    "id": "round2-cal-num-4-0",
+    "question": "Sou pessoa física com conta Gama. Informe a tarifa e a vigência.",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "R$ 320,00",
+        "05/10/2026",
+        "conta Gama e pessoa física"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "Z5",
+        "text": "Para conta Gama de pessoa física: tarifa R$ 320,00 a partir de 05/10/2026. Contas Delta não podem usar o serviço."
+      }
+    ],
+    "answer": "A tarifa é R$ 322,00, e contas Delta também podem usar [Z5].",
+    "expected_grade": "0"
+  },
+  {
+    "id": "round2-cal-fonte",
+    "question": "Quanto custa a tarifa?",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "R$ 240,00"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "Z6",
+        "text": "A tarifa é R$ 240,00."
+      }
+    ],
+    "answer": "R$ 240,00 [X999].",
+    "expected_grade": "0"
+  },
+  {
+    "id": "round2-cal-cond",
+    "question": "Sou pessoa jurídica. Tenho isenção?",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "não se aplica a PJ"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "Z7",
+        "text": "A isenção vale somente para pessoa física."
+      }
+    ],
+    "answer": "Sim, você tem isenção [Z7].",
+    "expected_grade": "0"
+  },
+  {
+    "id": "round2-cal-omissao",
+    "question": "Posso sacar R$ 100 sem saldo para a tarifa?",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "exige saldo para saque e tarifa"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "Z8",
+        "text": "O saque exige saldo para o saque e a tarifa."
+      }
+    ],
+    "answer": "Pode sacar R$ 100 [Z8].",
+    "expected_grade": "0"
+  },
+  {
+    "id": "round2-cal-data",
+    "question": "A regra vale em setembro?",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "a partir de outubro"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "Z9",
+        "text": "A regra entra em vigor em 01/10/2026."
+      }
+    ],
+    "answer": "Sim, vale em setembro [Z9].",
+    "expected_grade": "0"
+  },
+  {
+    "id": "round2-cal-amb-ok",
+    "question": "Quanto custa um saque?",
+    "reference": {
+      "expected": "clarify",
+      "requirements": [
+        "perguntar produto/público"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "Z10",
+        "text": "A tarifa depende do produto e do público."
+      }
+    ],
+    "answer": "Qual é seu produto e você é pessoa física ou jurídica?",
+    "expected_grade": "1"
+  },
+  {
+    "id": "round2-cal-amb-bad",
+    "question": "Quanto custa um saque?",
+    "reference": {
+      "expected": "clarify",
+      "requirements": [
+        "perguntar produto/público"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "Z10",
+        "text": "A tarifa depende do produto e do público."
+      }
+    ],
+    "answer": "Todo saque custa R$ 6,40 [Z10].",
+    "expected_grade": "0"
+  },
+  {
+    "id": "round2-cal-aus-ok",
+    "question": "Qual o prazo do produto Sigma?",
+    "reference": {
+      "expected": "abstain",
+      "requirements": [
+        "falta evidência"
+      ]
+    },
+    "evidence": [],
+    "answer": "Não encontrei evidência sobre esse prazo na coleção fornecida.",
+    "expected_grade": "1"
+  },
+  {
+    "id": "round2-cal-aus-bad",
+    "question": "Qual o prazo do produto Sigma?",
+    "reference": {
+      "expected": "abstain",
+      "requirements": [
+        "falta evidência"
+      ]
+    },
+    "evidence": [],
+    "answer": "O prazo é de 7 dias úteis.",
+    "expected_grade": "0"
+  },
+  {
+    "id": "round2-cal-inc",
+    "question": "A tarifa vale para mim?",
+    "reference": {
+      "expected": "unknown",
+      "requirements": [
+        "referência insuficiente"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "Z11",
+        "text": "Existem produtos Gama e Delta."
+      }
+    ],
+    "answer": "Depende do produto.",
+    "expected_grade": "inconclusive"
+  },
+  {
+    "id": "round2-cal-exc",
+    "question": "Minha conta Delta está incluída?",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "excluir Delta"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "Z12",
+        "text": "Todas as contas podem usar, exceto Delta."
+      }
+    ],
+    "answer": "Contas Delta ficam excluídas dessa regra [Z12].",
+    "expected_grade": "1"
+  }
+]

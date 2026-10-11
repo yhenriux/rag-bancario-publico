@@ -1,0 +1,372 @@
+[
+  {
+    "id": "cal-num-0-1",
+    "question": "Sou pessoa física com conta Alfa. Informe a tarifa e a vigência.",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "R$ 120,00",
+        "01/10/2026",
+        "conta Alfa e pessoa física"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "K1",
+        "text": "Para conta Alfa de pessoa física: tarifa R$ 120,00 a partir de 01/10/2026. Contas Beta não podem usar o serviço."
+      }
+    ],
+    "answer": "A tarifa para a sua conta Alfa é R$ 120,00 a partir de 01/10/2026 [K1].",
+    "expected_grade": "1"
+  },
+  {
+    "id": "cal-num-0-0",
+    "question": "Sou pessoa física com conta Alfa. Informe a tarifa e a vigência.",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "R$ 120,00",
+        "01/10/2026",
+        "conta Alfa e pessoa física"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "K1",
+        "text": "Para conta Alfa de pessoa física: tarifa R$ 120,00 a partir de 01/10/2026. Contas Beta não podem usar o serviço."
+      }
+    ],
+    "answer": "A tarifa é R$ 121,00, e contas Beta também podem usar [K1].",
+    "expected_grade": "0"
+  },
+  {
+    "id": "cal-num-1-1",
+    "question": "Sou pessoa física com conta Alfa. Informe a tarifa e a vigência.",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "R$ 130,00",
+        "02/10/2026",
+        "conta Alfa e pessoa física"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "K2",
+        "text": "Para conta Alfa de pessoa física: tarifa R$ 130,00 a partir de 02/10/2026. Contas Beta não podem usar o serviço."
+      }
+    ],
+    "answer": "A tarifa para a sua conta Alfa é R$ 130,00 a partir de 02/10/2026 [K2].",
+    "expected_grade": "1"
+  },
+  {
+    "id": "cal-num-1-0",
+    "question": "Sou pessoa física com conta Alfa. Informe a tarifa e a vigência.",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "R$ 130,00",
+        "02/10/2026",
+        "conta Alfa e pessoa física"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "K2",
+        "text": "Para conta Alfa de pessoa física: tarifa R$ 130,00 a partir de 02/10/2026. Contas Beta não podem usar o serviço."
+      }
+    ],
+    "answer": "A tarifa é R$ 131,00, e contas Beta também podem usar [K2].",
+    "expected_grade": "0"
+  },
+  {
+    "id": "cal-num-2-1",
+    "question": "Sou pessoa física com conta Alfa. Informe a tarifa e a vigência.",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "R$ 140,00",
+        "03/10/2026",
+        "conta Alfa e pessoa física"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "K3",
+        "text": "Para conta Alfa de pessoa física: tarifa R$ 140,00 a partir de 03/10/2026. Contas Beta não podem usar o serviço."
+      }
+    ],
+    "answer": "A tarifa para a sua conta Alfa é R$ 140,00 a partir de 03/10/2026 [K3].",
+    "expected_grade": "1"
+  },
+  {
+    "id": "cal-num-2-0",
+    "question": "Sou pessoa física com conta Alfa. Informe a tarifa e a vigência.",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "R$ 140,00",
+        "03/10/2026",
+        "conta Alfa e pessoa física"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "K3",
+        "text": "Para conta Alfa de pessoa física: tarifa R$ 140,00 a partir de 03/10/2026. Contas Beta não podem usar o serviço."
+      }
+    ],
+    "answer": "A tarifa é R$ 141,00, e contas Beta também podem usar [K3].",
+    "expected_grade": "0"
+  },
+  {
+    "id": "cal-num-3-1",
+    "question": "Sou pessoa física com conta Alfa. Informe a tarifa e a vigência.",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "R$ 150,00",
+        "04/10/2026",
+        "conta Alfa e pessoa física"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "K4",
+        "text": "Para conta Alfa de pessoa física: tarifa R$ 150,00 a partir de 04/10/2026. Contas Beta não podem usar o serviço."
+      }
+    ],
+    "answer": "A tarifa para a sua conta Alfa é R$ 150,00 a partir de 04/10/2026 [K4].",
+    "expected_grade": "1"
+  },
+  {
+    "id": "cal-num-3-0",
+    "question": "Sou pessoa física com conta Alfa. Informe a tarifa e a vigência.",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "R$ 150,00",
+        "04/10/2026",
+        "conta Alfa e pessoa física"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "K4",
+        "text": "Para conta Alfa de pessoa física: tarifa R$ 150,00 a partir de 04/10/2026. Contas Beta não podem usar o serviço."
+      }
+    ],
+    "answer": "A tarifa é R$ 151,00, e contas Beta também podem usar [K4].",
+    "expected_grade": "0"
+  },
+  {
+    "id": "cal-num-4-1",
+    "question": "Sou pessoa física com conta Alfa. Informe a tarifa e a vigência.",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "R$ 160,00",
+        "05/10/2026",
+        "conta Alfa e pessoa física"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "K5",
+        "text": "Para conta Alfa de pessoa física: tarifa R$ 160,00 a partir de 05/10/2026. Contas Beta não podem usar o serviço."
+      }
+    ],
+    "answer": "A tarifa para a sua conta Alfa é R$ 160,00 a partir de 05/10/2026 [K5].",
+    "expected_grade": "1"
+  },
+  {
+    "id": "cal-num-4-0",
+    "question": "Sou pessoa física com conta Alfa. Informe a tarifa e a vigência.",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "R$ 160,00",
+        "05/10/2026",
+        "conta Alfa e pessoa física"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "K5",
+        "text": "Para conta Alfa de pessoa física: tarifa R$ 160,00 a partir de 05/10/2026. Contas Beta não podem usar o serviço."
+      }
+    ],
+    "answer": "A tarifa é R$ 161,00, e contas Beta também podem usar [K5].",
+    "expected_grade": "0"
+  },
+  {
+    "id": "cal-fonte",
+    "question": "Quanto custa a tarifa?",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "R$ 120,00"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "K6",
+        "text": "A tarifa é R$ 120,00."
+      }
+    ],
+    "answer": "R$ 120,00 [X999].",
+    "expected_grade": "0"
+  },
+  {
+    "id": "cal-cond",
+    "question": "Sou pessoa jurídica. Tenho isenção?",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "não se aplica a PJ"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "K7",
+        "text": "A isenção vale somente para pessoa física."
+      }
+    ],
+    "answer": "Sim, você tem isenção [K7].",
+    "expected_grade": "0"
+  },
+  {
+    "id": "cal-omissao",
+    "question": "Posso sacar R$ 100 sem saldo para a tarifa?",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "exige saldo para saque e tarifa"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "K8",
+        "text": "O saque exige saldo para o saque e a tarifa."
+      }
+    ],
+    "answer": "Pode sacar R$ 100 [K8].",
+    "expected_grade": "0"
+  },
+  {
+    "id": "cal-data",
+    "question": "A regra vale em setembro?",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "a partir de outubro"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "K9",
+        "text": "A regra entra em vigor em 01/10/2026."
+      }
+    ],
+    "answer": "Sim, vale em setembro [K9].",
+    "expected_grade": "0"
+  },
+  {
+    "id": "cal-amb-ok",
+    "question": "Quanto custa um saque?",
+    "reference": {
+      "expected": "clarify",
+      "requirements": [
+        "perguntar produto/público"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "K10",
+        "text": "A tarifa depende do produto e do público."
+      }
+    ],
+    "answer": "Qual é seu produto e você é pessoa física ou jurídica?",
+    "expected_grade": "1"
+  },
+  {
+    "id": "cal-amb-bad",
+    "question": "Quanto custa um saque?",
+    "reference": {
+      "expected": "clarify",
+      "requirements": [
+        "perguntar produto/público"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "K10",
+        "text": "A tarifa depende do produto e do público."
+      }
+    ],
+    "answer": "Todo saque custa R$ 6,40 [K10].",
+    "expected_grade": "0"
+  },
+  {
+    "id": "cal-aus-ok",
+    "question": "Qual o prazo do produto Ômega?",
+    "reference": {
+      "expected": "abstain",
+      "requirements": [
+        "falta evidência"
+      ]
+    },
+    "evidence": [],
+    "answer": "Não encontrei evidência sobre esse prazo na coleção fornecida.",
+    "expected_grade": "1"
+  },
+  {
+    "id": "cal-aus-bad",
+    "question": "Qual o prazo do produto Ômega?",
+    "reference": {
+      "expected": "abstain",
+      "requirements": [
+        "falta evidência"
+      ]
+    },
+    "evidence": [],
+    "answer": "O prazo é de 7 dias úteis.",
+    "expected_grade": "0"
+  },
+  {
+    "id": "cal-inc",
+    "question": "A tarifa vale para mim?",
+    "reference": {
+      "expected": "unknown",
+      "requirements": [
+        "referência insuficiente"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "K11",
+        "text": "Existem produtos Alfa e Beta."
+      }
+    ],
+    "answer": "Depende do produto.",
+    "expected_grade": "inconclusive"
+  },
+  {
+    "id": "cal-exc",
+    "question": "Minha conta Beta está incluída?",
+    "reference": {
+      "expected": "answer",
+      "requirements": [
+        "excluir Beta"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "K12",
+        "text": "Todas as contas podem usar, exceto Beta."
+      }
+    ],
+    "answer": "Contas Beta ficam excluídas dessa regra [K12].",
+    "expected_grade": "1"
+  }
+]

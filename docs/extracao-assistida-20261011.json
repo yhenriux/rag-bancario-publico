@@ -1,0 +1,49 @@
+{
+  "human_validated": false,
+  "documents": 27,
+  "root_fix": "main vazio usa body antes de article parcial",
+  "mainContent_selections": [
+    {
+      "document_id": "d78de659c109e6f52cef0e2558cf2fb185d941813c3c1e74037c5ca1ffe75127",
+      "selection": "section.mainContent",
+      "chars": 1293
+    },
+    {
+      "document_id": "34dd0743118016d0ea68d47a0556030b6f8e97ae25d5a53503a375507db3d206",
+      "selection": "section.mainContent",
+      "chars": 3612
+    },
+    {
+      "document_id": "aa6d667e4ec6196cad12addf87cb7a1f35060b6fc7ea80f5f7ba080b971ad55d",
+      "selection": "section.mainContent",
+      "chars": 9609
+    },
+    {
+      "document_id": "12ad86c129ec48f7fa02ba10491c415b8e438fbba0bba4b6e589bb3fd13a71fd",
+      "selection": "section.mainContent",
+      "chars": 3604
+    }
+  ],
+  "excluded": [
+    {
+      "bank": "bradesco",
+      "url": "https://banco.bradesco/assets/classic/pdf/regulamento-sumario-utilizacao-cartao-credito-pessoa-fisica.pdf",
+      "status": "pending",
+      "error": "Somente HTTPS no host oficial aprovado, sem credenciais"
+    },
+    {
+      "bank": "bradesco",
+      "url": "https://banco.bradesco/assets/prime/pdf/Sumario_Cartoes_Credito_American_Express_Novo.pdf",
+      "status": "pending",
+      "error": "HTTP Error 502: Bad Gateway"
+    },
+    {
+      "document_id": "2b299fbc7bf7981e3282062ed0c4e975290be3a4d2b572008c74405eeb8dbe3d",
+      "url": "https://ajuda.inter.co/cartao/como-saber-se-a-fatura-esta-paga",
+      "stage": "extraction",
+      "error": "Documento sem conteúdo extraído",
+      "status": "pending"
+    }
+  ],
+  "remaining_limitation": "Sem conferência visual humana ou OCR; extração linear de tabelas permanece uma limitação e não sustenta regras sem passagens claras."
+}

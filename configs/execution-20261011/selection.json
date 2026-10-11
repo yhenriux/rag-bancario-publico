@@ -1,0 +1,36 @@
+{
+  "pilot_questions": 20,
+  "final_questions": 10,
+  "pilot_families": [
+    "bradesco-absent-basket",
+    "bradesco-baskets",
+    "bradesco-debit-replacement",
+    "bradesco-debit-unlock",
+    "bradesco-flex",
+    "bradesco-foreign-phone",
+    "bradesco-university",
+    "inter-absent-2027",
+    "inter-age",
+    "inter-card-fee",
+    "inter-credit-request",
+    "inter-limit-cash",
+    "inter-mei-pj",
+    "inter-pix-cash"
+  ],
+  "final_families": [
+    "bradesco-absent-card",
+    "bradesco-aeternum-additional",
+    "bradesco-aeternum-fee",
+    "bradesco-card-bill-payment",
+    "bradesco-international-account",
+    "inter-absent-exchange",
+    "inter-card-delivery",
+    "inter-dispute",
+    "inter-guarantee-redemption",
+    "inter-loop"
+  ],
+  "reason_for_reduction": "Coleção pequena, famílias agrupadas por regra, sem multiplicar paráfrases para atingir 60. Prioriza cinco classes e famílias novas. Amostra de conveniência assistida, sem garantia de representatividade ou dimensionamento confirmatório.",
+  "technical_family_excluded": "inter-atm-withdrawal",
+  "human_validated": false,
+  "final_family_relation": "Benefícios de adicionais e anuidade do Aeternum são regras distintas no mesmo documento; a dependência documental residual é reportada."
+}
