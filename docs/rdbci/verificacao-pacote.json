@@ -38,7 +38,18 @@
     "research_prose_unchanged": true,
     "all_table_cells_unchanged": true,
     "full_given_names_restored": true,
-    "template_color_alignment": true,
+    "template_color_alignment": "partial",
     "english_manuscript_revised_in_this_step": false
+  },
+  "complete_template_compliance": false,
+  "template_audit": {
+    "date": "2026-10-12",
+    "template_sha256": "e16dd44b901df87876f9a7aed833bc5f2027bf176a0c97e2360616818119b72d",
+    "same_as_previously_used": true,
+    "article_unchanged_by_this_audit": true,
+    "retained_template_comments": 21,
+    "objects_missing_accessible_description": 5,
+    "status": "corrections_required",
+    "report": "auditoria-template-20261012.md"
   }
 }

@@ -6,6 +6,8 @@ Conferência: 12/10/2026. O rascunho no OJS está iniciado; a preparação dos a
 
 A cópia individual do Word ficou truncada. O conteúdo foi recuperado da versão íntegra do pacote e o documento foi novamente conferido em quinze páginas no LibreOffice. Títulos e cabeçalhos adotam a formatação do template oficial, os resumos mantêm os cinco rótulos, as referências recuperam os nomes por extenso e o fechamento utiliza Conclusão. Texto de pesquisa e células das tabelas permanecem iguais. A correção visual desta etapa aplica-se ao manuscrito em português.
 
+A [auditoria completa do template](auditoria-template-20261012.md) identifica pendências de formatação, acessibilidade e limpeza interna. A correção da integridade do Word não estabelece conformidade integral com o template.
+
 ## Qual arquivo adicionar
 
 A submissão principal é em português. Envie cada arquivo separadamente em **Adicionar Arquivo**. O ZIP completo serve para baixar e organizar o pacote; ele não substitui o Word principal. As opções de componente podem variar: use a opção equivalente à função descrita abaixo.
