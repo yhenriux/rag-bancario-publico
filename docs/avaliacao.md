@@ -1,46 +1,28 @@
-# Como conferir as respostas
+# O que foi avaliado
 
-[Voltar ao início](../README.md) · [Método ativo](protocolo-individual.md)
+[Início](../README.md) · [Resultados](resultados.md) · [Método](metodo.md)
 
-A jornada rápida usa verificações automáticas e assistência de Codex. Avaliação humana independente fica como etapa adicional. A integração de julgamento por modelo ainda está pendente.
+A entrega mede a recuperação das referências preparadas. A correção semântica das respostas ainda não tem uma medida validada.
 
-## Registre quem ou o que avaliou
+## Medidas documentais
 
-Cada resultado informa origem, ferramenta ou pessoa, versão disponível, instrução, data, referência e justificativa. Regras determinísticas, julgamento por IA e revisão humana são registrados separadamente. Um escore automático não recebe o rótulo humano.
+- **Recall:** parcela das âncoras encontrada nas primeiras posições.
+- **Cobertura:** presença de um conjunto de âncoras especificado no dossiê.
+- **Perda pelo filtro:** referência que deixa de existir em todos os trechos candidatos restantes.
+- **Contexto efetivo:** referências presentes nos trechos selecionados para a entrada do gerador.
 
-A referência fica congelada antes das saídas. Registrar quando a mesma pessoa ou ferramenta participa da preparação e do julgamento. Ocultar o nome da configuração ajuda, mas não estabelece independência.
+As âncoras são curtas e assistidas. Cobertura de âncoras não comprova que todas as condições relevantes foram identificadas.
 
-## Critérios de conteúdo
+## Controles técnicos
 
-A adequação recebe `1` quando todos os requisitos estão atendidos e não há afirmação incompatível; caso contrário, recebe `0`. Casos sem evidência ou sem decisão permanecem pendentes, com seu motivo.
+Os controles de fidelidade verificam itens literais conhecidos. Os diagnósticos das 56 respostas verificam falhas, limite de saída, repetição e identificadores de fonte. Um identificador válido informa que a fonte estava disponível; verificar se a afirmação é sustentada exige análise de conteúdo.
 
-| Pergunta | O que conferir |
-|---|---|
-| Direta, condição ou exceção | Regra, condições, valores e exceções necessários |
-| Ambiguidade | Pedido de esclarecimento previsto |
-| Insuficiência | Reconhecimento da falta de evidência, sem preencher a lacuna |
+## Por que não publicamos notas de correção
 
-Aplicabilidade pergunta se a informação vale para a situação da pessoa. Suficiência pergunta se o contexto contém informação bastante. Produto e público ficam separados de elegibilidade, canal e período, porque somente os dois primeiros alimentam o filtro.
+O critério do juiz automático era acertar pelo menos 19 de 20 controles. A segunda rodada acertou 17. A [decisão registrada](evaluation-decision-20261011.json) desativa a adequação automática. Nenhuma dessas notas entra nos achados bancários.
 
-## O que pode ser automático
+Não houve avaliação por pessoas independentes, concordância entre anotadores ou teste de compreensão com leitores. Os comandos `study.py blind` e `study.py agreement` continuam disponíveis para uma possível ampliação com plano próprio.
 
-- Encontrar valores, datas e identificadores presentes nas passagens e nas respostas.
-- Registrar fontes recuperadas e fontes retiradas pelo filtro ou limite da entrada.
-- Calcular cobertura e recall após fixar referências e mapa de evidências.
-- Comparar escores completos e produzir intervalos por família.
+## Incerteza
 
-Uma correspondência textual não prova adequação. A avaliação por IA exige justificativa e conserva suas limitações. O catálogo atual localiza passagens; ele não julga respostas.
-
-## Comparações e intervalos
-
-H1 compara B com A; H2, C com B; H3, B com Bp. H1 e H3 usam condição e exceção. H2 usa perguntas com produto ou público explícito e codificável. Comparações exigem os dois escores da mesma pergunta e regras prévias para falhas e ausências.
-
-O código calcula 5.000 reamostragens de famílias dentro de cada banco. Os intervalos de 95% usam percentis 0,025 e 0,975; os de 98,33%, 0,008333 e 0,991667, da mesma distribuição, com interpolação linear. Registrar também se a diferença estimada atinge dez pontos percentuais.
-
-Com referências ou escores assistidos, os resultados são exploratórios e condicionados a essas anotações. Intervalos não quantificam todos os erros do avaliador automático. Concordância entre ferramentas não equivale a validação humana.
-
-## Fidelidade e publicação
-
-Conferir valores, unidades, datas e IDs antes e depois de qualquer ajuste de repetição. Uma perda de um item antes preservado impede aceitar o ajuste. O teste automático correspondente permanece pendente de integração.
-
-Cada diagnóstico reúne pergunta, resposta, referência, passagens e origem do julgamento. Mudanças na coleção ou no procedimento recebem nova versão. A publicação identifica claramente o que foi executado, o que foi sugerido e o que continua pendente.
+Os contrastes usam reamostragem de famílias por banco. Os intervalos publicados são exploratórios. A amostra pequena e a preparação assistida limitam sua interpretação.

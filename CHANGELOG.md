@@ -1,5 +1,16 @@
 ## 11/10/2026: execução em lote com assistência de Codex
 
+## 2026-10-12 Entrega documental
+
+- Redução de escopo registrada depois do início da geração.
+- Análise de cinco configurações, 30 perguntas e 150 pares concluída.
+- Auditoria de 27 originais e 43 âncoras; atributos inferidos declarados.
+- Reprodução pública das medidas, intervalos e intervenção BF04.
+- 56 respostas preservadas como execução parcial, sem notas de adequação.
+- Guias reorganizados por tarefa e planos históricos identificados.
+- Manuscrito atualizado com resultados, limites e declaração de IA.
+
+
 - Plano por entregas com meta de coleta e catálogo em uma jornada; retirados carga semanal, marcações humanas obrigatórias e intervalo de 14 dias do desenho ativo.
 - `batch.py` encadeia coleta, extração e catálogo; registra duplicatas e passagens literais, com origem automática e revisão pendente.
 - Conferência real de robots.txt para seis candidatos; termos restritivos do Itaú e Santander e falha de acesso da Caixa registrados.

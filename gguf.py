@@ -98,6 +98,8 @@ def check_final(inputs, gate_path):
     url=gate.get('public_registration_url','')
     if not re.fullmatch(r'https://github\.com/yhenriux/rag-bancario-publico/commit/[a-f0-9]{40}',url):
         raise ValueError('Registro exige commit público identificado')
+    if any(not isinstance(r.get('family'),str) or not r['family'] for r in finals):
+        raise ValueError('Entradas finais exigem família identificada')
     if any(r.get('family') in gate.get('pilot_families',[]) for r in finals):
         raise ValueError('Família do piloto presente na etapa final')
     if gate.get('inputs_sha256')!=digest(json.dumps(inputs,sort_keys=True)):

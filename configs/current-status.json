@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-12",
+  "scope": "documentary_retrieval",
+  "status": "completed_documentary_analysis",
+  "banks": [
+    "inter",
+    "bradesco"
+  ],
+  "documents": 27,
+  "chunks": 62,
+  "questions": 30,
+  "reference_anchors": 43,
+  "retrieval_configurations": [
+    "A",
+    "B",
+    "C",
+    "Bp",
+    "L"
+  ],
+  "retrieval_pairs": 150,
+  "partial_generations": 56,
+  "generation_completed": false,
+  "automatic_adequacy_enabled": false,
+  "human_independent_validation": false,
+  "license_decided": false,
+  "journal_submission": false
+}

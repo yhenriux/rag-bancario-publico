@@ -21,7 +21,7 @@ Adotamos como referência os artigos 4º e 5º da [Lei nº 15.263, de 14 de nove
 11. Preservar valores, condições, exceções e limites da regra.
 12. Usar nomes claros nos links e explicar mensagens de erro.
 
-O protocolo conserva sua versão científica revisada. Os guias oferecem explicações e exemplos para aplicar esse plano.
+O protocolo conserva sua versão científica revisada. Os guias explicam o método efetivamente aplicado, e o protocolo original permanece como histórico.
 
 ## Exemplo de revisão
 

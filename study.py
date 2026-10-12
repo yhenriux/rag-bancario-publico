@@ -235,6 +235,7 @@ def paired_bootstrap(pairs, repetitions=5000, seed=2026):
     alpha = 0.05 / 3
     return {'pairs': len(pairs), 'families_by_bank': {b: len(v) for b, v in banks.items()},
             'estimate': estimate, 'point_estimate_at_least_10pp': estimate >= 0.10,
+            'absolute_point_estimate_at_least_10pp': abs(estimate) >= 0.10,
             'ci95': [quantile(samples, .025), quantile(samples, .975)],
             'ci9833': [quantile(samples, alpha / 2), quantile(samples, 1 - alpha / 2)],
             'bootstrap_repetitions': repetitions, 'bootstrap_seed': seed,

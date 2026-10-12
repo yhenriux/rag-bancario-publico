@@ -1,40 +1,25 @@
 # Entenda o projeto
 
-[Voltar ao início](../README.md)
+[Início](../README.md) · [Resultados](resultados.md) · [Método](metodo.md)
 
-## O problema
+Uma pergunta bancária pode depender de uma regra, de uma condição e de uma exceção. A busca precisa encontrar as passagens certas para que elas possam entrar na resposta.
 
-Uma resposta pode citar a página certa e perder a condição que define quando uma regra vale. Um cartão pode oferecer isenção somente acima de um gasto mínimo. Queremos estudar como a organização dos documentos ajuda a preservar essas condições e quando um filtro perde uma fonte necessária.
+## Um exemplo real do estudo
 
-## Como funciona
+A pergunta “Tenho investimentos no Bradesco. Minha anuidade do cartão está isenta?” precisa esclarecer qual cartão e quais condições se aplicam. Uma fonte sobre o Aeternum pode ajudar nesse esclarecimento. Se o catálogo registrar apenas “Aeternum” e o filtro exigir “cartão”, a regra pode desaparecer da busca.
 
-O sistema consulta documentos públicos, encontra passagens e produz uma resposta. Cada passagem conserva sua origem. Comparamos seis formas de busca e resposta, descritas no [início do projeto](../README.md#o-que-o-estudo-compara).
+## O que comparamos
 
-Descrições dos documentos, chamadas metadados, funcionam como etiquetas. Elas podem informar produto, público e tipo de documento. Uma etiqueta errada pode prejudicar a busca. O alcance geral de uma regra precisa de suporte na fonte.
+Comparamos cinco formas de buscar nas mesmas fontes: texto original, descrição completa, descrição reduzida, filtro e busca por palavras. Medimos quantas referências preparadas aparecem nas primeiras posições.
 
-## Quem trabalha
+## Quem faz o trabalho
 
-Yago é o único pesquisador. Codex auxilia no trabalho operacional: localizar fontes, conferir condições, coletar, catalogar, preparar propostas e analisar registros. O plano usa lotes, com meta de coleta e catálogo em uma jornada. Não exige fichas manuais por documento nem disponibilidade semanal.
+Yago é o pesquisador e responsável intelectual. Codex apoia a preparação, o código, a análise e a redação. Não existe equipe de anotadores neste estudo. A origem assistida é informada nos registros.
 
-O código já encadeia coleta aprovada, extração e catálogo. Descrições semânticas, perguntas e avaliações assistidas ainda precisam ser preparadas sobre a coleção real. Os modelos também precisam de ambiente validado.
+## O que foi concluído
 
-## Como conferir respostas
+A coleta, a organização de 62 trechos e a comparação de busca em 30 perguntas estão documentadas. Há 56 respostas de uma execução parcial, preservadas como material complementar. O avaliador automático ficou abaixo da qualidade mínima exigida, por isso a correção das respostas permanece sem medida validada.
 
-Uma referência reúne a regra, suas condições, as passagens e o comportamento esperado. Perguntas e referências são fixadas antes das respostas.
+## Como usar a entrega
 
-- **Suficiência:** há informação bastante para responder?
-- **Aplicabilidade:** essa informação vale para a situação descrita?
-
-Regras automáticas ajudam a localizar perdas de valores e fontes. Julgamento por IA, quando utilizado, fica identificado como automático. Validação humana independente é uma etapa adicional. Não há avaliações humanas fictícias.
-
-## O piloto
-
-O piloto é um teste inicial com meta de 60 perguntas, em três bancos e cinco classes: direta, condição, exceção, ambiguidade e falta de informação. Produz 360 saídas principais e 90 de estabilidade.
-
-Essas saídas não exigem 450 marcações humanas na jornada rápida. Uma execução menor serve como teste técnico e registra seu tamanho real. O estudo assistido permanece exploratório.
-
-## O que fica registrado
-
-Fontes, termos, endereços, datas, hashes, passagens, descrições, perguntas, famílias, versões dos modelos, respostas, falhas e origem de cada anotação. Uma família reúne perguntas apoiadas na mesma regra; muitas paráfrases não criam famílias independentes.
-
-[Veja o plano de execução](plano-execucao.md) e a [situação das entregas](roadmap.md).
+Leia os [casos e resultados](resultados.md), examine as [fontes](fontes-e-acesso.md) e execute a [reprodução](reproducao.md). Você pode contestar referências e testar o mesmo desenho em outra coleção. Os resultados descrevem esta amostra; não estimam o desempenho de atendimento real dos bancos.

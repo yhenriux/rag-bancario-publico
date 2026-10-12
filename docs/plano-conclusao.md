@@ -1,5 +1,8 @@
 # Plano completo para concluir a pesquisa
 
+> **Documento histórico.** Preserve este registro para acompanhar o planejamento e as decisões da época. A entrega atual está no [método aplicado](metodo.md), nos [resultados](resultados.md) e no [escopo atual](escopo-atual.md).
+
+
 [Início](../README.md) · [Execução já realizada](execucao-20261011.md) · [Decisões em formato estruturado](../configs/closure-plan.json)
 
 **Versão de planejamento: 11/10/2026.** Yago é o único pesquisador. Codex conduz o trabalho técnico, prepara os registros e trata exceções. O plano usa execução em lote, sem equipe de anotadores ou catalogação manual obrigatória.

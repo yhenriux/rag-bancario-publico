@@ -1,5 +1,8 @@
 # Plano de execução em uma jornada
 
+> **Documento histórico.** Preserve este registro para acompanhar o planejamento e as decisões da época. A entrega atual está no [método aplicado](metodo.md), nos [resultados](resultados.md) e no [escopo atual](escopo-atual.md).
+
+
 [Voltar ao início](../README.md) · [Método ativo](protocolo-individual.md) · [Comandos](execucao.md)
 
 O [plano completo de conclusão](plano-conclusao.md) fixa as decisões e alternativas para as próximas etapas, incluindo dois bancos e o modelo compacto.

@@ -14,17 +14,17 @@
 | Filtro | Regra que decide quais documentos podem entrar na busca. |
 | Geral | Alcance que vale para todos os valores do atributo, quando a fonte comprova isso. |
 | Desconhecido | Valor que o pesquisador não conseguiu determinar na fonte. O filtro conserva esse documento. |
-| Configuração | Uma das seis formas de busca e resposta comparadas no estudo. |
+| Configuração | Uma forma de executar a busca. A entrega compara cinco; S pertence à geração complementar. |
 | Dossiê | Referência que reúne o que a resposta exige e as fontes que sustentam esses requisitos. |
 | Família de perguntas | Perguntas que dependem da mesma regra e da mesma evidência. |
 | Piloto | Teste inicial usado para revisar o procedimento e estimar o esforço. |
 | Suficiência | Presença de informação bastante para responder. |
 | Aplicabilidade | Compatibilidade da informação com a situação descrita na pergunta. |
 | Adequação | Atendimento a todos os requisitos da referência de avaliação. |
-| Cobertura | Presença de todas as fontes de pelo menos um conjunto suficiente para responder. |
+| Cobertura | Presença de um conjunto de âncoras definido no dossiê. Seu alcance depende da preparação das referências. |
 | Recall | Parcela das evidências de referência encontrada pela busca. Repetições da mesma evidência contam uma vez. |
 | Avaliação cega | Avaliação em que a pessoa não vê o nome do sistema que produziu a resposta. |
-| Concordância | Quanto avaliações coincidem. Neste estudo, duas passagens de Yago medem consistência intra-avaliador; não há acordo entre pessoas independentes. |
+| Concordância | Quanto avaliações coincidem. Neste estudo não foram realizadas rodadas humanas de avaliação ou concordância. |
 | Kappa | Medida de concordância que considera o acordo esperado pelo acaso. |
 | Jaccard | Medida que compara o que dois conjuntos têm em comum. |
 | Reamostragem ou bootstrap | Repetição do cálculo com novas seleções dos grupos observados, para estimar incerteza. |
@@ -38,7 +38,7 @@
 | Revisão do modelo | Versão identificada dos arquivos do modelo. Ajuda a repetir a mesma execução. |
 | Semente | Número que ajuda a repetir escolhas feitas pelo programa. |
 | Instantâneo | Cópia dos documentos em uma data de coleta. |
-| Pré-registro | Plano público datado, registrado antes da etapa final do estudo. |
+| Pré-registro | Plano registrado antes da análise pretendida. A mudança de escopo deste projeto é posterior aos rankings e não equivale a um pré-registro confirmatório. |
 | Identificador persistente | Endereço ou código durável que identifica uma versão publicada. Um DOI é um exemplo. |
 | JSON | Arquivo de dados organizado em campos e valores. |
 | JSONL | Arquivo com um registro JSON em cada linha. |

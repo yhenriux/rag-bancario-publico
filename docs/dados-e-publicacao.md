@@ -1,56 +1,32 @@
-# Como guardar e publicar os dados
+# Dados, direitos e publicação
 
-[Voltar ao início](../README.md)
+[Início](../README.md) · [Formato dos dados](dados.md) · [Reprodução](reproducao.md)
 
-Cada arquivo precisa ter uma origem e uma versão identificadas. A publicação também depende dos direitos de uso da fonte e da etapa da avaliação.
+## Onde está cada material
 
-## O que fica em cada lugar?
+| Material | Local e finalidade |
+|---|---|
+| Código e perguntas próprias | GitHub, para consulta e reprodução |
+| Metadados, posições e hashes | GitHub, para rastrear os registros |
+| Rankings e medidas derivadas | GitHub, para repetir as contas |
+| Originais, trechos, prompts e respostas | Pacote privado, sem redistribuição aprovada |
+| Pesos dos modelos | Fora do repositório e do pacote; revisões identificadas |
+| Artigo | Markdown no GitHub e Word para revisão autoral |
 
-| Pasta | Conteúdo | Como usar |
-|---|---|---|
-| `configs/` | Exemplos de configuração do estudo | Os exemplos podem ficar no GitHub. |
-| `examples/` | Perguntas, fontes e formulários fictícios | Servem para aprender e testar o código. |
-| `docs/` | Explicações e protocolo | Servem para entender e executar o estudo. |
-| `data/` | Cópias das fontes, textos e índices reais | Ficam fora do Git por padrão. |
-| `private/` | Anotações, referências, decisões e chaves | Yago controla o acesso aos arquivos de pesquisa. |
-| `runs/` | Resultados e registros das execuções | Ficam fora do Git por padrão. |
+## Integridade e histórico
 
-O arquivo `.gitignore` evita a inclusão automática dessas pastas no Git. Ele não controla o acesso ao computador ou ao armazenamento do pesquisador.
+`SHA256SUMS.json` confere os arquivos registrados. Os commits identificam versões. O protocolo original permanece preservado, e a [mudança de escopo](escopo-atual.md) informa quando e por que a entrega foi reduzida.
 
-## O que o registro de uma fonte contém?
+Não há depósito com DOI. O histórico do GitHub não é apresentado como pré-registro confirmatório desta análise, pois os rankings já estavam disponíveis na mudança de alcance.
 
-- Banco e tipo de documento.
-- Endereço usado na coleta e endereço final.
-- Data e horário da coleta.
-- Código SHA-256 do conteúdo original.
-- Local do arquivo guardado.
-- Termos de uso, data de revisão e responsável.
-- Decisão sobre coleta e redistribuição.
+## Direitos e declarações
 
-Conserve o arquivo original. Gere o texto revisado em outro arquivo. Registre o que foi corrigido e por quê.
+A conferência operacional de acesso não autoriza redistribuir o conteúdo dos bancos. As licenças do software de terceiros e dos modelos continuam próprias. A escolha da licença dos materiais autorais cabe a Yago; disponibilidade no GitHub não concede automaticamente uma licença aberta.
 
-## O que publicar primeiro?
+ChatGPT/Codex apoiou desenho, interpretação de fontes, preparação, programação, análise, redação e revisão. Qwen gerou respostas e controles; E5 representou textos para busca. Nenhuma ferramenta recebe autoria. A responsabilidade intelectual pertence ao pesquisador.
 
-Código, guias, exemplos fictícios e regras do estudo. Após revisar as fontes, Yago pode publicar o cadastro de endereços e os códigos de conferência permitidos.
+Yago trabalha no Inter. O projeto usa apenas documentação pública e não representa o banco.
 
-Documentos coletados e respostas de avaliação precisam de revisão específica antes da publicação. Uma página disponível para leitura pode ter limites para redistribuição.
+## Como citar
 
-A chave que mostra qual configuração produziu cada resposta fica restrita enquanto houver avaliação cega.
-
-## Como fixar uma versão?
-
-Registre a versão do código, as versões dos modelos e os códigos dos arquivos. Deposite o plano em um serviço público datado, como OSF ou Zenodo, antes da etapa final.
-
-O identificador público só entra na documentação depois de existir. O projeto ainda não tem DOI nem estudo final executado.
-
-## Como citar?
-
-Enquanto não houver uma versão com identificador persistente, informe o nome do projeto, o endereço do repositório e o commit usado.
-
-O arquivo `CITATION.cff` contém a identificação básica. Atualize a versão e o identificador quando a publicação ocorrer.
-
-## Quais direitos valem?
-
-Os documentos dos bancos conservam seus direitos e termos de uso. A licença do código ainda precisa ser definida pelo responsável. A publicação do protocolo acompanha a aprovação autoral e o registro da versão.
-
-[Veja o cadastro dos campos](dados.md).
+Informe autor, título, URL do repositório, data de consulta e commit utilizado. Consulte [CITATION.cff](../CITATION.cff). A escolha da revista, a aprovação do texto e a submissão são decisões autorais.

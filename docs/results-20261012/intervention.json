@@ -1,0 +1,28 @@
+{
+  "question_id": "BF04",
+  "post_hoc": true,
+  "human_validated": false,
+  "parent_relation": {
+    "aeternum": "cartao"
+  },
+  "relation_source_url": "https://banco.bradesco/html/principal/cartoes/aeternum/",
+  "k": 5,
+  "baseline_filtered_anchor_recall": 0.0,
+  "corrected_anchor_recall": 1.0,
+  "corrected_known_selected_ids": [
+    "91c64bcfaa43b29536a761c2cf118a37180e082aea93427fbc7db6de1a5e47ef",
+    "8391fab7206b1fec27e8171275fa498cc2776baf9ab183aacd0dd81bd873b143",
+    "c724f935137c3b535a207fffe141abf5b66c4efce7f318b472bab41ffbb66b21",
+    "43c9624fb199f5ca01139a65d82d3b7d346b34e4b9fd215fbc4248bd9d5aa4c5",
+    "fd92296fd76533d9f68cdbf41c345b77814d5521da4eafa69fbdffa428b7ce46"
+  ],
+  "reference_units": [
+    "bradesco-aeternum-fee-c6683dae7e0b",
+    "bradesco-aeternum-fee-2413e4c0acc7"
+  ],
+  "full_context_reconstructed": true,
+  "all_reference_anchors_guaranteed_in_top5": true,
+  "new_generation_or_embedding_calls": 0,
+  "main_results_unchanged": true,
+  "interpretation": "Correção demonstrada no caso já observado, sem validação externa ou estimativa de ganho geral."
+}

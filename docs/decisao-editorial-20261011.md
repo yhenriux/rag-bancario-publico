@@ -1,5 +1,8 @@
 # Escolha editorial baseada no trabalho executado
 
+> **Documento histórico.** Preserve este registro para acompanhar o planejamento e as decisões da época. A entrega atual está no [método aplicado](metodo.md), nos [resultados](resultados.md) e no [escopo atual](escopo-atual.md).
+
+
 Conferência de fontes oficiais em 11 de outubro de 2026. Nenhuma revista foi contatada e não houve submissão.
 
 ## Múltiplos Olhares em Ciência da Informação

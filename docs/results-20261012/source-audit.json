@@ -1,0 +1,17 @@
+{
+  "documents": 27,
+  "chunks": 62,
+  "reference_anchors": 43,
+  "banks": {
+    "inter": 18,
+    "bradesco": 9
+  },
+  "all_registry_records_present": true,
+  "all_robots_hashes_present": true,
+  "express_permission_from_banks": false,
+  "source_redistribution_approved": false,
+  "review_kind": "registro operacional assistido; não constitui parecer jurídico",
+  "human_independent_review": false,
+  "snapshot_bytes_verified": 27,
+  "verification": "sha256 de todos os originais usados"
+}

@@ -57,6 +57,7 @@ O programa cria um arquivo de resultados da demonstração. Ele conserva o arqui
 ## 5. Confira os testes
 
 ```bash
+python -m pip install 'beautifulsoup4>=4.12,<5' 'pypdf>=5,<7'
 python -m unittest discover -s tests -v
 ```
 
@@ -68,7 +69,7 @@ Os testes também rodam no GitHub. Abra a aba **Actions** para ver o resultado a
 
 Para entender a execução com assistência de Codex, leia [Entenda o projeto](entenda-o-projeto.md).
 
-Para preparar uma pesquisa com documentos reais, siga o [guia de execução](execucao.md). Essa etapa exige revisão das fontes, instalação dos modelos e participação de avaliadores.
+Para preparar uma pesquisa com documentos reais, siga o [guia de execução](execucao.md). Essa etapa exige revisão das fontes e instalação das dependências. Para repetir somente as contas, consulte a [reprodução pública](reproducao.md).
 
 ## Problemas comuns
 

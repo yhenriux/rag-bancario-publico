@@ -3,11 +3,15 @@ from pathlib import Path
 from study import load,records,write,compatible,recall
 
 
-def demonstrate(root,output):
-    root=Path(root);catalog={c['id']:c for c in records('configs/execution-20261011/catalog.jsonl')}
-    q=next(q for q in records(root/'dataset-v2/final-questions.jsonl') if q['id']=='BF04')
-    d=next(d for d in records(root/'dataset-v2/final-dossiers.jsonl') if d['question_id']=='BF04')
-    rows=records(root/'final-inputs/retrieval.jsonl');rank=next(r for r in rows if r['question_id']=='BF04' and r['config']=='B')['ranked']
+def demonstrate(root,output,public=False):
+    root=Path(root)
+    config=root/'configs/execution-20261012' if public else Path('configs/execution-20261012')
+    data=config if public else root/'dataset-v2'
+    ranking=root/'docs/results-20261012/final/retrieval.jsonl' if public else root/'final-inputs/retrieval.jsonl'
+    catalog={c['id']:c for c in records(config/'catalog.jsonl')}
+    q=next(q for q in records(data/'final-questions.jsonl') if q['id']=='BF04')
+    d=next(d for d in records(data/'final-dossiers.jsonl') if d['question_id']=='BF04')
+    rows=records(ranking);rank=next(r for r in rows if r['question_id']=='BF04' and r['config']=='B')['ranked']
     selected=[]
     for candidate in rank:
         c=catalog[candidate['chunk_id']];metadata={k:list(c[k]) for k in ('product','public')}
@@ -15,7 +19,7 @@ def demonstrate(root,output):
         if compatible(metadata,q['query_attributes']):selected.append(candidate['chunk_id'])
     # Os candidatos fora do top 10 vêm depois destes. Âncoras nos primeiros cinco
     # candidatos compatíveis permanecem no top 5 mesmo se sua lista for completada.
-    um=load(root/'dataset-v2/unit-map.json')
+    um=load(data/'unit-map.json')
     restored={u for c in selected[:5] for u in um.get(c,[])}
     original=next(r for r in rows if r['question_id']=='BF04' and r['config']=='C')
     old={u for c in original['ranked'][:5] for u in um.get(c['chunk_id'],[])}

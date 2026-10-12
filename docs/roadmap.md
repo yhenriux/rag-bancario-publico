@@ -1,25 +1,21 @@
-# Plano de trabalho
+# Estado e próximos passos
 
-[Voltar ao início](../README.md) · [Plano de uma jornada](plano-execucao.md)
+[Início](../README.md) · [Resultados](resultados.md)
 
-A execução usa lotes com assistência de Codex. Yago é o único pesquisador. O [adendo ativo](protocolo-individual.md) substitui a exigência de equipe e o calendário de avaliação manual.
+## Entrega documental concluída
 
-| Entrega | Situação |
-|---|---|
-| Código de coleta dirigida e seis configurações | Preparado; um caso real executado nas seis configurações |
-| Pré-conferência dos caminhos de seis candidatos | Consultas reais registradas em [access-preflight.json](access-preflight.json) |
-| Conferência de termos | Inter e Bradesco: liberação operacional limitada; Itaú, Santander e C6 suspensos |
-| Coleta, extração e catálogo em lote | 17 documentos reais: 12 Inter e 5 Bradesco |
-| Catálogo e passagens com origem literal | Catálogo real e 326 passagens candidatas, sem equivalência a famílias |
-| Descrições, perguntas e referências assistidas | Um caso técnico sobre fontes reais; preparação completa pendente |
-| Execução do piloto E5/Qwen | E5 validado; Qwen compacto: sete gerações técnicas concluídas; piloto completo pendente |
-| Julgamento por IA | Fluxo metodológico definido; integração ainda pendente |
-| Análise automática exploratória | Cálculos disponíveis; resultados reais pendentes |
-| Validação humana e teste com leitores | Etapas adicionais, fora da jornada rápida |
-| Etapa final e registro público | Dependem do piloto e do desenho atualizado |
+- Seleção de Inter e Bradesco, com exclusões justificadas.
+- Coleta e recuperação de 27 fontes, com versões registradas.
+- Organização de 62 trechos e 43 âncoras de referência.
+- Preparação de 30 perguntas, com origem assistida e famílias separadas.
+- Comparação de cinco configurações de busca nos dois conjuntos.
+- Análise, exemplos, documentação e cálculos públicos reproduzíveis.
+- Manuscrito com resultados para revisão autoral.
 
-Cada lote termina com contagens, hashes, falhas e decisões. O relatório distingue exemplo fictício, consulta técnica, proposta automática e resultado do estudo. Publicar no GitHub uma atualização do planejamento não significa registrar a etapa final no OSF ou Zenodo.
+## Decisões do autor
 
-[Resultados e limites da primeira execução](execucao-20261011.md).
+Revisar conteúdo e referências, escolher a licença dos materiais autorais, decidir a revista e aprovar eventual submissão. A [decisão editorial](decisao-editorial-20261012.md) registra o limite da política de IA da Múltiplos Olhares para o uso declarado neste projeto.
 
-O [plano completo de conclusão](plano-conclusao.md) define critérios de encerramento, alternativas de fonte e método, geração GGUF, avaliação automática, registro e publicação. Suas etapas continuam identificadas como planejadas até produzir as evidências correspondentes.
+## Ampliações possíveis
+
+Concluir geração, validar avaliação semântica, ampliar fontes e perguntas, obter revisão independente e testar compreensão com leitores. Essas etapas exigem novo alcance e registro. As 56 respostas já salvas permanecem disponíveis para retomada no pacote privado.

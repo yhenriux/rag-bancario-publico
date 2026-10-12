@@ -1,5 +1,8 @@
 # Adendo ativo: execução em lote com assistência de IA
 
+> **Documento histórico.** Preserve este registro para acompanhar o planejamento e as decisões da época. A entrega atual está no [método aplicado](metodo.md), nos [resultados](resultados.md) e no [escopo atual](escopo-atual.md).
+
+
 [Voltar ao início](../README.md) · [Plano de um dia](plano-execucao.md) · [Protocolo original](protocolo.md)
 
 **Atualizado em 11/10/2026.** Yago é o único pesquisador. Codex auxilia na seleção de fontes, programação, catalogação, preparação de perguntas e análise. O plano operacional usa entregas em lote. Não exige equipe, carga semanal, centenas de marcações manuais ou espera de 14 dias.

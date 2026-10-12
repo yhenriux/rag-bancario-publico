@@ -33,12 +33,12 @@ Modelo: [questions.jsonl](../examples/questions.jsonl).
 | `family` | Família da regra, com identificação do banco. |
 | `class` | Grupo principal da pergunta. |
 | `question` | Texto da pergunta. |
-| `query_attributes` | Produto e público explícitos na pergunta, codificados com origem registrada. |
+| `query_attributes` | Produto e público preparados para o filtro, com normalizações e inferências assistidas registradas. |
 | `origin` | Origem da pergunta: canal oficial, elaboração humana ou proposta assistida, com ferramenta e instrução registradas. |
 
 Os grupos aceitos pelo código são `direta`, `condicao`, `excecao`, `ambiguidade` e `insuficiencia`.
 
-Se produto e público não estiverem explícitos, use `{}` em `query_attributes`. O código não tenta adivinhar esses valores.
+Use `{}` para omitir filtros. A execução aplicada usa atributos preparados, incluindo inferências de Codex; consulte o [registro de origem](results-20261012/query-attribute-audit.jsonl). O código recebe esses valores e não os deduz durante a busca.
 
 ## Descrição do trecho
 
@@ -61,7 +61,7 @@ Modelo: [dossiers.jsonl](../examples/dossiers.jsonl).
 | `required_attributes` | Características que a informação precisa atender. |
 | `mandatory_requirements` | O que uma resposta adequada precisa preservar. |
 | `reference_units` | Códigos das passagens de referência. |
-| `sufficient_sets` | Conjuntos alternativos de passagens que bastam para responder. |
+| `sufficient_sets` | Conjuntos de âncoras preparados para medir cobertura, sem validação independente de suficiência. |
 | `expected_action` | Resposta, esclarecimento ou reconhecimento da falta de evidência. |
 | `adjudication_id` | Registro da decisão sobre a referência, com origem humana ou assistida. |
 

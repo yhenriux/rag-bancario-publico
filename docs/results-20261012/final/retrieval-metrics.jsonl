@@ -1,0 +1,160 @@
+{"question_id": "IF01", "config": "A", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-card-delivery-4dc5449b5c1b", "inter-card-delivery-786bf1c3dfed", "inter-card-delivery-de31c42f2131", "inter-card-delivery-ec07c64b3e2f"]}
+{"question_id": "IF01", "config": "A", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-card-delivery-4dc5449b5c1b", "inter-card-delivery-786bf1c3dfed", "inter-card-delivery-de31c42f2131", "inter-card-delivery-ec07c64b3e2f"]}
+{"question_id": "IF01", "config": "A", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-card-delivery-4dc5449b5c1b", "inter-card-delivery-786bf1c3dfed", "inter-card-delivery-de31c42f2131", "inter-card-delivery-ec07c64b3e2f"]}
+{"question_id": "IF01", "config": "B", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-card-delivery-4dc5449b5c1b", "inter-card-delivery-786bf1c3dfed", "inter-card-delivery-de31c42f2131", "inter-card-delivery-ec07c64b3e2f"]}
+{"question_id": "IF01", "config": "B", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-card-delivery-4dc5449b5c1b", "inter-card-delivery-786bf1c3dfed", "inter-card-delivery-de31c42f2131", "inter-card-delivery-ec07c64b3e2f"]}
+{"question_id": "IF01", "config": "B", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-card-delivery-4dc5449b5c1b", "inter-card-delivery-786bf1c3dfed", "inter-card-delivery-de31c42f2131", "inter-card-delivery-ec07c64b3e2f"]}
+{"question_id": "IF01", "config": "C", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-card-delivery-4dc5449b5c1b", "inter-card-delivery-786bf1c3dfed", "inter-card-delivery-de31c42f2131", "inter-card-delivery-ec07c64b3e2f"]}
+{"question_id": "IF01", "config": "C", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-card-delivery-4dc5449b5c1b", "inter-card-delivery-786bf1c3dfed", "inter-card-delivery-de31c42f2131", "inter-card-delivery-ec07c64b3e2f"]}
+{"question_id": "IF01", "config": "C", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-card-delivery-4dc5449b5c1b", "inter-card-delivery-786bf1c3dfed", "inter-card-delivery-de31c42f2131", "inter-card-delivery-ec07c64b3e2f"]}
+{"question_id": "IF01", "config": "Bp", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-card-delivery-4dc5449b5c1b", "inter-card-delivery-786bf1c3dfed", "inter-card-delivery-de31c42f2131", "inter-card-delivery-ec07c64b3e2f"]}
+{"question_id": "IF01", "config": "Bp", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-card-delivery-4dc5449b5c1b", "inter-card-delivery-786bf1c3dfed", "inter-card-delivery-de31c42f2131", "inter-card-delivery-ec07c64b3e2f"]}
+{"question_id": "IF01", "config": "Bp", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-card-delivery-4dc5449b5c1b", "inter-card-delivery-786bf1c3dfed", "inter-card-delivery-de31c42f2131", "inter-card-delivery-ec07c64b3e2f"]}
+{"question_id": "IF01", "config": "L", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-card-delivery-4dc5449b5c1b", "inter-card-delivery-786bf1c3dfed", "inter-card-delivery-de31c42f2131", "inter-card-delivery-ec07c64b3e2f"]}
+{"question_id": "IF01", "config": "L", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-card-delivery-4dc5449b5c1b", "inter-card-delivery-786bf1c3dfed", "inter-card-delivery-de31c42f2131", "inter-card-delivery-ec07c64b3e2f"]}
+{"question_id": "IF01", "config": "L", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-card-delivery-4dc5449b5c1b", "inter-card-delivery-786bf1c3dfed", "inter-card-delivery-de31c42f2131", "inter-card-delivery-ec07c64b3e2f"]}
+{"question_id": "IF01", "config": "S", "recall": null, "coverage": null}
+{"question_id": "IF02", "config": "A", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-guarantee-redemption-7ced3d89ff50", "inter-guarantee-redemption-8edba404cb28", "inter-guarantee-redemption-d23777b28c80"]}
+{"question_id": "IF02", "config": "A", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-guarantee-redemption-7ced3d89ff50", "inter-guarantee-redemption-8edba404cb28", "inter-guarantee-redemption-d23777b28c80"]}
+{"question_id": "IF02", "config": "A", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-guarantee-redemption-7ced3d89ff50", "inter-guarantee-redemption-8edba404cb28", "inter-guarantee-redemption-d23777b28c80"]}
+{"question_id": "IF02", "config": "B", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-guarantee-redemption-7ced3d89ff50", "inter-guarantee-redemption-8edba404cb28", "inter-guarantee-redemption-d23777b28c80"]}
+{"question_id": "IF02", "config": "B", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-guarantee-redemption-7ced3d89ff50", "inter-guarantee-redemption-8edba404cb28", "inter-guarantee-redemption-d23777b28c80"]}
+{"question_id": "IF02", "config": "B", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-guarantee-redemption-7ced3d89ff50", "inter-guarantee-redemption-8edba404cb28", "inter-guarantee-redemption-d23777b28c80"]}
+{"question_id": "IF02", "config": "C", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-guarantee-redemption-7ced3d89ff50", "inter-guarantee-redemption-8edba404cb28", "inter-guarantee-redemption-d23777b28c80"]}
+{"question_id": "IF02", "config": "C", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-guarantee-redemption-7ced3d89ff50", "inter-guarantee-redemption-8edba404cb28", "inter-guarantee-redemption-d23777b28c80"]}
+{"question_id": "IF02", "config": "C", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-guarantee-redemption-7ced3d89ff50", "inter-guarantee-redemption-8edba404cb28", "inter-guarantee-redemption-d23777b28c80"]}
+{"question_id": "IF02", "config": "Bp", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-guarantee-redemption-7ced3d89ff50", "inter-guarantee-redemption-8edba404cb28", "inter-guarantee-redemption-d23777b28c80"]}
+{"question_id": "IF02", "config": "Bp", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-guarantee-redemption-7ced3d89ff50", "inter-guarantee-redemption-8edba404cb28", "inter-guarantee-redemption-d23777b28c80"]}
+{"question_id": "IF02", "config": "Bp", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-guarantee-redemption-7ced3d89ff50", "inter-guarantee-redemption-8edba404cb28", "inter-guarantee-redemption-d23777b28c80"]}
+{"question_id": "IF02", "config": "L", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-guarantee-redemption-7ced3d89ff50", "inter-guarantee-redemption-8edba404cb28", "inter-guarantee-redemption-d23777b28c80"]}
+{"question_id": "IF02", "config": "L", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-guarantee-redemption-7ced3d89ff50", "inter-guarantee-redemption-8edba404cb28", "inter-guarantee-redemption-d23777b28c80"]}
+{"question_id": "IF02", "config": "L", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-guarantee-redemption-7ced3d89ff50", "inter-guarantee-redemption-8edba404cb28", "inter-guarantee-redemption-d23777b28c80"]}
+{"question_id": "IF02", "config": "S", "recall": null, "coverage": null}
+{"question_id": "IF03", "config": "A", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-loop-41d9c58fc00c", "inter-loop-584f113fa5b4", "inter-loop-8556cbfb4947"]}
+{"question_id": "IF03", "config": "A", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-loop-41d9c58fc00c", "inter-loop-584f113fa5b4", "inter-loop-8556cbfb4947"]}
+{"question_id": "IF03", "config": "A", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-loop-41d9c58fc00c", "inter-loop-584f113fa5b4", "inter-loop-8556cbfb4947"]}
+{"question_id": "IF03", "config": "B", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-loop-41d9c58fc00c", "inter-loop-584f113fa5b4", "inter-loop-8556cbfb4947"]}
+{"question_id": "IF03", "config": "B", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-loop-41d9c58fc00c", "inter-loop-584f113fa5b4", "inter-loop-8556cbfb4947"]}
+{"question_id": "IF03", "config": "B", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-loop-41d9c58fc00c", "inter-loop-584f113fa5b4", "inter-loop-8556cbfb4947"]}
+{"question_id": "IF03", "config": "C", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-loop-41d9c58fc00c", "inter-loop-584f113fa5b4", "inter-loop-8556cbfb4947"]}
+{"question_id": "IF03", "config": "C", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-loop-41d9c58fc00c", "inter-loop-584f113fa5b4", "inter-loop-8556cbfb4947"]}
+{"question_id": "IF03", "config": "C", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-loop-41d9c58fc00c", "inter-loop-584f113fa5b4", "inter-loop-8556cbfb4947"]}
+{"question_id": "IF03", "config": "Bp", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-loop-41d9c58fc00c", "inter-loop-584f113fa5b4", "inter-loop-8556cbfb4947"]}
+{"question_id": "IF03", "config": "Bp", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-loop-41d9c58fc00c", "inter-loop-584f113fa5b4", "inter-loop-8556cbfb4947"]}
+{"question_id": "IF03", "config": "Bp", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-loop-41d9c58fc00c", "inter-loop-584f113fa5b4", "inter-loop-8556cbfb4947"]}
+{"question_id": "IF03", "config": "L", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-loop-41d9c58fc00c", "inter-loop-584f113fa5b4", "inter-loop-8556cbfb4947"]}
+{"question_id": "IF03", "config": "L", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-loop-41d9c58fc00c", "inter-loop-584f113fa5b4", "inter-loop-8556cbfb4947"]}
+{"question_id": "IF03", "config": "L", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-loop-41d9c58fc00c", "inter-loop-584f113fa5b4", "inter-loop-8556cbfb4947"]}
+{"question_id": "IF03", "config": "S", "recall": null, "coverage": null}
+{"question_id": "IF04", "config": "A", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-dispute-e706d0704b53"]}
+{"question_id": "IF04", "config": "A", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-dispute-e706d0704b53"]}
+{"question_id": "IF04", "config": "A", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-dispute-e706d0704b53"]}
+{"question_id": "IF04", "config": "B", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-dispute-e706d0704b53"]}
+{"question_id": "IF04", "config": "B", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-dispute-e706d0704b53"]}
+{"question_id": "IF04", "config": "B", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-dispute-e706d0704b53"]}
+{"question_id": "IF04", "config": "C", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-dispute-e706d0704b53"]}
+{"question_id": "IF04", "config": "C", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-dispute-e706d0704b53"]}
+{"question_id": "IF04", "config": "C", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-dispute-e706d0704b53"]}
+{"question_id": "IF04", "config": "Bp", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-dispute-e706d0704b53"]}
+{"question_id": "IF04", "config": "Bp", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-dispute-e706d0704b53"]}
+{"question_id": "IF04", "config": "Bp", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-dispute-e706d0704b53"]}
+{"question_id": "IF04", "config": "L", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-dispute-e706d0704b53"]}
+{"question_id": "IF04", "config": "L", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-dispute-e706d0704b53"]}
+{"question_id": "IF04", "config": "L", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["inter-dispute-e706d0704b53"]}
+{"question_id": "IF04", "config": "S", "recall": null, "coverage": null}
+{"question_id": "IF05", "config": "A", "k": 3, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "IF05", "config": "A", "k": 5, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "IF05", "config": "A", "k": 10, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "IF05", "config": "B", "k": 3, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "IF05", "config": "B", "k": 5, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "IF05", "config": "B", "k": 10, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "IF05", "config": "C", "k": 3, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "IF05", "config": "C", "k": 5, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "IF05", "config": "C", "k": 10, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "IF05", "config": "Bp", "k": 3, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "IF05", "config": "Bp", "k": 5, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "IF05", "config": "Bp", "k": 10, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "IF05", "config": "L", "k": 3, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "IF05", "config": "L", "k": 5, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "IF05", "config": "L", "k": 10, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "IF05", "config": "S", "recall": null, "coverage": null}
+{"question_id": "BF01", "config": "A", "k": 3, "recall": 0.0, "coverage": false, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "BF01", "config": "A", "k": 5, "recall": 0.0, "coverage": false, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "BF01", "config": "A", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-aeternum-additional-219b39fe85da"]}
+{"question_id": "BF01", "config": "B", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-aeternum-additional-219b39fe85da"]}
+{"question_id": "BF01", "config": "B", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-aeternum-additional-219b39fe85da"]}
+{"question_id": "BF01", "config": "B", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-aeternum-additional-219b39fe85da"]}
+{"question_id": "BF01", "config": "C", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-aeternum-additional-219b39fe85da"]}
+{"question_id": "BF01", "config": "C", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-aeternum-additional-219b39fe85da"]}
+{"question_id": "BF01", "config": "C", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-aeternum-additional-219b39fe85da"]}
+{"question_id": "BF01", "config": "Bp", "k": 3, "recall": 0.0, "coverage": false, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "BF01", "config": "Bp", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-aeternum-additional-219b39fe85da"]}
+{"question_id": "BF01", "config": "Bp", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-aeternum-additional-219b39fe85da"]}
+{"question_id": "BF01", "config": "L", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-aeternum-additional-219b39fe85da"]}
+{"question_id": "BF01", "config": "L", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-aeternum-additional-219b39fe85da"]}
+{"question_id": "BF01", "config": "L", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-aeternum-additional-219b39fe85da"]}
+{"question_id": "BF01", "config": "S", "recall": null, "coverage": null}
+{"question_id": "BF02", "config": "A", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-international-account-ad51809508bb"]}
+{"question_id": "BF02", "config": "A", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-international-account-ad51809508bb"]}
+{"question_id": "BF02", "config": "A", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-international-account-ad51809508bb"]}
+{"question_id": "BF02", "config": "B", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-international-account-ad51809508bb"]}
+{"question_id": "BF02", "config": "B", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-international-account-ad51809508bb"]}
+{"question_id": "BF02", "config": "B", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-international-account-ad51809508bb"]}
+{"question_id": "BF02", "config": "C", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-international-account-ad51809508bb"]}
+{"question_id": "BF02", "config": "C", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-international-account-ad51809508bb"]}
+{"question_id": "BF02", "config": "C", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-international-account-ad51809508bb"]}
+{"question_id": "BF02", "config": "Bp", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-international-account-ad51809508bb"]}
+{"question_id": "BF02", "config": "Bp", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-international-account-ad51809508bb"]}
+{"question_id": "BF02", "config": "Bp", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-international-account-ad51809508bb"]}
+{"question_id": "BF02", "config": "L", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-international-account-ad51809508bb"]}
+{"question_id": "BF02", "config": "L", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-international-account-ad51809508bb"]}
+{"question_id": "BF02", "config": "L", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-international-account-ad51809508bb"]}
+{"question_id": "BF02", "config": "S", "recall": null, "coverage": null}
+{"question_id": "BF03", "config": "A", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-card-bill-payment-2e0cdb816688", "bradesco-card-bill-payment-b1d0f719fbc3"]}
+{"question_id": "BF03", "config": "A", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-card-bill-payment-2e0cdb816688", "bradesco-card-bill-payment-b1d0f719fbc3"]}
+{"question_id": "BF03", "config": "A", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-card-bill-payment-2e0cdb816688", "bradesco-card-bill-payment-b1d0f719fbc3"]}
+{"question_id": "BF03", "config": "B", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-card-bill-payment-2e0cdb816688", "bradesco-card-bill-payment-b1d0f719fbc3"]}
+{"question_id": "BF03", "config": "B", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-card-bill-payment-2e0cdb816688", "bradesco-card-bill-payment-b1d0f719fbc3"]}
+{"question_id": "BF03", "config": "B", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-card-bill-payment-2e0cdb816688", "bradesco-card-bill-payment-b1d0f719fbc3"]}
+{"question_id": "BF03", "config": "C", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-card-bill-payment-2e0cdb816688", "bradesco-card-bill-payment-b1d0f719fbc3"]}
+{"question_id": "BF03", "config": "C", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-card-bill-payment-2e0cdb816688", "bradesco-card-bill-payment-b1d0f719fbc3"]}
+{"question_id": "BF03", "config": "C", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-card-bill-payment-2e0cdb816688", "bradesco-card-bill-payment-b1d0f719fbc3"]}
+{"question_id": "BF03", "config": "Bp", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-card-bill-payment-2e0cdb816688", "bradesco-card-bill-payment-b1d0f719fbc3"]}
+{"question_id": "BF03", "config": "Bp", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-card-bill-payment-2e0cdb816688", "bradesco-card-bill-payment-b1d0f719fbc3"]}
+{"question_id": "BF03", "config": "Bp", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-card-bill-payment-2e0cdb816688", "bradesco-card-bill-payment-b1d0f719fbc3"]}
+{"question_id": "BF03", "config": "L", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-card-bill-payment-2e0cdb816688", "bradesco-card-bill-payment-b1d0f719fbc3"]}
+{"question_id": "BF03", "config": "L", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-card-bill-payment-2e0cdb816688", "bradesco-card-bill-payment-b1d0f719fbc3"]}
+{"question_id": "BF03", "config": "L", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-card-bill-payment-2e0cdb816688", "bradesco-card-bill-payment-b1d0f719fbc3"]}
+{"question_id": "BF03", "config": "S", "recall": null, "coverage": null}
+{"question_id": "BF04", "config": "A", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-aeternum-fee-2413e4c0acc7", "bradesco-aeternum-fee-c6683dae7e0b"]}
+{"question_id": "BF04", "config": "A", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-aeternum-fee-2413e4c0acc7", "bradesco-aeternum-fee-c6683dae7e0b"]}
+{"question_id": "BF04", "config": "A", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-aeternum-fee-2413e4c0acc7", "bradesco-aeternum-fee-c6683dae7e0b"]}
+{"question_id": "BF04", "config": "B", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-aeternum-fee-2413e4c0acc7", "bradesco-aeternum-fee-c6683dae7e0b"]}
+{"question_id": "BF04", "config": "B", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-aeternum-fee-2413e4c0acc7", "bradesco-aeternum-fee-c6683dae7e0b"]}
+{"question_id": "BF04", "config": "B", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-aeternum-fee-2413e4c0acc7", "bradesco-aeternum-fee-c6683dae7e0b"]}
+{"question_id": "BF04", "config": "C", "k": 3, "recall": 0.0, "coverage": false, "reference_units_excluded": ["bradesco-aeternum-fee-2413e4c0acc7", "bradesco-aeternum-fee-c6683dae7e0b"], "retrieved_reference_units": []}
+{"question_id": "BF04", "config": "C", "k": 5, "recall": 0.0, "coverage": false, "reference_units_excluded": ["bradesco-aeternum-fee-2413e4c0acc7", "bradesco-aeternum-fee-c6683dae7e0b"], "retrieved_reference_units": []}
+{"question_id": "BF04", "config": "C", "k": 10, "recall": 0.0, "coverage": false, "reference_units_excluded": ["bradesco-aeternum-fee-2413e4c0acc7", "bradesco-aeternum-fee-c6683dae7e0b"], "retrieved_reference_units": []}
+{"question_id": "BF04", "config": "Bp", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-aeternum-fee-2413e4c0acc7", "bradesco-aeternum-fee-c6683dae7e0b"]}
+{"question_id": "BF04", "config": "Bp", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-aeternum-fee-2413e4c0acc7", "bradesco-aeternum-fee-c6683dae7e0b"]}
+{"question_id": "BF04", "config": "Bp", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-aeternum-fee-2413e4c0acc7", "bradesco-aeternum-fee-c6683dae7e0b"]}
+{"question_id": "BF04", "config": "L", "k": 3, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-aeternum-fee-2413e4c0acc7", "bradesco-aeternum-fee-c6683dae7e0b"]}
+{"question_id": "BF04", "config": "L", "k": 5, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-aeternum-fee-2413e4c0acc7", "bradesco-aeternum-fee-c6683dae7e0b"]}
+{"question_id": "BF04", "config": "L", "k": 10, "recall": 1.0, "coverage": true, "reference_units_excluded": [], "retrieved_reference_units": ["bradesco-aeternum-fee-2413e4c0acc7", "bradesco-aeternum-fee-c6683dae7e0b"]}
+{"question_id": "BF04", "config": "S", "recall": null, "coverage": null}
+{"question_id": "BF05", "config": "A", "k": 3, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "BF05", "config": "A", "k": 5, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "BF05", "config": "A", "k": 10, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "BF05", "config": "B", "k": 3, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "BF05", "config": "B", "k": 5, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "BF05", "config": "B", "k": 10, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "BF05", "config": "C", "k": 3, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "BF05", "config": "C", "k": 5, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "BF05", "config": "C", "k": 10, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "BF05", "config": "Bp", "k": 3, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "BF05", "config": "Bp", "k": 5, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "BF05", "config": "Bp", "k": 10, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "BF05", "config": "L", "k": 3, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "BF05", "config": "L", "k": 5, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "BF05", "config": "L", "k": 10, "recall": null, "coverage": null, "reference_units_excluded": [], "retrieved_reference_units": []}
+{"question_id": "BF05", "config": "S", "recall": null, "coverage": null}

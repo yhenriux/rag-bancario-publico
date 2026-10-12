@@ -1,0 +1,294 @@
+{
+  "phase": "pilot",
+  "scope": "documentary_retrieval",
+  "retrieval_completed": true,
+  "questions": 20,
+  "families": 14,
+  "classes": {
+    "direta": 4,
+    "condicao": 4,
+    "excecao": 4,
+    "ambiguidade": 4,
+    "insuficiencia": 4
+  },
+  "retrieval_pairs": 100,
+  "retrieval_summary": [
+    {
+      "config": "A",
+      "k": 3,
+      "eligible_questions": 16,
+      "mean_anchor_recall": 0.90625,
+      "all_anchors_covered": 0.875
+    },
+    {
+      "config": "A",
+      "k": 5,
+      "eligible_questions": 16,
+      "mean_anchor_recall": 0.90625,
+      "all_anchors_covered": 0.875
+    },
+    {
+      "config": "A",
+      "k": 10,
+      "eligible_questions": 16,
+      "mean_anchor_recall": 0.90625,
+      "all_anchors_covered": 0.875
+    },
+    {
+      "config": "B",
+      "k": 3,
+      "eligible_questions": 16,
+      "mean_anchor_recall": 0.90625,
+      "all_anchors_covered": 0.875
+    },
+    {
+      "config": "B",
+      "k": 5,
+      "eligible_questions": 16,
+      "mean_anchor_recall": 0.90625,
+      "all_anchors_covered": 0.875
+    },
+    {
+      "config": "B",
+      "k": 10,
+      "eligible_questions": 16,
+      "mean_anchor_recall": 1.0,
+      "all_anchors_covered": 1
+    },
+    {
+      "config": "C",
+      "k": 3,
+      "eligible_questions": 16,
+      "mean_anchor_recall": 0.90625,
+      "all_anchors_covered": 0.875
+    },
+    {
+      "config": "C",
+      "k": 5,
+      "eligible_questions": 16,
+      "mean_anchor_recall": 0.96875,
+      "all_anchors_covered": 0.9375
+    },
+    {
+      "config": "C",
+      "k": 10,
+      "eligible_questions": 16,
+      "mean_anchor_recall": 1.0,
+      "all_anchors_covered": 1
+    },
+    {
+      "config": "Bp",
+      "k": 3,
+      "eligible_questions": 16,
+      "mean_anchor_recall": 0.90625,
+      "all_anchors_covered": 0.875
+    },
+    {
+      "config": "Bp",
+      "k": 5,
+      "eligible_questions": 16,
+      "mean_anchor_recall": 0.96875,
+      "all_anchors_covered": 0.9375
+    },
+    {
+      "config": "Bp",
+      "k": 10,
+      "eligible_questions": 16,
+      "mean_anchor_recall": 0.96875,
+      "all_anchors_covered": 0.9375
+    },
+    {
+      "config": "L",
+      "k": 3,
+      "eligible_questions": 16,
+      "mean_anchor_recall": 0.9375,
+      "all_anchors_covered": 0.9375
+    },
+    {
+      "config": "L",
+      "k": 5,
+      "eligible_questions": 16,
+      "mean_anchor_recall": 0.9375,
+      "all_anchors_covered": 0.9375
+    },
+    {
+      "config": "L",
+      "k": 10,
+      "eligible_questions": 16,
+      "mean_anchor_recall": 1.0,
+      "all_anchors_covered": 1
+    }
+  ],
+  "paired_exploratory_contrasts": [
+    {
+      "contrast": "B-A",
+      "metric": "recall",
+      "k": 5,
+      "result": {
+        "pairs": 8,
+        "families_by_bank": {
+          "inter": 4,
+          "bradesco": 3
+        },
+        "estimate": -0.125,
+        "point_estimate_at_least_10pp": false,
+        "absolute_point_estimate_at_least_10pp": true,
+        "ci95": [
+          -0.42857142857142855,
+          0.0
+        ],
+        "ci9833": [
+          -0.42857142857142855,
+          0.0
+        ],
+        "bootstrap_repetitions": 5000,
+        "bootstrap_seed": 2026,
+        "interpretation": "exploratoria; nenhum apoio confirmatorio automatico"
+      }
+    },
+    {
+      "contrast": "B-A",
+      "metric": "coverage",
+      "k": 5,
+      "result": {
+        "pairs": 8,
+        "families_by_bank": {
+          "inter": 4,
+          "bradesco": 3
+        },
+        "estimate": -0.125,
+        "point_estimate_at_least_10pp": false,
+        "absolute_point_estimate_at_least_10pp": true,
+        "ci95": [
+          -0.42857142857142855,
+          0.0
+        ],
+        "ci9833": [
+          -0.42857142857142855,
+          0.0
+        ],
+        "bootstrap_repetitions": 5000,
+        "bootstrap_seed": 2026,
+        "interpretation": "exploratoria; nenhum apoio confirmatorio automatico"
+      }
+    },
+    {
+      "contrast": "B-Bp",
+      "metric": "recall",
+      "k": 5,
+      "result": {
+        "pairs": 8,
+        "families_by_bank": {
+          "inter": 4,
+          "bradesco": 3
+        },
+        "estimate": -0.125,
+        "point_estimate_at_least_10pp": false,
+        "absolute_point_estimate_at_least_10pp": true,
+        "ci95": [
+          -0.42857142857142855,
+          0.0
+        ],
+        "ci9833": [
+          -0.42857142857142855,
+          0.0
+        ],
+        "bootstrap_repetitions": 5000,
+        "bootstrap_seed": 2026,
+        "interpretation": "exploratoria; nenhum apoio confirmatorio automatico"
+      }
+    },
+    {
+      "contrast": "B-Bp",
+      "metric": "coverage",
+      "k": 5,
+      "result": {
+        "pairs": 8,
+        "families_by_bank": {
+          "inter": 4,
+          "bradesco": 3
+        },
+        "estimate": -0.125,
+        "point_estimate_at_least_10pp": false,
+        "absolute_point_estimate_at_least_10pp": true,
+        "ci95": [
+          -0.42857142857142855,
+          0.0
+        ],
+        "ci9833": [
+          -0.42857142857142855,
+          0.0
+        ],
+        "bootstrap_repetitions": 5000,
+        "bootstrap_seed": 2026,
+        "interpretation": "exploratoria; nenhum apoio confirmatorio automatico"
+      }
+    },
+    {
+      "contrast": "C-B",
+      "metric": "recall",
+      "k": 5,
+      "result": {
+        "pairs": 16,
+        "families_by_bank": {
+          "inter": 6,
+          "bradesco": 6
+        },
+        "estimate": 0.0625,
+        "point_estimate_at_least_10pp": false,
+        "absolute_point_estimate_at_least_10pp": false,
+        "ci95": [
+          0.0,
+          0.21428571428571427
+        ],
+        "ci9833": [
+          0.0,
+          0.25
+        ],
+        "bootstrap_repetitions": 5000,
+        "bootstrap_seed": 2026,
+        "interpretation": "exploratoria; nenhum apoio confirmatorio automatico"
+      }
+    },
+    {
+      "contrast": "C-B",
+      "metric": "coverage",
+      "k": 5,
+      "result": {
+        "pairs": 16,
+        "families_by_bank": {
+          "inter": 6,
+          "bradesco": 6
+        },
+        "estimate": 0.0625,
+        "point_estimate_at_least_10pp": false,
+        "absolute_point_estimate_at_least_10pp": false,
+        "ci95": [
+          0.0,
+          0.21428571428571427
+        ],
+        "ci9833": [
+          0.0,
+          0.25
+        ],
+        "bootstrap_repetitions": 5000,
+        "bootstrap_seed": 2026,
+        "interpretation": "exploratoria; nenhum apoio confirmatorio automatico"
+      }
+    }
+  ],
+  "automatic_adequacy_enabled": false,
+  "human_validated": false,
+  "filter_excluded_reference_questions": [],
+  "input_sha256": {
+    "retrieval": "9e9dba1f0b9cc030d33c2ed4c8cbece8ee49d80a2c3bc6ce173eccae299309c3"
+  },
+  "limitations": [
+    "amostra de conveniência",
+    "referências assistidas e sem avaliação independente",
+    "atributos preparados incluem inferências",
+    "mudança de escopo posterior ao início da execução",
+    "âncoras curtas não demonstram suficiência semântica",
+    "conjuntos não constituem validação externa"
+  ]
+}

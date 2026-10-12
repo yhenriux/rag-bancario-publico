@@ -1,5 +1,8 @@
 # Método aplicado nesta execução
 
+> **Documento histórico.** Preserve este registro para acompanhar o planejamento e as decisões da época. A entrega atual está no [método aplicado](metodo.md), nos [resultados](resultados.md) e no [escopo atual](escopo-atual.md).
+
+
 Este adendo define uma exploração assistida por IA, conduzida por um pesquisador individual. O protocolo original continua preservado em `protocolo.md`. As conclusões desta execução usam o método aqui descrito.
 
 ## Escopo e fontes
