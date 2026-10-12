@@ -1,6 +1,6 @@
 {
   "source_sha256": "6ce1bdbbaef263f3c669ced47d560402119f1b670e6d8a492a0fd7738aa3c035",
-  "revised_sha256": "54aaa0b6b3889604aa0554bced85a16e8533224c500107c2bc62eb681a3159fe",
+  "revised_sha256": "4e6ab5da180af2c5f32c98d8b3e52bad499e4cf5a69f457868e16e2e08c954c9",
   "scope": "editorial_reformulation",
   "tables_preserved": true,
   "equation_preserved": true,
@@ -9,7 +9,7 @@
   "numerical_literals_preserved": true,
   "research_inputs_modified": false,
   "title": "Organização do conhecimento em RAG bancário: recuperação de evidências em documentos públicos brasileiros",
-  "word_count": 6258,
+  "word_count": 6256,
   "Resumo_words": 155,
   "Abstract_words": 158,
   "Resumen_words": 164,

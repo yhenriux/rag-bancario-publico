@@ -220,11 +220,11 @@ Quadro 2 Ocorrências e intervenções documentais
 | Orçamento retira evidências | Lista efetivamente enviada | Reunir regra e condição ou ajustar prioridade |
 | Avaliador erra controles conhecidos | Duas calibrações publicadas | Conservar adequação fora das medidas principais |
 
-Fonte: elaboração própria, 2026. A linha sobre orçamento descreve um mecanismo de controle; os registros de contexto efetivo informa se ele ocorreu nesta execução.
+Fonte: elaboração própria, 2026. A linha sobre orçamento descreve um mecanismo de controle; os registros de contexto efetivo informam se ele ocorreu nesta execução.
 
 A calibração produz uma decisão operacional relevante. Saídas estruturalmente válidas tornam a avaliação processável, embora possam conter rótulos incorretos. O critério registrado mantém a facilidade de processamento e a competência para julgar como aspectos que precisam de conferências próprias. Uma ferramenta abaixo do limiar pode apoiar exploração, com suas notas excluídas das conclusões sobre adequação nessa tarefa.
 
-A disponibilidade das referências permite revisar a preparação. Outros pesquisadores podem contestar uma âncora curta, identificar condições omitidas ou ampliar a coleção. Os rankings públicos permitem repetir os cálculos sem executar modelos. Essa abertura conserva as escolhas metodológicas junto às medidas e oferece uma base concreta para examinar vieses, limites e intervenções, em vez de apresentar uma taxa de acerto isolada de suas entradas.
+A disponibilidade das referências permite revisar a preparação. Outros pesquisadores podem contestar uma âncora curta, identificar condições omitidas ou ampliar a coleção. Os rankings públicos permitem repetir os cálculos sem executar modelos. Essa abertura conserva as escolhas metodológicas junto às medidas e oferece uma base concreta para examinar vieses, limites e intervenções, com taxas de acerto vinculadas às entradas que as sustentam.
 
 ## 6 Limitações e disponibilidade dos materiais
 
