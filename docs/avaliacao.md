@@ -26,3 +26,7 @@ Não houve avaliação por pessoas independentes, concordância entre anotadores
 ## Incerteza
 
 Os contrastes usam reamostragem de famílias por banco. Os intervalos publicados são exploratórios. A amostra pequena e a preparação assistida limitam sua interpretação.
+
+## Posição das referências
+
+A revisão diagnóstica calcula recall@1/3/5/10 e MRR@10, a média do inverso da posição da primeira âncora até dez trechos. Ausência nesse limite vale zero; pergunta sem referências recebe NA. MRR mede acesso inicial, não cobertura ou suficiência semântica. [Matriz](diagnostico-20261012/matrix.md).

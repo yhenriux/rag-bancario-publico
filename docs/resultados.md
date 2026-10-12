@@ -8,7 +8,7 @@ A comparação documental está concluída: 30 perguntas, cinco configurações 
 
 Recall é a parcela das âncoras encontrada. Cobertura é a presença de um conjunto de âncoras indicado no dossiê. As seis perguntas sem referência ficam fora dessas médias, com valor não aplicável. A configuração S não faz busca.
 
-| Configuração | Recall piloto (16) | Cobertura piloto (16) | Recall final (8) | Cobertura final (8) |
+| Configuração | Recall piloto (16) | Cobertura piloto (16) | Recall segundo (8) | Cobertura segundo (8) |
 |---|---:|---:|---:|---:|
 | A | 90,625% | 87,500% | 87,500% | 87,500% |
 | B | 90,625% | 87,500% | 100,000% | 100,000% |
@@ -36,7 +36,17 @@ A, B, Bp e L encontram as duas âncoras da regra do Aeternum. C exclui os trecho
 
 Uma correção posterior acrescenta a relação `aeternum → cartao` e reaplica a seleção ao ranking congelado. As duas âncoras retornam às primeiras cinco posições. Essa demonstração usa o caso já observado, sem novas chamadas de modelo e sem alterar os resultados principais. [Registro da intervenção](results-20261012/intervention.json).
 
-## Diferenças e incerteza
+## Casos discordantes e sensibilidade
+
+Em recall@5 e cobertura@5, C supera B somente em B05 (1/16 perguntas elegíveis do piloto) e perde somente em BF04 (1/8 do segundo conjunto). No piloto, B perde para A e Bp em B05, entre oito perguntas de condição e exceção; no segundo conjunto, as quatro perguntas dessas classes empatam nos dois contrastes.
+
+A revisão acrescenta [matriz 30 × 5](diagnostico-20261012/matrix.md), recall@1/3/5/10, MRR@10 e posições por âncora. B05 está na posição 6 de B e 4 de C. Retirar os dois campos inferidos torna o caso equivalente a B, eliminando o ganho no corte de cinco posições. Em BF04, cartão é expresso e a falha permanece. Esta sensibilidade é posterior, limitada aos dois casos e não valida um extrator independente.
+
+O catálogo oferece 18 candidatos do Inter e 44 do Bradesco antes do filtro adicional. BM25 é competitivo: no segundo conjunto, recupera todas as âncoras em três posições e tem MRR@10 de 0,917. No piloto, L tem recall@3 e @5 de 93,75%, acima de A e B em 90,625%; C e Bp alcançam 96,875% em cinco posições.
+
+B05 e BF04 não esgotam as mudanças de posição: em recall@1, I08 também distingue C e B no piloto. A ordem das listas publicadas muda em 17/20 e 9/10 perguntas. [Cálculos completos](diagnostico-20261012/diagnostics.json) e [decisões críticas](resposta-parecer-20261012.md).
+
+## Intervalos históricos, fora da interpretação principal
 
 | Conjunto | Diferença de recall | Perguntas elegíveis | Estimativa (p.p.) | Intervalo 95% (p.p.) | Intervalo 98,33% (p.p.) |
 |---|---|---:|---:|---|---|
@@ -47,7 +57,7 @@ Uma correção posterior acrescenta a relação `aeternum → cartao` e reaplica
 | final | B-Bp | 4 | 0.00 | 0.00 a 0.00 | 0.00 a 0.00 |
 | final | C-B | 8 | -12.50 | -37.50 a 0.00 | -37.50 a 0.00 |
 
-P.p. significa pontos percentuais. B−A e B−Bp usam condição e exceção; C−B usa perguntas com atributos preparados. Os intervalos percentis vêm das mesmas 5.000 reamostragens de famílias por banco, com semente 2026. A magnitude de dez pontos também é informada nos relatórios JSON.
+P.p. significa pontos percentuais. B−A e B−Bp usam condição e exceção; C−B usa perguntas com atributos preparados. Os intervalos percentis vêm das mesmas 5.000 reamostragens de famílias por banco, com semente 2026. O critério histórico de dez pontos continua nos relatórios JSON. Em oito perguntas, uma mudança binária já vale 12,5 pontos; esse limiar não define relevância robusta nesta amostra. Os intervalos permanecem como histórico reproduzível, com a interpretação principal baseada nos casos.
 
 Todos os contrastes são exploratórios. O intervalo 0 a 0 no conjunto final decorre de diferenças nulas nas quatro perguntas elegíveis; não demonstra equivalência geral. A divisão de famílias preserva o desenho, mas os rankings dos dois conjuntos já estavam disponíveis antes da mudança de escopo.
 

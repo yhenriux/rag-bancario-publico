@@ -25,7 +25,15 @@ Resultado esperado: dois registros, `pilot` e `final`, ambos com `metrics_match:
 
 Ele usa os rankings em `docs/results-20261012/` e as referências em `configs/execution-20261012/`. Recalcula recall, cobertura, diferenças pareadas e 5.000 reamostragens. Também reproduz a intervenção posterior no caso BF04.
 
-## 3. Confira os códigos dos arquivos
+## 3. Confira a análise diagnóstica da revisão
+
+```bash
+python retrieval_diagnostics.py
+```
+
+Resultado esperado: `diagnostics_match: true` e `pairs: 150`. O programa refaz os quatro cortes, posições das âncoras, MRR@10, contagens de discordantes e a sensibilidade dos dois casos. Esta análise é posterior ao parecer. [Matriz](diagnostico-20261012/matrix.md) e [resposta crítica](resposta-parecer-20261012.md).
+
+## 4. Confira os códigos dos arquivos
 
 ```bash
 python -c "import json,hashlib,pathlib; m=json.load(open('SHA256SUMS.json')); assert all(hashlib.sha256(pathlib.Path(p).read_bytes()).hexdigest()==h for p,h in m.items()); print('Integridade conferida')"
@@ -33,7 +41,7 @@ python -c "import json,hashlib,pathlib; m=json.load(open('SHA256SUMS.json')); as
 
 O manifesto cobre arquivos registrados do projeto. Ele confere os bytes; o conteúdo e as escolhas científicas continuam sujeitos a revisão.
 
-## 4. Execute os testes do código
+## 5. Execute os testes do código
 
 ```bash
 python -m pip install 'beautifulsoup4>=4.12,<5' 'pypdf>=5,<7'

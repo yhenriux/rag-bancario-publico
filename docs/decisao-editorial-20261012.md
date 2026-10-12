@@ -4,7 +4,7 @@ Conferência em 12/10/2026. O manuscrito descreve um estudo documental concluíd
 
 ## Formato e extensão
 
-O Word usa o template oficial consultado da Múltiplos Olhares. Contém títulos e resumos nas três línguas, cinco palavras-chave por língua, tabelas editáveis e equação nativa numerada. Os resumos têm entre 150 e 250 palavras e o texto permanece no intervalo de 4.000 a 8.000 palavras.
+O Word usa o template oficial consultado da Múltiplos Olhares. A revisão crítica atual contém 22 páginas e 7890 palavras, incluindo tabelas; cada página foi conferida visualmente. Contém títulos e resumos nas três línguas, cinco palavras-chave por língua, tabelas editáveis e equação nativa numerada. Os resumos têm entre 150 e 250 palavras e o texto permanece no intervalo de 4.000 a 8.000 palavras.
 
 ## Política de IA
 

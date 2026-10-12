@@ -10,6 +10,8 @@
 | Ver os achados e os casos | [Resultados](resultados.md) |
 | Conhecer o método e os limites | [Método aplicado](metodo.md) |
 | Ler o artigo | [Manuscrito](manuscrito.md) |
+| Conferir a revisão crítica | [Resposta ao parecer](resposta-parecer-20261012.md) |
+| Ver cada pergunta e configuração | [Matriz diagnóstica](diagnostico-20261012/matrix.md) |
 | Conferir o que foi concluído | [Estado e próximos passos](roadmap.md) |
 | Entender uma palavra | [Glossário](glossario.md) |
 

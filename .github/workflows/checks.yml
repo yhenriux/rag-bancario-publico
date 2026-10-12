@@ -16,4 +16,5 @@ jobs:
       - run: python study.py budget
       - run: python demo.py
       - run: python replay_results.py
-      - run: python -m compileall -q study.py collect.py experiment.py audit.py fidelity.py prepare.py demo.py batch.py technical.py gguf.py execution.py dataset.py evaluate.py analysis_run.py precision.py close_documentary.py replay_results.py
+      - run: python retrieval_diagnostics.py
+      - run: python -m compileall -q study.py collect.py experiment.py audit.py fidelity.py prepare.py demo.py batch.py technical.py gguf.py execution.py dataset.py evaluate.py analysis_run.py precision.py close_documentary.py replay_results.py retrieval_diagnostics.py

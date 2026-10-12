@@ -39,3 +39,7 @@ Os 36 controles de fidelidade preservaram 144 itens literais. O juiz automático
 ## Limites
 
 Amostra de conveniência pequena, referências assistidas, atributos parcialmente inferidos e preparação compartilhada introduzem dependência e risco de circularidade. Não houve avaliação humana independente, teste com leitores ou validação externa. Uma correção do vocabulário aplicada ao caso BF04 é posterior ao achado e fica separada dos resultados principais.
+
+## Revisão diagnóstica
+
+O artigo usa segundo conjunto para os arquivos historicamente chamados `final`; seus rankings já eram conhecidos e não constituem validação cega. Bp constava do protocolo antes do piloto. A [análise posterior](diagnostico-20261012/diagnostics.json) acrescenta quatro cortes, MRR@10, posições e discordantes. A sensibilidade de B05 e BF04 torna explícita a dependência dos atributos inferidos, sem criar independência retrospectiva. [Resposta ao parecer](resposta-parecer-20261012.md).
