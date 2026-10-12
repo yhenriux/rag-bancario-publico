@@ -1,0 +1,24 @@
+{
+  "restored_from_intact_backup": true,
+  "truncated_previous_copy_bytes": 2728960,
+  "original_bytes": 3821644,
+  "corrected_bytes": 3786051,
+  "zip_crc_valid": true,
+  "all_xml_well_formed": true,
+  "research_prose_unchanged": true,
+  "all_table_cells_unchanged": true,
+  "references": 21,
+  "full_given_names_restored": true,
+  "anonymous": true,
+  "template_colors": "C00000 / FFCCCC / FFEAEA",
+  "conclusion_heading": "CONCLUSÃO",
+  "remaining_bibliographic_locality": "Journal of Documentation marked [S. l.] because the publication location was not verified",
+  "pages_rendered_and_visually_checked": 15,
+  "LibreOffice_render_succeeded": true,
+  "sha256": "3e2f8c4be2cd24dcd698469d9605e541f3b74b418244d121e31c3824b4fd8117",
+  "bibliographic_sources": [
+    "https://portal.isko.org/Knowledge-Organization-Journal-(KO-Journal)",
+    "https://www.nowpublishers.com/article/DownloadSummary/INR-019",
+    "https://www.informationr.net/tdw/publ/papers/2000HIB_Korean.pdf"
+  ]
+}

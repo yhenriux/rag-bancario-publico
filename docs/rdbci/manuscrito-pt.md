@@ -263,7 +263,7 @@ O módulo de geração foi interrompido e não oferece uma comparação balancea
 
 O repositório público publica código, perguntas próprias, referências posicionais, hashes, rankings e relatórios derivados. Com esses arquivos e a biblioteca padrão do Python, terceiros repetem as métricas a partir dos rankings congelados, inclusive posições individuais e medidas por banco. Reexecutar a busca original exige os textos, índices, modelos e versões do ambiente. Originais, trechos, índices, prompts e 56 respostas ficam no pacote privado do pesquisador porque a redistribuição não está licenciada. Não houve depósito com DOI. Os materiais para recalcular as métricas acompanham a submissão em um arquivo de dados sem identificação de autoria. O endereço do repositório público é informado aos editores na folha de rosto separada.
 
-## 7 Considerações finais
+## 7 Conclusão
 
 O estudo diagnóstico associa representação documental, seleção de candidatos e localização de referências em uma coleção pública de dois bancos brasileiros. Em cinco posições, o filtro supera a busca sem filtro numa pergunta do piloto e perde numa pergunta do segundo conjunto. A sensibilidade mostra a dependência do ganho em relação aos campos inferidos; a demonstração hierárquica explica a exclusão no caso conhecido. Os cortes mais restritos destacam a competitividade do BM25 e diferenças ocultas pelo teto da medida em cinco posições.
 
@@ -280,42 +280,42 @@ ChatGPT/Codex apoia discussão do desenho, pesquisa e interpretação de fontes,
 
 BRASIL. Conselho Monetário Nacional. **Resolução nº 3.919, de 25 de novembro de 2010**. Altera e consolida as normas sobre cobrança de tarifas pela prestação de serviços. Texto consolidado consultado, versão v7, disponibilizado pelo Banco Central do Brasil. Disponível em: https://normativos.bcb.gov.br/Lists/Normativos/Attachments/49514/Res_3919_v7_P.pdf. Acesso em: 12 out. 2026.
 
-DADOPOULOS, M.; LADAS, A.; MOSCHIDIS, S.; NEGKAKIS, I. **Metadata-Driven Retrieval-Augmented Generation for Financial Question Answering**. arXiv, 2025. Preprint arXiv:2510.24402, versão 1. Disponível em: https://arxiv.org/html/2510.24402v1. Acesso em: 11 out. 2026.
+DADOPOULOS, Michail; LADAS, Anestis; MOSCHIDIS, Stratos; NEGKAKIS, Ioannis. **Metadata-Driven Retrieval-Augmented Generation for Financial Question Answering**. arXiv, 2025. Preprint arXiv:2510.24402, versão 1. Disponível em: https://arxiv.org/html/2510.24402v1. Acesso em: 11 out. 2026.
 
-ES, S.; JAMES, J.; ESPINOSA ANKE, L.; SCHOCKAERT, S. RAGAs: Automated Evaluation of Retrieval Augmented Generation. In: **Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics: System Demonstrations**. Association for Computational Linguistics, 2024. p. 150–158. DOI: 10.18653/v1/2024.eacl-demo.16. Disponível em: https://aclanthology.org/2024.eacl-demo.16/. Acesso em: 12 out. 2026.
+ES, Shahul; JAMES, Jithin; ESPINOSA ANKE, Luis; SCHOCKAERT, Steven. RAGAs: Automated Evaluation of Retrieval Augmented Generation. In: **Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics: System Demonstrations**. Association for Computational Linguistics, 2024. p. 150–158. DOI: 10.18653/v1/2024.eacl-demo.16. Disponível em: https://aclanthology.org/2024.eacl-demo.16/. Acesso em: 12 out. 2026.
 
-FORD, D. **Introducing Contextual Retrieval**. Anthropic, 19 set. 2024. Disponível em: https://www.anthropic.com/engineering/contextual-retrieval. Acesso em: 11 out. 2026.
+FORD, Daniel. **Introducing Contextual Retrieval**. Anthropic, 19 set. 2024. Disponível em: https://www.anthropic.com/engineering/contextual-retrieval. Acesso em: 11 out. 2026.
 
-HJØRLAND, B. Knowledge Organization (KO). **Knowledge Organization**, v. 43, n. 6, p. 475–484, 2016a. DOI: 10.5771/0943-7444-2016-6-475. Disponível em: https://www.imrpress.com/journal/KO/43/6/10.5771/0943-7444-2016-6-475. Acesso em: 12 out. 2026.
+HJØRLAND, Birger. Knowledge Organization (KO). **Knowledge Organization**, Würzburg, v. 43, n. 6, p. 475–484, 2016a. DOI: 10.5771/0943-7444-2016-6-475. Disponível em: https://www.imrpress.com/journal/KO/43/6/10.5771/0943-7444-2016-6-475. Acesso em: 12 out. 2026.
 
-HJØRLAND, B. Does the Traditional Thesaurus Have a Place in Modern Information Retrieval? **Knowledge Organization**, v. 43, n. 3, p. 145–159, 2016b. DOI: 10.5771/0943-7444-2016-3-145. Disponível em: https://www.imrpress.com/journal/KO/43/3/10.5771/0943-7444-2016-3-145. Acesso em: 12 out. 2026.
+HJØRLAND, Birger. Does the Traditional Thesaurus Have a Place in Modern Information Retrieval? **Knowledge Organization**, Würzburg, v. 43, n. 3, p. 145–159, 2016b. DOI: 10.5771/0943-7444-2016-3-145. Disponível em: https://www.imrpress.com/journal/KO/43/3/10.5771/0943-7444-2016-3-145. Acesso em: 12 out. 2026.
 
 INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. **ISO 25964-1:2011: Information and documentation: Thesauri and interoperability with other vocabularies: Part 1: Thesauri for information retrieval**. Geneva: ISO, 2011. Descrição pública do escopo. Disponível em: https://www.iso.org/standard/53657.html. Acesso em: 12 out. 2026.
 
 INTFLOAT. **multilingual-e5-large-instruct**. Hugging Face, [s. d.]. Modelo, revisão 274baa43b0e13e37fafa6428dbc7938e62e5c439. Disponível em: https://huggingface.co/intfloat/multilingual-e5-large-instruct. Acesso em: 12 out. 2026.
 
-ISLAM, P. et al. **FinanceBench: A New Benchmark for Financial Question Answering**. arXiv, 2023. Preprint arXiv:2311.11944. Disponível em: https://arxiv.org/abs/2311.11944. Acesso em: 12 out. 2026.
+ISLAM, Pranab et al. **FinanceBench: A New Benchmark for Financial Question Answering**. arXiv, 2023. Preprint arXiv:2311.11944. Disponível em: https://arxiv.org/abs/2311.11944. Acesso em: 12 out. 2026.
 
-JOREN, H.; ZHANG, J.; FERNG, C.; JUAN, D.; TALY, A.; RASHTCHIAN, C. **Sufficient Context: A New Lens on Retrieval Augmented Generation Systems**. In: INTERNATIONAL CONFERENCE ON LEARNING REPRESENTATIONS, 2025. **Anais [...]**. OpenReview, 2025. Disponível em: https://openreview.net/forum?id=Jjr2Odj8DJ. Acesso em: 12 out. 2026.
+JOREN, Hailey; ZHANG, Jianyi; FERNG, Chun-Sung; JUAN, Da-Cheng; TALY, Ankur; RASHTCHIAN, Cyrus. **Sufficient Context: A New Lens on Retrieval Augmented Generation Systems**. In: INTERNATIONAL CONFERENCE ON LEARNING REPRESENTATIONS, 2025. **Anais [...]**. OpenReview, 2025. Disponível em: https://openreview.net/forum?id=Jjr2Odj8DJ. Acesso em: 12 out. 2026.
 
-LEWIS, P. et al. **Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks**. In: **Advances in Neural Information Processing Systems**, v. 33, 2020. Disponível em: https://proceedings.neurips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html. Acesso em: 12 out. 2026.
+LEWIS, Patrick et al. **Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks**. In: **Advances in Neural Information Processing Systems**, v. 33, 2020. Disponível em: https://proceedings.neurips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html. Acesso em: 12 out. 2026.
 
-MANNING, C. D.; RAGHAVAN, P.; SCHÜTZE, H. **Introduction to Information Retrieval**. Cambridge: Cambridge University Press, 2008. Disponível em: https://nlp.stanford.edu/IR-book/. Acesso em: 12 out. 2026.
+MANNING, Christopher D.; RAGHAVAN, Prabhakar; SCHÜTZE, Hinrich. **Introduction to Information Retrieval**. Cambridge: Cambridge University Press, 2008. Disponível em: https://nlp.stanford.edu/IR-book/. Acesso em: 12 out. 2026.
 
-MILES, A.; BECHHOFER, S. (ed.). **SKOS Simple Knowledge Organization System Reference**. W3C Recommendation, 18 ago. 2009. Disponível em: https://www.w3.org/TR/skos-reference/. Acesso em: 12 out. 2026.
+MILES, Alistair; BECHHOFER, Sean (ed.). **SKOS Simple Knowledge Organization System Reference**. W3C Recommendation, 18 ago. 2009. Disponível em: https://www.w3.org/TR/skos-reference/. Acesso em: 12 out. 2026.
 
 QWEN TEAM. **Qwen3-8B-GGUF**. Hugging Face, [s. d.]. Modelo, revisão 7c41481f57cb95916b40956ab2f0b139b296d974. Disponível em: https://huggingface.co/Qwen/Qwen3-8B-GGUF. Acesso em: 12 out. 2026.
 
-ROBERTSON, S.; ZARAGOZA, H. The Probabilistic Relevance Framework: BM25 and Beyond. **Foundations and Trends in Information Retrieval**, v. 3, n. 4, p. 333–389, 2009. DOI: 10.1561/1500000019. Disponível em: https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf. Acesso em: 12 out. 2026.
+ROBERTSON, Stephen; ZARAGOZA, Hugo. The Probabilistic Relevance Framework: BM25 and Beyond. **Foundations and Trends in Information Retrieval**, Hanover, v. 3, n. 4, p. 333–389, 2009. DOI: 10.1561/1500000019. Disponível em: https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf. Acesso em: 12 out. 2026.
 
-SAAD-FALCON, J.; KHATTAB, O.; POTTS, C.; ZAHARIA, M. ARES: An Automated Evaluation Framework for Retrieval-Augmented Generation Systems. In: **Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies**. Association for Computational Linguistics, 2024. v. 1, p. 338–354. DOI: 10.18653/v1/2024.naacl-long.20. Disponível em: https://aclanthology.org/2024.naacl-long.20/. Acesso em: 12 out. 2026.
+SAAD-FALCON, Jon; KHATTAB, Omar; POTTS, Christopher; ZAHARIA, Matei. ARES: An Automated Evaluation Framework for Retrieval-Augmented Generation Systems. In: **Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies**. Association for Computational Linguistics, 2024. v. 1, p. 338–354. DOI: 10.18653/v1/2024.naacl-long.20. Disponível em: https://aclanthology.org/2024.naacl-long.20/. Acesso em: 12 out. 2026.
 
-TUDHOPE, D.; BINDING, C. Still Quite Popular After all Those Years: The Continued Relevance of the Information Retrieval Thesaurus. **Knowledge Organization**, v. 43, n. 3, p. 174–179, 2016. DOI: 10.5771/0943-7444-2016-3-174. Disponível em: https://www.imrpress.com/journal/KO/43/3/10.5771/0943-7444-2016-3-174. Acesso em: 12 out. 2026.
+TUDHOPE, Douglas; BINDING, Ceri. Still Quite Popular After all Those Years: The Continued Relevance of the Information Retrieval Thesaurus. **Knowledge Organization**, Würzburg, v. 43, n. 3, p. 174–179, 2016. DOI: 10.5771/0943-7444-2016-3-174. Disponível em: https://www.imrpress.com/journal/KO/43/3/10.5771/0943-7444-2016-3-174. Acesso em: 12 out. 2026.
 
-WANG, L. et al. **Multilingual E5 Text Embeddings: A Technical Report**. arXiv, 2024. Preprint arXiv:2402.05672. Disponível em: https://arxiv.org/abs/2402.05672. Acesso em: 12 out. 2026.
+WANG, Liang et al. **Multilingual E5 Text Embeddings: A Technical Report**. arXiv, 2024. Preprint arXiv:2402.05672. Disponível em: https://arxiv.org/abs/2402.05672. Acesso em: 12 out. 2026.
 
-WANG, S.; TAN, J.; DOU, Z.; WEN, J. OmniEval: An Omnidirectional and Automatic RAG Evaluation Benchmark in Financial Domain. In: CONFERENCE ON EMPIRICAL METHODS IN NATURAL LANGUAGE PROCESSING, 2025, Suzhou. **Proceedings [...]**. Association for Computational Linguistics, 2025. p. 5726–5751. DOI: 10.18653/v1/2025.emnlp-main.292. Disponível em: https://aclanthology.org/2025.emnlp-main.292/. Acesso em: 11 out. 2026.
+WANG, Shuting; TAN, Jiejun; DOU, Zhicheng; WEN, Ji-Rong. OmniEval: An Omnidirectional and Automatic RAG Evaluation Benchmark in Financial Domain. In: CONFERENCE ON EMPIRICAL METHODS IN NATURAL LANGUAGE PROCESSING, 2025, Suzhou. **Proceedings [...]**. Association for Computational Linguistics, 2025. p. 5726–5751. DOI: 10.18653/v1/2025.emnlp-main.292. Disponível em: https://aclanthology.org/2025.emnlp-main.292/. Acesso em: 11 out. 2026.
 
-WILSON, T. D. Models in information behaviour research. **Journal of Documentation**, v. 55, n. 3, p. 249–270, 1999. DOI: 10.1108/EUM0000000007145. Disponível em: https://doi.org/10.1108/EUM0000000007145. Acesso em: 12 out. 2026.
+WILSON, Thomas Daniel. Models in information behaviour research. **Journal of Documentation**, [S. l.], v. 55, n. 3, p. 249–270, 1999. DOI: 10.1108/EUM0000000007145. Disponível em: https://doi.org/10.1108/EUM0000000007145. Acesso em: 12 out. 2026.
 
-ZHENG, L. et al. Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena. In: **Advances in Neural Information Processing Systems**, v. 36, 2023. Datasets and Benchmarks Track. Disponível em: https://proceedings.neurips.cc/paper_files/paper/2023/hash/91f18a1287b398d378ef22505bf41832-Abstract-Datasets_and_Benchmarks.html. Acesso em: 12 out. 2026.
+ZHENG, Lianmin et al. Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena. In: **Advances in Neural Information Processing Systems**, v. 36, 2023. Datasets and Benchmarks Track. Disponível em: https://proceedings.neurips.cc/paper_files/paper/2023/hash/91f18a1287b398d378ef22505bf41832-Abstract-Datasets_and_Benchmarks.html. Acesso em: 12 out. 2026.

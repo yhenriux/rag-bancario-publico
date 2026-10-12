@@ -29,5 +29,16 @@
   "data_repository_deposit": "pending",
   "data_doi": null,
   "sole_author_eligibility": "requires_editorial_confirmation",
-  "submission_completed_by_assistant": false
+  "submission_completed_by_assistant": false,
+  "portuguese_manuscript_correction": {
+    "completed": true,
+    "pages": 15,
+    "zip_crc_valid": true,
+    "LibreOffice_render_succeeded": true,
+    "research_prose_unchanged": true,
+    "all_table_cells_unchanged": true,
+    "full_given_names_restored": true,
+    "template_color_alignment": true,
+    "english_manuscript_revised_in_this_step": false
+  }
 }

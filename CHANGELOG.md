@@ -1,5 +1,11 @@
 ## 11/10/2026: execução em lote com assistência de Codex
 
+## 12/10/2026: correção do Word em português
+
+- Recupera a cópia truncada a partir do pacote íntegro e valida a estrutura do Word.
+- Alinha cores, títulos, resumos, tabelas e referências ao template oficial; utiliza Conclusão.
+- Confere quinze páginas no LibreOffice; texto da pesquisa e células das tabelas são preservados.
+
 ## 12/10/2026: pacote bilíngue para a RDBCI
 
 - Cópias específicas no template oficial, com manuscritos PT e EN e resumos em cinco rótulos.
