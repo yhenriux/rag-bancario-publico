@@ -1,0 +1,19 @@
+{
+  "source_sha256": "6ce1bdbbaef263f3c669ced47d560402119f1b670e6d8a492a0fd7738aa3c035",
+  "revised_sha256": "54aaa0b6b3889604aa0554bced85a16e8533224c500107c2bc62eb681a3159fe",
+  "scope": "editorial_reformulation",
+  "tables_preserved": true,
+  "equation_preserved": true,
+  "references_preserved": true,
+  "urls_preserved": true,
+  "numerical_literals_preserved": true,
+  "research_inputs_modified": false,
+  "title": "Organização do conhecimento em RAG bancário: recuperação de evidências em documentos públicos brasileiros",
+  "word_count": 6258,
+  "Resumo_words": 155,
+  "Abstract_words": 158,
+  "Resumen_words": 164,
+  "source_commit": "0a5d96167f8fc90bce86c7a09d73def0b2ea27fe",
+  "word_pages": 17,
+  "research_file_integrity_checked": true
+}

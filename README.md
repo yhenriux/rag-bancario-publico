@@ -4,6 +4,8 @@
 
 RAG é uma técnica que busca informações em documentos antes de produzir uma resposta com inteligência artificial. A entrega principal deste projeto examina a etapa de busca.
 
+O manuscrito tem o título **Organização do conhecimento em RAG bancário: recuperação de evidências em documentos públicos brasileiros**. A versão atual incorpora uma revisão de tom e voz, com os dados e o método preservados.
+
 ## Estado da entrega
 
 | Parte | Estado em 12/10/2026 |

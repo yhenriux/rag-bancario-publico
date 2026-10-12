@@ -1,5 +1,14 @@
 ## 11/10/2026: execução em lote com assistência de Codex
 
+## 2026-10-12 Revisão de título e redação científica
+
+- Título escolhido pelo autor aplicado nas três línguas.
+- Reformulação integral conforme o guia de tom e voz fornecido.
+- Tabelas, equação, referências, URLs e valores numéricos preservados.
+- Arquivos de pesquisa, resultados e parâmetros mantidos.
+- Conferência editorial registrada em docs/revisao-editorial-20261012.json.
+
+
 ## 2026-10-12 Entrega documental
 
 - Redução de escopo registrada depois do início da geração.
