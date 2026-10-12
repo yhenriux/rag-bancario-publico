@@ -135,10 +135,10 @@
   "tests/test_gguf.py": "dd0c0eaaf53d84471bd9c931fa5e3fc0ea9c476dca6499f4dc814ad978ba086e",
   "tests/test_replay.py": "c1f834d4e5db1baaeb6d0b238388cc6c8cf2517b61cade7a1b88c17cd1261f26",
   "tests/test_study.py": "8620de8efeaa0ece6c20c1fdccf43b10726ce70a240ede822a1209d50f6fccbe",
-  "retrieval_diagnostics.py": "20ebc2f455fbd6f056ba9cb55bde2505d64a0e87a7499290b8f728f9c1d225b9",
+  "retrieval_diagnostics.py": "1be443c22a80b0a257863950c7448a73f17d760e1e14ca56e3ff2ccc245ece7e",
   "tests/test_retrieval_diagnostics.py": "f1ccfd54e252189a9eaef689fc0e41bfd6721783d2d3d6e663b1bbc92cbf86bc",
   "docs/resposta-parecer-20261012.md": "d23cf9973a02e34dd602f7a6b9983850fdab54165d0fd9c631c74d6df41114c9",
-  "docs/verificacao-parecer-20261012.json": "222f0e0d3f599d85a8f575954f60a33f8e2a766b5f2036ce577cd31d96bfc4b5",
+  "docs/verificacao-parecer-20261012.json": "57527ee405b9c20bdbe143434e65120018f24bff27348f41be73ac378923cd4e",
   "docs/diagnostico-20261012/diagnostics.json": "a367182bc0c001b02a375091932a92c5233e4f1fd5010135eee978123050634d",
   "docs/diagnostico-20261012/matrix.md": "1a554120c55620f748e3febd76e9fd24b65e6c077bb9ee5d659315ac2dd71de1",
   "docs/arquivo/manuscrito-antes-parecer-20261012.md": "1d3eb3968fa8cce5e4df1656c6f14d377572d18f6a53e5c79308af9e708454a8"

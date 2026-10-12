@@ -2,6 +2,7 @@
 import argparse
 import hashlib
 import json
+import math
 from collections import Counter
 from pathlib import Path
 from study import covered, load, records, recall
@@ -52,7 +53,7 @@ def diagnose(root):
             selected = [r for r in rows if r['phase'] == phase and r['config'] == mode and r['recall_at5'] is not None]
             summary = {'phase': phase, 'config': mode, 'eligible_questions': len(selected)}
             for field in [*(f'recall_at{k}' for k in KS), *(f'coverage_at{k}' for k in KS), 'reciprocal_rank_at10']:
-                summary[field] = sum(r[field] for r in selected) / len(selected) if selected else None
+                summary[field] = math.fsum(r[field] for r in selected) / len(selected) if selected else None
             summaries.append(summary)
         for left, right in (('B', 'A'), ('B', 'Bp'), ('C', 'B')):
             eligible = [q for q in questions if dossiers[q['id']]['reference_units'] and

@@ -49,5 +49,6 @@
   "independent_human_annotation": false,
   "confirmed_answer_adequacy": false,
   "external_validation": false,
-  "DOI_issued": false
+  "DOI_issued": false,
+  "diagnostic_mean_arithmetic": "math.fsum, evita diferenças do somatório nativo entre versões do Python"
 }
