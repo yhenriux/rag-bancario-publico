@@ -1,0 +1,44 @@
+{
+  "phase": "pilot",
+  "input_hashes": {
+    "config": "bad962e55aaef59dc5a8f85ed2c53210bc161e88d412169f1d7dad53161aaa59",
+    "chunks": "3f4dd786b57a5e4733cb63ce3b4846dc41c387f374e41087132bd085e7d8df88",
+    "metadata": "ceec769ca25933a363f177ed71f25bbd58f0fb2185d92d8088951c7424b992f2",
+    "questions": "7853e1293f324f758d65771c0fb00adb8b7efbddbeca82cd0ccd15e1815b676b",
+    "dossiers": "2572f7e93768c37c2d364a5559a3165413b2c7e5078f504aec26bfcad931255d",
+    "index_inputs": "8fdfc1442f851c4a728f1da707322a73dc78517c1754d470ed6aa6f3c0171e28",
+    "prompts": "2846f75b6f5facce338a5301f6909fb03734f503c50c77d7f5c64ec32648bbdd",
+    "retrieval": "9e9dba1f0b9cc030d33c2ed4c8cbece8ee49d80a2c3bc6ce173eccae299309c3"
+  },
+  "questions": 20,
+  "families": [
+    "bradesco-absent-basket",
+    "bradesco-baskets",
+    "bradesco-debit-replacement",
+    "bradesco-debit-unlock",
+    "bradesco-flex",
+    "bradesco-foreign-phone",
+    "bradesco-university",
+    "inter-absent-2027",
+    "inter-age",
+    "inter-card-fee",
+    "inter-credit-request",
+    "inter-limit-cash",
+    "inter-mei-pj",
+    "inter-pix-cash"
+  ],
+  "stability_questions": [
+    "B02",
+    "B04",
+    "B06",
+    "B07",
+    "B10",
+    "I01",
+    "I03",
+    "I05",
+    "I07",
+    "I09"
+  ],
+  "expected_generations": 180,
+  "human_validated": false
+}

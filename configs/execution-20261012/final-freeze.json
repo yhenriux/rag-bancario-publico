@@ -1,0 +1,29 @@
+{
+  "phase": "final",
+  "input_hashes": {
+    "config": "bad962e55aaef59dc5a8f85ed2c53210bc161e88d412169f1d7dad53161aaa59",
+    "chunks": "3f4dd786b57a5e4733cb63ce3b4846dc41c387f374e41087132bd085e7d8df88",
+    "metadata": "ceec769ca25933a363f177ed71f25bbd58f0fb2185d92d8088951c7424b992f2",
+    "questions": "b61974970252372985f081f882c4c400bc1c651c9eecc001e291937a8be5169c",
+    "dossiers": "c75816204deff779b2399b37505e420f7ce1b2dd307d32c4ca56ed56149dbec6",
+    "index_inputs": "8fdfc1442f851c4a728f1da707322a73dc78517c1754d470ed6aa6f3c0171e28",
+    "prompts": "2436fa86ea4003ad5fdf98482706afcac6cec110c13a21bb0ae1d044d6d0db5c",
+    "retrieval": "916a3cf69ca2dd7b4b3595da9fa53213d8592f387390e5fb3c77fec1a6d12b7f"
+  },
+  "questions": 10,
+  "families": [
+    "bradesco-absent-card",
+    "bradesco-aeternum-additional",
+    "bradesco-aeternum-fee",
+    "bradesco-card-bill-payment",
+    "bradesco-international-account",
+    "inter-absent-exchange",
+    "inter-card-delivery",
+    "inter-dispute",
+    "inter-guarantee-redemption",
+    "inter-loop"
+  ],
+  "stability_questions": [],
+  "expected_generations": 60,
+  "human_validated": false
+}

@@ -1,0 +1,248 @@
+{
+  "documents": 27,
+  "sources": [
+    {
+      "url": "https://ajuda.inter.co/conta-digital-pessoa-fisica-e-mei/o-inter-cobra-tarifas-dos-clientes-da-conta-digital",
+      "old_sha256": "41ef1694f4c9b5ad0d6e6e153d536ea714e8f1d9c8c3496c5327d68d8518798a",
+      "current_sha256": "41ef1694f4c9b5ad0d6e6e153d536ea714e8f1d9c8c3496c5327d68d8518798a",
+      "same_raw_bytes": true,
+      "location": "html:body",
+      "characters": 910
+    },
+    {
+      "url": "https://ajuda.inter.co/cartao/qual-a-taxa-para-realizar-um-saque",
+      "old_sha256": "ce8209756b32d5b4af77aaa2dd7b321814111893633609a69a2d4e507e10ae69",
+      "current_sha256": "ce8209756b32d5b4af77aaa2dd7b321814111893633609a69a2d4e507e10ae69",
+      "same_raw_bytes": true,
+      "location": "html:body",
+      "characters": 619
+    },
+    {
+      "url": "https://ajuda.inter.co/cartao/onde-posso-fazer-saques-de-valores-disponiveis-na-minha-conta/",
+      "old_sha256": "21c5f79f825bbdfe8f9b138da3df2fcbb66f2193694580fa345ede470db3abd6",
+      "current_sha256": "21c5f79f825bbdfe8f9b138da3df2fcbb66f2193694580fa345ede470db3abd6",
+      "same_raw_bytes": true,
+      "location": "html:body",
+      "characters": 873
+    },
+    {
+      "url": "https://ajuda.inter.co/pix/o-pix-saque-e-pix-troco-sao-gratuitos",
+      "old_sha256": "ee4c7ad8ff8d4dd027342f88a0126e3fa3c6812a531f4607e3ac20a2378ccd3c",
+      "current_sha256": "ee4c7ad8ff8d4dd027342f88a0126e3fa3c6812a531f4607e3ac20a2378ccd3c",
+      "same_raw_bytes": true,
+      "location": "html:body",
+      "characters": 1013
+    },
+    {
+      "url": "https://ajuda.inter.co/sobre-o-inter/quais-sao-os-tipos-de-conta-que-o-inter-oferece-para-os-clientes/",
+      "old_sha256": "e3129b6ee9218d16caeb427fd306f2ab04ad5d1a44e1f47ba9e07594ad4663aa",
+      "current_sha256": "e3129b6ee9218d16caeb427fd306f2ab04ad5d1a44e1f47ba9e07594ad4663aa",
+      "same_raw_bytes": true,
+      "location": "html:body",
+      "characters": 1309
+    },
+    {
+      "url": "https://ajuda.inter.co/cartao/o-inter-cobra-alguma-anuidade-no-cartao-de-credito",
+      "old_sha256": "06eca6ff2d195f04b9229554199ba6b5cceb91dbf4a53dc155a546ccdb062dbf",
+      "current_sha256": "06eca6ff2d195f04b9229554199ba6b5cceb91dbf4a53dc155a546ccdb062dbf",
+      "same_raw_bytes": true,
+      "location": "html:body",
+      "characters": 254
+    },
+    {
+      "url": "https://ajuda.inter.co/cartao/como-funciona-a-analise-do-limite-de-credito-no-inter/",
+      "old_sha256": "86281f7c9fe7a83493fde09dd926e86f736f971e06fd0fff6a77125bbe016b2a",
+      "current_sha256": "86281f7c9fe7a83493fde09dd926e86f736f971e06fd0fff6a77125bbe016b2a",
+      "same_raw_bytes": true,
+      "location": "html:body",
+      "characters": 901
+    },
+    {
+      "url": "https://ajuda.inter.co/cartao/como-ajustar-o-limite-de-credito-do-cartao-na-regua",
+      "old_sha256": "3b76c638a987bb93ed0b9c986ae67dcda9e8e7466e78cdbc2e5e3655fe055410",
+      "current_sha256": "3b76c638a987bb93ed0b9c986ae67dcda9e8e7466e78cdbc2e5e3655fe055410",
+      "same_raw_bytes": true,
+      "location": "html:body",
+      "characters": 673
+    },
+    {
+      "url": "https://ajuda.inter.co/cartao/como-solicitar-limite-de-credito-no-cartao-da-conta-pf",
+      "old_sha256": "5ede645be29b744c68059442e29f664002478d569e4308929e33069ee58c9015",
+      "current_sha256": "5ede645be29b744c68059442e29f664002478d569e4308929e33069ee58c9015",
+      "same_raw_bytes": true,
+      "location": "html:body",
+      "characters": 832
+    },
+    {
+      "url": "https://ajuda.inter.co/cartao/qual-o-prazo-para-a-analise-de-credito-do-meu-cartao-mastercard",
+      "old_sha256": "a71596fb0eaebdee232399fc5cbe31620ac2edd6d4d74056aee582b085b89bb4",
+      "current_sha256": "a71596fb0eaebdee232399fc5cbe31620ac2edd6d4d74056aee582b085b89bb4",
+      "same_raw_bytes": true,
+      "location": "html:body",
+      "characters": 553
+    },
+    {
+      "url": "https://ajuda.inter.co/cartao/quais-as-taxas-do-saque-de-limite/",
+      "old_sha256": "6823ee82e7fe52ece918eff01617e9e7ca0bce82da9fc579ca08facf810aa04e",
+      "current_sha256": "6823ee82e7fe52ece918eff01617e9e7ca0bce82da9fc579ca08facf810aa04e",
+      "same_raw_bytes": true,
+      "location": "html:body",
+      "characters": 741
+    },
+    {
+      "url": "https://banco.bradesco/html/classic/produtos-servicos/tipos-de-conta/bradesco-universitario.shtm",
+      "old_sha256": "f0ef2ec194d5eef4901faa38f326599b750c55ff019930636008f297be327103",
+      "current_sha256": "f0ef2ec194d5eef4901faa38f326599b750c55ff019930636008f297be327103",
+      "same_raw_bytes": true,
+      "location": "html:section.mainContent",
+      "characters": 1293
+    },
+    {
+      "url": "https://banco.bradesco/html/classic/produtos-servicos/tarifas/index.shtm",
+      "old_sha256": "9a5dfce3eefcfc72d474abf92f7cf9be5cb402a6bd4431171be8f3dd4cb62717",
+      "current_sha256": "9a5dfce3eefcfc72d474abf92f7cf9be5cb402a6bd4431171be8f3dd4cb62717",
+      "same_raw_bytes": true,
+      "location": "html:section.mainContent",
+      "characters": 3612
+    },
+    {
+      "url": "https://banco.bradesco/cidadania-financeira/educacao-financeira/produtos-e-servicos-financeiros/contas-bancarias/index.shtm",
+      "old_sha256": "8bc5ff48a3e0db5feec9c5a6fbc3c52fa247447c634c4cf6faa41be2c45e4568",
+      "current_sha256": "8bc5ff48a3e0db5feec9c5a6fbc3c52fa247447c634c4cf6faa41be2c45e4568",
+      "same_raw_bytes": true,
+      "location": "html:body",
+      "characters": 10156
+    },
+    {
+      "url": "https://banco.bradesco/html/principal/cartoes/servicoseseguros/pagamento-de-contas-com-o-cartao/",
+      "old_sha256": "96cc7cafa9bb48fee68c2b7c1fe1afadb6fc41685763899a8a047ba4bdd5ce68",
+      "current_sha256": "96cc7cafa9bb48fee68c2b7c1fe1afadb6fc41685763899a8a047ba4bdd5ce68",
+      "same_raw_bytes": true,
+      "location": "html:body",
+      "characters": 1521
+    },
+    {
+      "url": "https://banco.bradesco/html/classic/canais-digitais/horarios-e-limites/index.shtm",
+      "old_sha256": "a7300667ac9f0eab88d3d2b1b3c4c622b2a8bca799481579abb8a31aaca3177c",
+      "current_sha256": "a7300667ac9f0eab88d3d2b1b3c4c622b2a8bca799481579abb8a31aaca3177c",
+      "same_raw_bytes": true,
+      "location": "html:section.mainContent",
+      "characters": 9609
+    },
+    {
+      "url": "https://ajuda.inter.co/cartao/o-cartao-inter-funciona-como-debito-ou-credito/",
+      "old_sha256": "3927a672e4b83276d86e40b67f4733f17c324cae2a6ad427e6203ccb25641728",
+      "current_sha256": "3927a672e4b83276d86e40b67f4733f17c324cae2a6ad427e6203ccb25641728",
+      "same_raw_bytes": true,
+      "location": "html:body",
+      "characters": 806
+    },
+    {
+      "url": "https://ajuda.inter.co/cartao/qual-o-prazo-de-entrega-do-cartao-fisico",
+      "old_sha256": "1a188df2d38da5d456731c4398af3b52cf776bda561a6efc725e2a362357a248",
+      "current_sha256": "1a188df2d38da5d456731c4398af3b52cf776bda561a6efc725e2a362357a248",
+      "same_raw_bytes": true,
+      "location": "html:body",
+      "characters": 725
+    },
+    {
+      "url": "https://ajuda.inter.co/cartao/paguei-a-fatura-e-o-limite-do-cartao-nao-foi-liberado-qual-o-prazo",
+      "old_sha256": "eab727565aaafa0736ba023168248f2ccb312e46d6f15b9b85a4f99d85da29b1",
+      "current_sha256": "eab727565aaafa0736ba023168248f2ccb312e46d6f15b9b85a4f99d85da29b1",
+      "same_raw_bytes": true,
+      "location": "html:body",
+      "characters": 1063
+    },
+    {
+      "url": "https://ajuda.inter.co/cartao/quando-posso-contestar-uma-compra-e-quais-documentos-preciso-enviar",
+      "old_sha256": "dc56ce7743b1ee1078492e0a5e01cbe3d6d08bf9f7bd6ad3d6f5a708507394e9",
+      "current_sha256": "dc56ce7743b1ee1078492e0a5e01cbe3d6d08bf9f7bd6ad3d6f5a708507394e9",
+      "same_raw_bytes": true,
+      "location": "html:body",
+      "characters": 1224
+    },
+    {
+      "url": "https://ajuda.inter.co/cartao/como-contestar-uma-compra-nao-reconhecida-no-cartao-de-credito",
+      "old_sha256": "84265906cb55ddabf106af9ddcb74d4837ba034173d117b530487f788417cf4e",
+      "current_sha256": "84265906cb55ddabf106af9ddcb74d4837ba034173d117b530487f788417cf4e",
+      "same_raw_bytes": true,
+      "location": "html:body",
+      "characters": 746
+    },
+    {
+      "url": "https://ajuda.inter.co/inter-loop/paguei-a-fatura-do-cartao-e-ainda-nao-recebi-os-pontos-do-inter-loop-o-que-eu-faco",
+      "old_sha256": "4cc1a796029b50fde06bb40a8d31bf9b0378a0de84474b2f8d5b04357d65fa34",
+      "current_sha256": "4cc1a796029b50fde06bb40a8d31bf9b0378a0de84474b2f8d5b04357d65fa34",
+      "same_raw_bytes": true,
+      "location": "html:body",
+      "characters": 1033
+    },
+    {
+      "url": "https://ajuda.inter.co/investimentos/qual-e-o-prazo-para-resgate-do-cdb-mais-limite-ou-poupanca-mais",
+      "old_sha256": "8e115ac415af84c5f09b1198ab3b23b8d2d1cb01633d0d9070fabd2cb00cfd4a",
+      "current_sha256": "8e115ac415af84c5f09b1198ab3b23b8d2d1cb01633d0d9070fabd2cb00cfd4a",
+      "same_raw_bytes": true,
+      "location": "html:body",
+      "characters": 1068
+    },
+    {
+      "url": "https://banco.bradesco/cartoes/atendimento/",
+      "old_sha256": "09881b00ea039650ff8c1a782f0d629cc5d6bdba76cbed9f4176a4df53b407b6",
+      "current_sha256": "c33ad120a28c5c01d7601e2a20a3594233d2e245cd77dea5d9bebc766b6b3521",
+      "same_raw_bytes": false,
+      "location": "html:body",
+      "characters": 6574
+    },
+    {
+      "url": "https://banco.bradesco/html/principal/cartoes/aeternum/",
+      "old_sha256": "ee41de9187173b5cdb9f493e1640db52130db45053bf527588d35e1988e70d5a",
+      "current_sha256": "b60a9ad713c7d49091a42590aeb52a90400282404f946181270d46ee685c53c0",
+      "same_raw_bytes": false,
+      "location": "html:body",
+      "characters": 3303
+    },
+    {
+      "url": "https://banco.bradesco/html/classic/produtos-servicos/emprestimo-e-financiamento/credito-flex-bradesco.shtm",
+      "old_sha256": "fc82633c1d2582b765003689f5476e9e1bc600add496be908dc29aab326b587d",
+      "current_sha256": "242a6b51e0b7444d231167cda5f9146a20eb4687d842e741a24d191a1d8349dc",
+      "same_raw_bytes": false,
+      "location": "html:section.mainContent",
+      "characters": 3604
+    },
+    {
+      "url": "https://banco.bradesco/abrasuaconta/index.shtm",
+      "old_sha256": "1ac98bc9923c5a27da28326c78bd6f325ca8446f9ca1cc06373d40b82239a6a3",
+      "current_sha256": "644214df1e09e67875f4f973793edd7e6f8b851e56397208a966b48226785c76",
+      "same_raw_bytes": false,
+      "location": "html:body",
+      "characters": 9405
+    }
+  ],
+  "missing_sources": [],
+  "human_validated": false,
+  "original_17_snapshots_retained": true,
+  "new_collection_is_not_silently_substituted": true,
+  "collection_errors": [
+    {
+      "bank": "bradesco",
+      "url": "https://banco.bradesco/assets/classic/pdf/regulamento-sumario-utilizacao-cartao-credito-pessoa-fisica.pdf",
+      "status": "pending",
+      "error": "Somente HTTPS no host oficial aprovado, sem credenciais"
+    },
+    {
+      "bank": "bradesco",
+      "url": "https://banco.bradesco/assets/prime/pdf/Sumario_Cartoes_Credito_American_Express_Novo.pdf",
+      "status": "pending",
+      "error": "HTTP Error 502: Bad Gateway"
+    }
+  ],
+  "extraction_errors": [
+    {
+      "document_id": "2b299fbc7bf7981e3282062ed0c4e975290be3a4d2b572008c74405eeb8dbe3d",
+      "url": "https://ajuda.inter.co/cartao/como-saber-se-a-fatura-esta-paga",
+      "stage": "extraction",
+      "error": "Documento sem conteúdo extraído",
+      "status": "pending"
+    }
+  ]
+}

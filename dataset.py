@@ -38,10 +38,11 @@ SPECS=[
 ('final','BF05','bradesco-absent-card','insuficiencia','7c84','Qual é a anuidade do Cartão Órbita 2030 do Bradesco?',['cartão e anuidade não localizados na coleção','não inventar valor'],[],{'product':['cartao']})]
 
 
-def build(documents_path,chunks_path,output):
+def build(documents_path,chunks_path,output,document_id_map=None):
     docs=records(documents_path);chunks=records(chunks_path);out=Path(output)
     out.mkdir(parents=True,exist_ok=False);questions=[];dossiers=[];units=[];unit_map={c['id']:[] for c in chunks}
     for phase,ident,family,cls,dp,q,requirements,needles,attrs in SPECS:
+        dp=(document_id_map or {}).get(dp,dp)
         doc=next(d for d in docs if d['document_id'].startswith(dp)); references=[]
         for j,needle in enumerate(needles):
             found=False
@@ -81,5 +82,5 @@ def build(documents_path,chunks_path,output):
 
 if __name__=='__main__':
  import argparse
- p=argparse.ArgumentParser();p.add_argument('documents');p.add_argument('chunks');p.add_argument('output');a=p.parse_args()
- build(a.documents,a.chunks,a.output)
+ p=argparse.ArgumentParser();p.add_argument('documents');p.add_argument('chunks');p.add_argument('output');p.add_argument('--id-map');a=p.parse_args()
+ build(a.documents,a.chunks,a.output,load(a.id_map) if a.id_map else None)

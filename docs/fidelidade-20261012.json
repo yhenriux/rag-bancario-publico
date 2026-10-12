@@ -1,0 +1,26 @@
+{
+  "generations": 36,
+  "required_item_checks": 144,
+  "missing_items": [],
+  "degenerate_outputs": [],
+  "truncated_outputs": [],
+  "human_validated": false,
+  "passed": true,
+  "elapsed_seconds": 198.7672858510001,
+  "runtime": {
+    "backend": "llama.cpp b11557",
+    "precision": "Q4_K_M",
+    "threads": 8,
+    "model_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "executable_sha256": "ae18d4586edf56c54194c2467ed58ba570b98348521138f49e0a1c0992a1dbaa",
+    "context_tokens": 8192,
+    "gpu_layers": 0,
+    "batch_tokens": 512,
+    "microbatch_tokens": 128,
+    "weight_repacking": false,
+    "global_prompt_cache_mib": 0,
+    "inputs_sha256": "a5473c3922354e9386dcc39c317b5fa21d02c900f75e7bb2157efd31394d34a6"
+  },
+  "cases_sha256": "1ce3f189b2bfaf340190602fbcd1880f12898af31ad872c6106a6375fdac9bab",
+  "answers_sha256": "14282f3efd3b560f9801d197701f5825c6c131ccaa8cb4570967570d5f5890c8"
+}
