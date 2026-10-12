@@ -1,5 +1,13 @@
 ## 11/10/2026: execução em lote com assistência de Codex
 
+## 12/10/2026: pacote bilíngue para a RDBCI
+
+- Cópias específicas no template oficial, com manuscritos PT e EN e resumos em cinco rótulos.
+- Suplementos, sete tabelas e metadados nos dois idiomas; os dados experimentais permanecem preservados.
+- Guia de arquivos e rótulos para envio, com declarações pessoais e assinaturas ainda pendentes.
+- Pacote público de dados reproduz os 150 pares sem incluir textos bancários ou respostas integrais.
+- Elegibilidade de autoria individual, depósito de dados e certificação de tradução não são presumidos.
+
 ## 2026-10-12 Revisão de título e redação científica
 
 - Título escolhido pelo autor aplicado nas três línguas.

@@ -26,6 +26,7 @@ Os dados e referências foram preparados com apoio de IA. A amostra é pequena, 
 - **Quero ver os achados:** [resultados e exemplos](docs/resultados.md).
 - **Quero repetir as contas:** [reprodução em poucos comandos](docs/reproducao.md).
 - **Quero consultar o artigo:** [manuscrito com resultados](docs/manuscrito.md).
+- **Quero preparar a submissão à RDBCI:** [pacote em português e inglês, rótulos e pendências](docs/rdbci/pacote-submissao.md).
 - **Quero saber o método e seus limites:** [método aplicado](docs/metodo.md).
 - **Quero coletar outra coleção:** [guia técnico](docs/execucao.md).
 - **Quero localizar um arquivo:** [índice da documentação](docs/index.md).

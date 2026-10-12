@@ -1,0 +1,16 @@
+{
+  "titles": {
+    "PT": "Organização do conhecimento em RAG bancário: recuperação de evidências em documentos públicos brasileiros",
+    "EN": "Knowledge organization in banking RAG: evidence retrieval from Brazilian public documents"
+  },
+  "abstracts": {
+    "PT": "Introdução: A organização documental influencia quais evidências chegam à etapa de geração em sistemas RAG. Objetivo: Examinar como cabeçalhos contextuais e filtros de produto e público alteram a recuperação de evidências bancárias. Metodologia: Estudo de caso diagnóstico, quantitativo e exploratório, com 27 páginas públicas de dois bancos brasileiros e 62 trechos, comparados em cinco configurações de busca. Vinte perguntas do piloto e dez de famílias novas no segundo conjunto utilizam âncoras, passagens curtas preparadas como referência com assistência de inteligência artificial. Resultados: Nas primeiras cinco posições, o filtro recupera a referência em uma das dezesseis perguntas elegíveis do piloto que a busca sem filtro deixa de fora. Em uma das oito perguntas elegíveis do segundo conjunto, exclui as duas âncoras por ausência da relação entre Aeternum e cartão no catálogo. Uma verificação determinística documenta a dependência do ganho em relação a campos inferidos. No segundo conjunto, as buscas lexical e com cabeçalho completo recuperam todas as âncoras em três posições; a lexical apresenta o melhor acesso inicial. Conclusão: Os dados permitem diagnosticar ordenação e exclusão de referências. A amostra pequena e a preparação compartilhada limitam a generalização; a adequação semântica das respostas permanece fora do alcance avaliado.",
+    "EN": "Introduction: Document organization influences which evidence reaches the generation stage in RAG systems. Objective: To examine how contextual headers and product and audience filters change banking evidence retrieval. Methodology: A diagnostic, quantitative, exploratory case study using 27 public pages from two Brazilian banks and 62 passages, compared across five retrieval configurations. Twenty pilot questions and ten questions from new rule families in a second set use anchors, short reference passages prepared with artificial intelligence assistance. Results: Within the first five positions, filtering retrieves the reference for one of sixteen eligible pilot questions where unfiltered retrieval leaves it out. For one of eight eligible questions in the second set, filtering excludes both anchors because the catalogue lacks the relation between Aeternum and the card category. A deterministic check documents the dependence of the gain on inferred attributes. In the second set, lexical retrieval and retrieval with complete headers find all anchors within three positions; lexical retrieval provides the best initial access. Conclusion: The data support diagnosis of ranking and reference exclusion. The small sample and shared preparation limit generalization; semantic answer adequacy remains outside the evaluated scope."
+  },
+  "keywords": {
+    "PT": "Representação do conhecimento; Recuperação da informação; Metadados; Inteligência artificial; Documentação.",
+    "EN": "Knowledge representation; Information retrieval; Metadata; Artificial intelligence; Documentation."
+  },
+  "author_review": "pending",
+  "translation_certification": "not_obtained"
+}

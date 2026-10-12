@@ -11,6 +11,7 @@
 | Conhecer o método e os limites | [Método aplicado](metodo.md) |
 | Consultar parâmetros e proveniência | [Suplemento do método](suplemento-metodo-20261012.md) |
 | Ler o artigo | [Manuscrito](manuscrito.md) |
+| Preparar o envio à RDBCI | [Pacote PT/EN e rótulos dos arquivos](rdbci/pacote-submissao.md) |
 | Conferir a revisão crítica | [Primeiro parecer](resposta-parecer-20261012.md) e [reavaliação](resposta-reavaliacao-20261012.md) |
 | Ver cada pergunta e configuração | [Matriz diagnóstica](diagnostico-20261012/matrix.md) |
 | Conferir o que foi concluído | [Estado e próximos passos](roadmap.md) |

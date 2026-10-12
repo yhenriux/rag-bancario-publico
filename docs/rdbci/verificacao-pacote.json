@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-12",
+  "template": "official_RDBCI_1199",
+  "main_pages": {
+    "PT": 15,
+    "EN": 14
+  },
+  "abstract_words": {
+    "PT": 197,
+    "EN": 186
+  },
+  "references": 21,
+  "generated_docx": 16,
+  "author_pdfs_unsigned": 9,
+  "visual_pages_checked": 74,
+  "all_pages_visually_checked": true,
+  "native_equation": {
+    "square_roots": 2,
+    "fraction": 1
+  },
+  "frozen_analysis_pairs": 150,
+  "public_data_files_preserved": 35,
+  "data_analysis_reproduced": true,
+  "original_search_fully_reproducible": false,
+  "author_review": "pending",
+  "signatures": "pending",
+  "unified_credit_form_submission": "pending",
+  "translation_certification": "not_obtained",
+  "data_repository_deposit": "pending",
+  "data_doi": null,
+  "sole_author_eligibility": "requires_editorial_confirmation",
+  "submission_completed_by_assistant": false
+}

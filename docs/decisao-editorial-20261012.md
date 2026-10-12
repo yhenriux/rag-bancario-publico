@@ -1,5 +1,18 @@
 # Decisão editorial da entrega atual
 
+## Destino escolhido: RDBCI
+
+Conferência em 12/10/2026. O autor iniciou um rascunho no OJS. A preparação técnica não registra conclusão da submissão, aceite ou publicação.
+
+O [pacote de submissão](rdbci/pacote-submissao.md) utiliza o template oficial da RDBCI, com manuscritos sem identificação em português (15 páginas) e inglês (14 páginas), resumos nos cinco rótulos previstos, 21 referências e tabelas editáveis. Suplementos, metadados, declarações e instruções de envio acompanham a entrega. As traduções inglesas tiveram assistência de IA e não possuem certificação profissional.
+
+As [diretrizes](https://periodicos.sbu.unicamp.br/ojs/index.php/rdbci/about/submissions) e os formulários oficiais exigem revisão pessoal e declarações. A compatibilidade da autoria individual com a titulação do autor, o depósito dos materiais, a licença dos materiais autorais, o formulário unificado CRediT e as assinaturas permanecem pendentes. A declaração genérica de ausência de conflito precisa ser conciliada com o vínculo informado com o Inter. As cláusulas de responsabilidade humana do formulário de IA devem ser revisadas à luz da assistência declarada. A versão de trabalho no GitHub está informada.
+
+Nenhum coautor foi incluído, nenhum contato com a revista foi enviado, nenhuma assinatura foi aplicada e nenhum custo foi contratado. O pesquisador precisa revisar e aprovar intelectualmente o conteúdo antes de concluir o envio.
+
+## Histórico: avaliação do destino anterior
+
+
 Conferência em 12/10/2026. O manuscrito descreve um estudo documental concluído, com geração complementar parcial. A aprovação intelectual e a submissão pertencem ao autor.
 
 ## Formato e extensão
