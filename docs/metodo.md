@@ -43,3 +43,5 @@ Amostra de conveniência pequena, referências assistidas, atributos parcialment
 ## Revisão diagnóstica
 
 O artigo usa segundo conjunto para os arquivos historicamente chamados `final`; seus rankings já eram conhecidos e não constituem validação cega. Bp constava do protocolo antes do piloto. A [análise posterior](diagnostico-20261012/diagnostics.json) acrescenta quatro cortes, MRR@10, posições e discordantes. A sensibilidade de B05 e BF04 torna explícita a dependência dos atributos inferidos, sem criar independência retrospectiva. [Resposta ao parecer](resposta-parecer-20261012.md).
+
+A estratificação posterior mantém as mesmas médias agregadas e mostra os resultados por banco. A remoção de campos inferidos é uma verificação determinística do mecanismo e não valida a classificação das perguntas. Os parâmetros completos e o alcance da leitura bibliográfica estão no [suplemento de método](suplemento-metodo-20261012.md).

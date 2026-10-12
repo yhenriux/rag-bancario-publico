@@ -31,7 +31,7 @@ def diagnose(root):
     cfg = root / 'configs/execution-20261012'
     base = root / 'docs/results-20261012'
     unit_map = load(cfg / 'unit-map.json')
-    rows, summaries, discordants, filter_differences, matrix = [], [], [], [], []
+    rows, summaries, bank_summaries, discordants, filter_differences, matrix = [], [], [], [], [], []
     sources = [cfg / n for n in ('catalog.jsonl', 'unit-map.json')]
     phases = {}
     for phase in ('pilot', 'final'):
@@ -47,7 +47,8 @@ def diagnose(root):
                 row = {'phase': phase, 'question_id': q['id'], 'bank': q['bank'], 'class': q['class'], 'config': mode, **m}
                 rows.append(row); measurements[q['id'], mode] = row
                 cells[mode] = m
-            matrix.append({'phase': phase, 'question_id': q['id'], 'cells': cells})
+            matrix.append({'phase': phase, 'question_id': q['id'], 'bank': q['bank'],
+                           'class': q['class'], 'anchor_count': len(set(dossiers[q['id']]['reference_units'])), 'cells': cells})
         phases[phase] = (questions, rankings, dossiers, measurements)
         for mode in MODES:
             selected = [r for r in rows if r['phase'] == phase and r['config'] == mode and r['recall_at5'] is not None]
@@ -55,6 +56,13 @@ def diagnose(root):
             for field in [*(f'recall_at{k}' for k in KS), *(f'coverage_at{k}' for k in KS), 'reciprocal_rank_at10']:
                 summary[field] = math.fsum(r[field] for r in selected) / len(selected) if selected else None
             summaries.append(summary)
+            for bank in sorted({q['bank'] for q in questions}):
+                bank_rows = [r for r in selected if r['bank'] == bank]
+                stratum = {'phase': phase, 'bank': bank, 'config': mode,
+                           'eligible_questions': len(bank_rows)}
+                for field in [*(f'recall_at{k}' for k in KS), *(f'coverage_at{k}' for k in KS), 'reciprocal_rank_at10']:
+                    stratum[field] = math.fsum(r[field] for r in bank_rows) / len(bank_rows) if bank_rows else None
+                bank_summaries.append(stratum)
         for left, right in (('B', 'A'), ('B', 'Bp'), ('C', 'B')):
             eligible = [q for q in questions if dossiers[q['id']]['reference_units'] and
                         (left == 'C' or q['class'] in ('condicao', 'excecao'))]
@@ -96,7 +104,7 @@ def diagnose(root):
     result = {'analysis_timing': 'posthoc_after_review', 'scope': 'frozen_rankings_and_assisted_references',
               'candidate_chunks_by_bank': dict(sorted(Counter(c['bank'] for c in records(cfg / 'catalog.jsonl')).items())),
               'input_sha256': {str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest() for p in sources},
-              'summary': summaries, 'discordant_pairs': discordants,
+              'summary': summaries, 'summary_by_bank': bank_summaries, 'discordant_pairs': discordants,
               'C_vs_B_differences': filter_differences, 'two_case_sensitivity': sensitivity, 'measurements': rows}
     return result, matrix
 
@@ -105,8 +113,9 @@ def markdown_matrix(matrix):
     text = ['# Matriz diagnóstica posterior', '',
             'Cada célula contém posição da primeira âncora no top 10 / recall@5 / cobertura@5. ',
             'NR: nenhuma âncora nas dez posições publicadas; NA: pergunta sem referência. ',
-            'As posições não medem suficiência semântica. IDs `final` identificam o segundo conjunto histórico.', '',
-            '| Pergunta | A | B | C | Bp | L |', '|---|---|---|---|---|---|']
+            'As posições não medem suficiência semântica. IDs `final` identificam o segundo conjunto histórico.',
+            'ID identifica a pergunta; N informa o número de âncoras distintas de referência.', '',
+            '| ID | Banco | Classe | N | A | B | C | Bp | L |', '|---|---|---|---:|---|---|---|---|---|']
     for row in matrix:
         cells = []
         for mode in MODES:
@@ -115,8 +124,11 @@ def markdown_matrix(matrix):
                 cells.append('NA')
             else:
                 position = m['first_anchor_rank_top10'] or 'NR'
-                cells.append(f"{position} / {m['recall_at5']:g} / {m['coverage_at5']:g}")
-        text.append('| ' + ' | '.join([row['question_id'], *cells]) + ' |')
+                cells.append(f"{position}/{m['recall_at5']:g}/{m['coverage_at5']:g}".replace('.', ','))
+        label = {'direta': 'direta', 'condicao': 'condição', 'excecao': 'exceção',
+                 'ambiguidade': 'ambiguidade', 'insuficiencia': 'insuficiência'}[row['class']]
+        text.append('| ' + ' | '.join([row['question_id'], row['bank'].title(), label,
+                                      str(row['anchor_count']), *cells]) + ' |')
     return '\n'.join(text) + '\n'
 
 

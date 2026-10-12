@@ -31,7 +31,7 @@ Ele usa os rankings em `docs/results-20261012/` e as referências em `configs/ex
 python retrieval_diagnostics.py
 ```
 
-Resultado esperado: `diagnostics_match: true` e `pairs: 150`. O programa refaz os quatro cortes, posições das âncoras, MRR@10, contagens de discordantes e a sensibilidade dos dois casos. Esta análise é posterior ao parecer. [Matriz](diagnostico-20261012/matrix.md) e [resposta crítica](resposta-parecer-20261012.md).
+Resultado esperado: `diagnostics_match: true` e `pairs: 150`. O programa refaz os quatro cortes, posições das âncoras, MRR@10, contagens de discordantes, os vinte estratos por banco e a verificação determinística de dependência em dois casos. Esta análise é posterior ao parecer. [Matriz](diagnostico-20261012/matrix.md) e [resposta crítica](resposta-parecer-20261012.md).
 
 ## 4. Confira os códigos dos arquivos
 

@@ -42,7 +42,7 @@ Em recall@5 e cobertura@5, C supera B somente em B05 (1/16 perguntas elegíveis 
 
 A revisão acrescenta [matriz 30 × 5](diagnostico-20261012/matrix.md), recall@1/3/5/10, MRR@10 e posições por âncora. B05 está na posição 6 de B e 4 de C. Retirar os dois campos inferidos torna o caso equivalente a B, eliminando o ganho no corte de cinco posições. Em BF04, cartão é expresso e a falha permanece. Esta sensibilidade é posterior, limitada aos dois casos e não valida um extrator independente.
 
-O catálogo oferece 18 candidatos do Inter e 44 do Bradesco antes do filtro adicional. BM25 é competitivo: no segundo conjunto, recupera todas as âncoras em três posições e tem MRR@10 de 0,917. No piloto, L tem recall@3 e @5 de 93,75%, acima de A e B em 90,625%; C e Bp alcançam 96,875% em cinco posições.
+O catálogo oferece 18 candidatos do Inter e 44 do Bradesco antes do filtro adicional. BM25 é competitivo: no segundo conjunto, B e L recuperam todas as âncoras em três posições. L apresenta recall@1 de 87,5% e MRR@10 de 0,917, contra 62,5% e 0,792 em B. No piloto, L tem recall@3 e @5 de 93,75%, acima de A e B em 90,625%; C e Bp alcançam 96,875% em cinco posições.
 
 B05 e BF04 não esgotam as mudanças de posição: em recall@1, I08 também distingue C e B no piloto. A ordem das listas publicadas muda em 17/20 e 9/10 perguntas. [Cálculos completos](diagnostico-20261012/diagnostics.json) e [decisões críticas](resposta-parecer-20261012.md).
 
@@ -73,3 +73,9 @@ Todos os contrastes são exploratórios. O intervalo 0 a 0 no conjunto final dec
 - [Origem dos atributos das perguntas](results-20261012/query-attribute-audit.jsonl).
 
 Amostra pequena, referências curtas e preparação assistida limitam a generalização. Uma comparação com perguntas reais e referências independentes exige outra etapa de pesquisa.
+
+## Resultados separados por banco
+
+As doze perguntas elegíveis do Inter, oito no piloto e quatro no segundo conjunto, têm recall@5 de 100% nas cinco configurações. Todas as diferenças nesse corte estão nas doze elegíveis do Bradesco. O Inter mantém diferenças em acesso inicial: no piloto, recall@1 de C é 100%, de A/B/Bp é 87,5% e de L é 75%; no segundo conjunto, A/Bp/L têm 100% e B/C, 75%.
+
+Os vinte estratos por banco, conjunto e configuração estão em `summary_by_bank` no [relatório diagnóstico](diagnostico-20261012/diagnostics.json). A [matriz](diagnostico-20261012/matrix.md) informa banco, classe e número de âncoras. A preparação compartilhada limita a independência; retirar campos inferidos verifica uma consequência determinística da política de seleção.
